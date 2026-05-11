@@ -111,32 +111,17 @@ body {
 .delta-up { color: var(--correct); }
 .delta-down { color: var(--wrong); }
 
-/* Login page */
-.login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 1rem;
-}
-
+/* Login modal */
 .login-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 1rem;
-  padding: 2.5rem;
+  padding: 1.75rem;
   width: 100%;
   max-width: 380px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-}
-
-.login-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  text-align: center;
 }
 
 .login-subtitle {
@@ -190,32 +175,6 @@ body {
   text-align: center;
 }
 
-.login-divider {
-  text-align: center;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  position: relative;
-}
-
-.login-divider::before,
-.login-divider::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  width: 42%;
-  height: 1px;
-  background: var(--border);
-}
-
-.login-divider::before { left: 0; }
-.login-divider::after { right: 0; }
-
-.btn-guest {
-  width: 100%;
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-}
 
 /* Main layout */
 .main {

@@ -1,10 +1,16 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { login } from '../utils/storage.js'
 
-export default function LoginPage({ onLogin, onGuest }) {
+export default function LoginPage({ onLogin, onClose }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
+
+  useEffect(() => {
+    function onKey(e) { if (e.key === 'Escape') onClose() }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
 
   function handleSubmit(e) {
     e.preventDefault()
@@ -17,10 +23,13 @@ export default function LoginPage({ onLogin, onGuest }) {
   }
 
   return (
-    <div className="login-page">
-      <div className="login-card">
-        <h1 className="login-title">Integration Bee</h1>
-        <p className="login-subtitle">Sign in or create an account to track your rating.</p>
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="login-card" onClick={e => e.stopPropagation()}>
+        <div className="modal-header">
+          <h2 className="modal-title">Sign in</h2>
+          <button className="modal-close" onClick={onClose}>✕</button>
+        </div>
+        <p className="login-subtitle">New username? An account is created automatically.</p>
         <form className="login-form" onSubmit={handleSubmit}>
           <div className="login-field">
             <label className="login-label">Username</label>
@@ -49,11 +58,6 @@ export default function LoginPage({ onLogin, onGuest }) {
             Continue
           </button>
         </form>
-        <p className="login-hint">New username? An account will be created automatically.</p>
-        <div className="login-divider">or</div>
-        <button className="btn btn-guest" type="button" onClick={onGuest}>
-          Play as guest
-        </button>
       </div>
     </div>
   )

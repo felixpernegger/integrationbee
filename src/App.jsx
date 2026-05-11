@@ -61,16 +61,15 @@ function findNextProblem(targetRating, excludeIds, reviewIds = null) {
 function buildSession() {
   const storedUser = getCurrentUser()
   const userData = storedUser ? getUser(storedUser) : null
-  if (!userData) return { username: null, playerRating: null, currentProblem: null, problemRating: null, seenIds: new Set(), mistakeIds: [] }
-  const playerRating = { rating: userData.rating, rd: userData.rd, volatility: userData.volatility }
-  const { problem: first } = findNextProblem(userData.rating, new Set())
+  const targetRating = userData?.rating ?? 1500
+  const { problem: first } = findNextProblem(targetRating, new Set())
   return {
-    username: storedUser,
-    playerRating,
+    username: storedUser || null,
+    playerRating: userData ? { rating: userData.rating, rd: userData.rd, volatility: userData.volatility } : null,
     currentProblem: first,
     problemRating: getProblemRating(first.id, first.source),
     seenIds: new Set([first.id]),
-    mistakeIds: userData.mistakeIds || [],
+    mistakeIds: userData?.mistakeIds || [],
   }
 }
 
@@ -89,7 +88,7 @@ export default function App() {
   const [reviewMode, setReviewMode] = useState(false)
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [showStats, setShowStats] = useState(false)
-  const [guestMode, setGuestMode] = useState(false)
+  const [showLogin, setShowLogin] = useState(false)
 
   const done = status !== null || revealed
 
@@ -105,7 +104,6 @@ export default function App() {
     )
 
     if (next === null) {
-      // All review mistakes cleared — exit review mode
       setReviewMode(false)
       const { problem: fallback } = findNextProblem(targetRating, currentSeen)
       setCurrentProblem(fallback)
@@ -123,10 +121,8 @@ export default function App() {
 
   function handleLogin(name, userData) {
     setUsername(name)
-    const rating = { rating: userData.rating, rd: userData.rd, volatility: userData.volatility }
-    setPlayerRating(rating)
-    const ids = userData.mistakeIds || []
-    setMistakeIds(ids)
+    setPlayerRating({ rating: userData.rating, rd: userData.rd, volatility: userData.volatility })
+    setMistakeIds(userData.mistakeIds || [])
     const { problem: first } = findNextProblem(userData.rating, new Set())
     setCurrentProblem(first)
     setProblemRating(getProblemRating(first.id, first.source))
@@ -136,39 +132,38 @@ export default function App() {
     setRevealed(false)
     setRatingDelta(null)
     setReviewMode(false)
+    setShowLogin(false)
   }
 
   function handleLogout() {
     logout()
     setUsername(null)
     setPlayerRating(null)
-    setCurrentProblem(null)
-    setProblemRating(null)
-    setSeenIds(new Set())
     setMistakeIds([])
+    setRatingDelta(null)
+    setReviewMode(false)
+    // Keep playing — just pick a new problem as guest
+    const { problem: first } = findNextProblem(1500, new Set())
+    setCurrentProblem(first)
+    setProblemRating(getProblemRating(first.id, first.source))
+    setSeenIds(new Set([first.id]))
     setStreak(0)
     setStatus(null)
     setRevealed(false)
-    setRatingDelta(null)
-    setReviewMode(false)
   }
 
   function applyRatingUpdate(score) {
     if (!username || !playerRating || !currentProblem) return
     const problemStored = getProblemRating(currentProblem.id, currentProblem.source)
     const { player: newPlayer, problem: newProblemRating } = updateRatings(playerRating, problemStored, score)
-
     const delta = Math.round(newPlayer.rating - playerRating.rating)
     setRatingDelta(delta)
     setPlayerRating(newPlayer)
-
     const userData = getUser(username)
     saveUser(username, { ...userData, rating: newPlayer.rating, rd: newPlayer.rd, volatility: newPlayer.volatility })
     saveProblemRating(currentProblem.id, newProblemRating)
     appendRatingHistory(username, newPlayer.rating)
     incrementSolveStats(username, score === 1)
-
-    // Update mistake tracking
     if (score === 1) {
       removeMistake(username, currentProblem.id)
       setMistakeIds(prev => prev.filter(id => id !== currentProblem.id))
@@ -182,27 +177,18 @@ export default function App() {
     if (done) return
     const correct = checkAnswer(input, currentProblem.accepted)
     setStatus(correct ? 'correct' : 'wrong')
-    if (correct) {
-      setStreak(s => s + 1)
-      applyRatingUpdate(1)
-    } else {
-      setStreak(0)
-      applyRatingUpdate(0)
-    }
+    if (correct) { setStreak(s => s + 1); applyRatingUpdate(1) }
+    else { setStreak(0); applyRatingUpdate(0) }
   }
 
   function handleReveal() {
     setRevealed(true)
-    if (status === null) {
-      setStreak(0)
-      applyRatingUpdate(0)
-    }
+    if (status === null) { setStreak(0); applyRatingUpdate(0) }
   }
 
   function handleStartReview() {
     setShowStats(false)
     setReviewMode(true)
-    // Reset seen so all mistakes are available
     setSeenIds(new Set())
     setStatus(null)
     setRevealed(false)
@@ -215,38 +201,13 @@ export default function App() {
     }
   }
 
-  function handleGuest() {
-    setGuestMode(true)
-    const { problem: first } = findNextProblem(1500, new Set())
-    setCurrentProblem(first)
-    setProblemRating(getProblemRating(first.id, first.source))
-    setSeenIds(new Set([first.id]))
-  }
-
-  function handleLoginFromGuest() {
-    setGuestMode(false)
-    setCurrentProblem(null)
-    setSeenIds(new Set())
-    setStatus(null)
-    setRevealed(false)
-    setRatingDelta(null)
-    setStreak(0)
-  }
-
-  if (!username && !guestMode) {
-    return <LoginPage onLogin={handleLogin} onGuest={handleGuest} />
-  }
-
   return (
     <div className="app">
       {showLeaderboard && <Leaderboard currentUser={username} onClose={() => setShowLeaderboard(false)} />}
-      {showStats && (
-        <StatsModal
-          username={username}
-          onClose={() => setShowStats(false)}
-          onStartReview={handleStartReview}
-        />
+      {showStats && username && (
+        <StatsModal username={username} onClose={() => setShowStats(false)} onStartReview={handleStartReview} />
       )}
+      {showLogin && <LoginPage onLogin={handleLogin} onClose={() => setShowLogin(false)} />}
 
       <header className="header">
         <h1 className="site-title">Integration Bee</h1>
@@ -259,10 +220,10 @@ export default function App() {
           />
           <div className="user-area">
             <button className="btn btn-leaderboard" onClick={() => setShowLeaderboard(true)}>Leaderboard</button>
-            {!guestMode && <button className="btn btn-leaderboard" onClick={() => setShowStats(true)}>Stats</button>}
-            {guestMode
-              ? <button className="btn btn-check" onClick={handleLoginFromGuest}>Log in</button>
-              : <><span className="username">{username}</span><button className="btn btn-logout" onClick={handleLogout}>Log out</button></>
+            {username && <button className="btn btn-leaderboard" onClick={() => setShowStats(true)}>Stats</button>}
+            {username
+              ? <><span className="username">{username}</span><button className="btn btn-logout" onClick={handleLogout}>Log out</button></>
+              : <button className="btn btn-check" onClick={() => setShowLogin(true)}>Log in</button>
             }
           </div>
         </div>
@@ -280,24 +241,16 @@ export default function App() {
           {done && currentProblem.source && (
             <div className="problem-meta">
               <span className="source">{currentProblem.source}</span>
-              {problemRating && (
-                <span className="problem-rating">· {Math.round(problemRating.rating)}</span>
-              )}
+              {problemRating && <span className="problem-rating">· {Math.round(problemRating.rating)}</span>}
             </div>
           )}
 
           <IntegralDisplay latex={currentProblem.integrand} />
 
-          {!done && (
-            <AnswerInput onSubmit={handleAnswer} disabled={done} />
-          )}
+          {!done && <AnswerInput onSubmit={handleAnswer} disabled={done} />}
 
-          {status === 'correct' && (
-            <div className="feedback feedback-correct">Correct!</div>
-          )}
-          {status === 'wrong' && (
-            <div className="feedback feedback-wrong">Not quite — try revealing the answer.</div>
-          )}
+          {status === 'correct' && <div className="feedback feedback-correct">Correct!</div>}
+          {status === 'wrong' && <div className="feedback feedback-wrong">Not quite — try revealing the answer.</div>}
 
           {revealed && (
             <div className="reveal-box">
@@ -307,11 +260,7 @@ export default function App() {
           )}
 
           <div className="actions">
-            {!revealed && (
-              <button className="btn btn-reveal" onClick={handleReveal}>
-                Reveal answer
-              </button>
-            )}
+            {!revealed && <button className="btn btn-reveal" onClick={handleReveal}>Reveal answer</button>}
             {done && !reviewMode && (
               <>
                 <button className="btn btn-easier" onClick={() => advanceProblem(-RATING_STEP)}>← Easier</button>
