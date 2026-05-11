@@ -72,6 +72,7 @@ export default function ArchivePage({ checkAnswer, onArchiveAnswer }) {
   const [status, setStatus] = useState(null)
   const [revealed, setRevealed] = useState(false)
   const [ratingDelta, setRatingDelta] = useState(null)
+  const [showLatex, setShowLatex] = useState(false)
 
   function navigate(segment) {
     setPath(prev => [...prev, segment])
@@ -88,6 +89,7 @@ export default function ArchivePage({ checkAnswer, onArchiveAnswer }) {
     setStatus(null)
     setRevealed(false)
     setRatingDelta(null)
+    setShowLatex(false)
   }
 
   function toggleProblem(id) {
@@ -95,6 +97,7 @@ export default function ArchivePage({ checkAnswer, onArchiveAnswer }) {
     setStatus(null)
     setRevealed(false)
     setRatingDelta(null)
+    setShowLatex(false)
   }
 
   function handleAnswer(problem, input) {
@@ -176,6 +179,17 @@ export default function ArchivePage({ checkAnswer, onArchiveAnswer }) {
 
                 {isActive && (
                   <div className="archive-problem-body">
+                    <div className="archive-problem-body-header">
+                      <button
+                        className="btn-view-latex"
+                        onClick={() => setShowLatex(v => !v)}
+                      >
+                        {showLatex ? 'Hide LaTeX' : 'View LaTeX'}
+                      </button>
+                    </div>
+                    {showLatex && (
+                      <code className="archive-latex-source">{p.integrand}</code>
+                    )}
                     <IntegralDisplay latex={p.integrand} />
 
                     {!done && (
