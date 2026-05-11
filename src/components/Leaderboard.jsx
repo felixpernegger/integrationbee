@@ -44,6 +44,7 @@ export default function Leaderboard({ currentUser, onClose }) {
             </tbody>
           </table>
         )}
+        <p className="lb-warning">Warning: Since it is extremely easy to cheat, this leaderboard should not be taken too seriously.</p>
       </div>
     </div>
   )
