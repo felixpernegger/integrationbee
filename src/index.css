@@ -190,6 +190,33 @@ body {
   text-align: center;
 }
 
+.login-divider {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  position: relative;
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 42%;
+  height: 1px;
+  background: var(--border);
+}
+
+.login-divider::before { left: 0; }
+.login-divider::after { right: 0; }
+
+.btn-guest {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
 /* Main layout */
 .main {
   display: flex;

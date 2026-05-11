@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { login } from '../utils/storage.js'
 
-export default function LoginPage({ onLogin }) {
+export default function LoginPage({ onLogin, onGuest }) {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
@@ -50,6 +50,10 @@ export default function LoginPage({ onLogin }) {
           </button>
         </form>
         <p className="login-hint">New username? An account will be created automatically.</p>
+        <div className="login-divider">or</div>
+        <button className="btn btn-guest" type="button" onClick={onGuest}>
+          Play as guest
+        </button>
       </div>
     </div>
   )

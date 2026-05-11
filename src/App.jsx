@@ -89,6 +89,7 @@ export default function App() {
   const [reviewMode, setReviewMode] = useState(false)
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [showStats, setShowStats] = useState(false)
+  const [guestMode, setGuestMode] = useState(false)
 
   const done = status !== null || revealed
 
@@ -214,8 +215,26 @@ export default function App() {
     }
   }
 
-  if (!username) {
-    return <LoginPage onLogin={handleLogin} />
+  function handleGuest() {
+    setGuestMode(true)
+    const { problem: first } = findNextProblem(1500, new Set())
+    setCurrentProblem(first)
+    setProblemRating(getProblemRating(first.id, first.source))
+    setSeenIds(new Set([first.id]))
+  }
+
+  function handleLoginFromGuest() {
+    setGuestMode(false)
+    setCurrentProblem(null)
+    setSeenIds(new Set())
+    setStatus(null)
+    setRevealed(false)
+    setRatingDelta(null)
+    setStreak(0)
+  }
+
+  if (!username && !guestMode) {
+    return <LoginPage onLogin={handleLogin} onGuest={handleGuest} />
   }
 
   return (
@@ -240,9 +259,11 @@ export default function App() {
           />
           <div className="user-area">
             <button className="btn btn-leaderboard" onClick={() => setShowLeaderboard(true)}>Leaderboard</button>
-            <button className="btn btn-leaderboard" onClick={() => setShowStats(true)}>Stats</button>
-            <span className="username">{username}</span>
-            <button className="btn btn-logout" onClick={handleLogout}>Log out</button>
+            {!guestMode && <button className="btn btn-leaderboard" onClick={() => setShowStats(true)}>Stats</button>}
+            {guestMode
+              ? <button className="btn btn-check" onClick={handleLoginFromGuest}>Log in</button>
+              : <><span className="username">{username}</span><button className="btn btn-logout" onClick={handleLogout}>Log out</button></>
+            }
           </div>
         </div>
       </header>
