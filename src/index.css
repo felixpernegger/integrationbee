@@ -30,6 +30,38 @@ body {
   justify-content: space-between;
   padding: 1.25rem 2rem;
   border-bottom: 1px solid var(--border);
+  gap: 1.5rem;
+}
+
+/* Nav tabs */
+.nav-tabs {
+  display: flex;
+  gap: 0.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+}
+
+.nav-tab {
+  background: transparent;
+  border: none;
+  border-radius: 0.35rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-tab:hover {
+  color: var(--text);
+}
+
+.nav-tab-active {
+  background: var(--surface);
+  color: var(--text);
 }
 
 .header-right {
@@ -534,6 +566,24 @@ body {
   color: var(--wrong);
 }
 
+.resources-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.resources-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.resources-content a:hover {
+  text-decoration: underline;
+}
+
 /* Reveal box */
 .reveal-box {
   background: var(--bg);
@@ -553,4 +603,176 @@ body {
 
 .reveal-box .katex {
   font-size: 1.4rem;
+}
+
+/* ── Archive page ─────────────────────────────────── */
+.archive-page {
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 860px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.archive-heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 2.5rem 1rem 0;
+}
+
+.archive-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 1.5rem 1rem 0;
+  flex-wrap: wrap;
+}
+
+.archive-crumb-group {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.archive-crumb {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.1rem 0.2rem;
+}
+
+.archive-crumb:hover {
+  text-decoration: underline;
+}
+
+.archive-crumb-sep {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+  width: 100%;
+}
+
+.archive-folder {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.archive-folder:hover {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+}
+
+.archive-folder-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.archive-folder-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  word-break: break-word;
+}
+
+.archive-folder-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Problem list */
+.archive-problem-list {
+  width: 100%;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.archive-problem-row {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.6rem;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.archive-problem-active {
+  border-color: var(--accent);
+}
+
+.archive-problem-header {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.archive-problem-header:hover {
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+}
+
+.archive-problem-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  white-space: nowrap;
+  min-width: 6rem;
+}
+
+.archive-problem-preview {
+  flex: 1;
+  overflow: hidden;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.archive-problem-preview .katex {
+  font-size: 1rem;
+}
+
+.archive-problem-chevron {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.archive-problem-body {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ── Resources page ───────────────────────────────── */
+.resources-card {
+  max-width: 640px;
+}
+
+.resources-title {
+  font-size: 1.1rem;
+  font-weight: 700;
 }

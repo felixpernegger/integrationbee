@@ -6,6 +6,8 @@ import ScoreBoard from './components/ScoreBoard'
 import LoginPage from './components/LoginPage'
 import Leaderboard from './components/Leaderboard'
 import StatsModal from './components/StatsModal'
+import ResourcesPage from './components/ResourcesPage'
+import ArchivePage from './components/ArchivePage'
 import rawProblems from './data/problems.json'
 import { updateRatings } from './utils/glicko2.js'
 import {
@@ -86,6 +88,7 @@ export default function App() {
   const [revealed, setRevealed] = useState(false)
   const [ratingDelta, setRatingDelta] = useState(null)
   const [reviewMode, setReviewMode] = useState(false)
+  const [currentPage, setCurrentPage] = useState('practice')
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [showStats, setShowStats] = useState(false)
   const [showLogin, setShowLogin] = useState(false)
@@ -186,6 +189,27 @@ export default function App() {
     if (status === null) { setStreak(0); applyRatingUpdate(0) }
   }
 
+  function handleArchiveAnswer(problem, score) {
+    if (!username || !playerRating) return null
+    const problemStored = getProblemRating(problem.id, problem.source)
+    const { player: newPlayer, problem: newProblemRating } = updateRatings(playerRating, problemStored, score)
+    const delta = Math.round(newPlayer.rating - playerRating.rating)
+    setPlayerRating(newPlayer)
+    const userData = getUser(username)
+    saveUser(username, { ...userData, rating: newPlayer.rating, rd: newPlayer.rd, volatility: newPlayer.volatility })
+    saveProblemRating(problem.id, newProblemRating)
+    appendRatingHistory(username, newPlayer.rating)
+    incrementSolveStats(username, score === 1)
+    if (score === 1) {
+      removeMistake(username, problem.id)
+      setMistakeIds(prev => prev.filter(id => id !== problem.id))
+    } else {
+      addMistake(username, problem.id)
+      setMistakeIds(prev => prev.includes(problem.id) ? prev : [...prev, problem.id])
+    }
+    return delta
+  }
+
   function handleStartReview() {
     setShowStats(false)
     setReviewMode(true)
@@ -210,7 +234,12 @@ export default function App() {
       {showLogin && <LoginPage onLogin={handleLogin} onClose={() => setShowLogin(false)} />}
 
       <header className="header">
-        <h1 className="site-title">Integration Bee</h1>
+        <h1 className="site-title" style={{cursor:'pointer'}} onClick={() => setCurrentPage('practice')}>Integration Bee</h1>
+        <nav className="nav-tabs">
+          <button className={`nav-tab${currentPage === 'practice' ? ' nav-tab-active' : ''}`} onClick={() => setCurrentPage('practice')}>Practice</button>
+          <button className={`nav-tab${currentPage === 'archive' ? ' nav-tab-active' : ''}`} onClick={() => setCurrentPage('archive')}>Archive</button>
+          <button className={`nav-tab${currentPage === 'resources' ? ' nav-tab-active' : ''}`} onClick={() => setCurrentPage('resources')}>Resources</button>
+        </nav>
         <div className="header-right">
           <ScoreBoard
             rating={playerRating?.rating ?? null}
@@ -229,6 +258,16 @@ export default function App() {
         </div>
       </header>
 
+      {currentPage === 'resources' && <ResourcesPage />}
+
+      {currentPage === 'archive' && (
+        <ArchivePage
+          checkAnswer={checkAnswer}
+          onArchiveAnswer={handleArchiveAnswer}
+        />
+      )}
+
+      {currentPage === 'practice' && (
       <main className="main">
         <div className="card">
           {reviewMode && (
@@ -274,6 +313,7 @@ export default function App() {
           </div>
         </div>
       </main>
+      )}
     </div>
   )
 }
