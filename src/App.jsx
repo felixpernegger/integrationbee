@@ -92,6 +92,7 @@ export default function App() {
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [showStats, setShowStats] = useState(false)
   const [showLogin, setShowLogin] = useState(false)
+  const [showLatex, setShowLatex] = useState(false)
 
   const done = status !== null || revealed
 
@@ -120,6 +121,7 @@ export default function App() {
     setStatus(null)
     setRevealed(false)
     setRatingDelta(null)
+    setShowLatex(false)
   }
 
   function handleLogin(name, userData) {
