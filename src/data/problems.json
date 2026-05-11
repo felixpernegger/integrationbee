@@ -1853,5 +1853,530 @@
     "answer": "\\frac{\\pi}{4}",
     "accepted": ["pi/4"],
     "source": "MIT Qualifying Round 2026 Problem 20"
+  },
+  {
+    "id": 266,
+    "integrand": "\\int_{0}^{2025} \\lfloor x \\rfloor \\, dx",
+    "answer": "2049300",
+    "accepted": ["2049300"],
+    "source": "Bonn 2025 Qualifying Round Problem 2"
+  },
+  {
+    "id": 267,
+    "integrand": "\\int_{0}^{\\pi/2} \\sin x \\sin 2x \\, dx",
+    "answer": "\\frac{2}{3}",
+    "accepted": ["2/3"],
+    "source": "Bonn 2025 Qualifying Round Problem 3"
+  },
+  {
+    "id": 268,
+    "integrand": "\\int_{0}^{\\pi/2} \\frac{\\cos x}{1 + \\sin x} \\, dx",
+    "answer": "\\ln 2",
+    "accepted": ["ln(2)", "log(2)", "ln2", "log2"],
+    "source": "Bonn 2025 Qualifying Round Problem 4"
+  },
+  {
+    "id": 269,
+    "integrand": "\\int_{-\\pi}^{\\pi} \\lfloor \\sin(\\lfloor x \\rfloor) \\rfloor \\, dx",
+    "answer": "-3",
+    "accepted": ["-3"],
+    "source": "Bonn 2025 Qualifying Round Problem 5"
+  },
+  {
+    "id": 270,
+    "integrand": "\\int_{0}^{\\pi} \\sin^{2025}(x) \\cos^{2025}(x) \\, dx",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Qualifying Round Problem 6"
+  },
+  {
+    "id": 271,
+    "integrand": "\\int_{0}^{1} \\lfloor 4x(1-x) \\rfloor \\, dx",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Qualifying Round Problem 7"
+  },
+  {
+    "id": 272,
+    "integrand": "\\int_{1}^{e} \\frac{\\cos(1 + \\ln x)}{x} \\, dx",
+    "answer": "\\sin(2) - \\sin(1)",
+    "accepted": ["sin(2)-sin(1)"],
+    "source": "Bonn 2025 Qualifying Round Problem 9"
+  },
+  {
+    "id": 273,
+    "integrand": "\\int_{0}^{\\pi/2} \\min(\\sin x,\\, \\cos x)\\, \\max(\\tan x,\\, 1) \\, dx",
+    "answer": "1",
+    "accepted": ["1"],
+    "source": "Bonn 2025 Qualifying Round Problem 10"
+  },
+  {
+    "id": 274,
+    "integrand": "\\int_{0}^{1} \\frac{\\arcsin x}{\\sqrt{1-x^2}} \\, dx",
+    "answer": "\\frac{\\pi^2}{8}",
+    "accepted": ["pi^2/8"],
+    "source": "Bonn 2025 Qualifying Round Problem 11"
+  },
+  {
+    "id": 275,
+    "integrand": "\\int_{1/e}^{1} x^{1/\\ln x} \\, dx",
+    "answer": "e - 1",
+    "accepted": ["e-1"],
+    "source": "Bonn 2025 Qualifying Round Problem 12"
+  },
+  {
+    "id": 276,
+    "integrand": "\\int_{0}^{4\\pi} \\sin(\\sin x - x) \\, dx",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Qualifying Round Problem 13"
+  },
+  {
+    "id": 277,
+    "integrand": "\\int_{0}^{\\infty} \\frac{x^{1011}}{1 + x^{2024}} \\, dx",
+    "answer": "\\frac{\\pi}{2024}",
+    "accepted": ["pi/2024"],
+    "source": "Bonn 2025 Qualifying Round Problem 14"
+  },
+  {
+    "id": 278,
+    "integrand": "\\int_{-\\infty}^{0} e^{e^x + x} \\, dx",
+    "answer": "e - 1",
+    "accepted": ["e-1"],
+    "source": "Bonn 2025 Qualifying Round Problem 15"
+  },
+  {
+    "id": 279,
+    "integrand": "\\int_{0}^{\\infty} \\frac{e^{-x}}{e^{-x} + 2025} \\, dx",
+    "answer": "\\ln\\!\\left(\\frac{2026}{2025}\\right)",
+    "accepted": ["ln(2026/2025)", "log(2026/2025)"],
+    "source": "Bonn 2025 Qualifying Round Problem 16"
+  },
+  {
+    "id": 280,
+    "integrand": "\\int_{0}^{1} 45x^{45} \\, dx",
+    "answer": "\\frac{45}{46}",
+    "accepted": ["45/46"],
+    "source": "Bonn 2025 Qualifying Round Problem 17"
+  },
+  {
+    "id": 281,
+    "integrand": "\\int_{0}^{e} \\ln(x^2) \\, dx",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Qualifying Round Problem 18"
+  },
+  {
+    "id": 282,
+    "integrand": "\\int_{1/2025}^{2025} e^{x+1/x} \\frac{\\log_{2025} x}{x} \\, dx",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Qualifying Round Problem 20"
+  },
+  {
+    "id": 283,
+    "integrand": "\\int_{0}^{2} 1 + 2x + 3x^2 + 4x^3 + 5x^4 + 6x^5 \\, dx",
+    "answer": "126",
+    "accepted": ["126"],
+    "source": "Bonn 2025 Qualifying Round Problem 21"
+  },
+  {
+    "id": 284,
+    "integrand": "\\int_{1}^{e} \\frac{\\ln(\\ln x + 1)}{x} \\, dx",
+    "answer": "2\\log 2 - 1",
+    "accepted": ["2log(2)-1", "2ln(2)-1", "2*log(2)-1", "2*ln(2)-1"],
+    "source": "Bonn 2025 Qualifying Round Problem 22"
+  },
+  {
+    "id": 285,
+    "integrand": "\\int_{0}^{1} \\frac{\\sqrt{x}}{2(1+x)} \\, dx",
+    "answer": "1 - \\frac{\\pi}{4}",
+    "accepted": ["1-pi/4"],
+    "source": "Bonn 2025 Qualifying Round Problem 23"
+  },
+  {
+    "id": 286,
+    "integrand": "\\int_{0}^{\\pi/2} \\left(\\cot x - x\\csc^2 x\\right) dx",
+    "answer": "-1",
+    "accepted": ["-1"],
+    "source": "Bonn 2025 Qualifying Round Problem 24"
+  },
+  {
+    "id": 287,
+    "integrand": "\\int_{0}^{\\pi/2} \\left(x^4 - 4\\pi x^3 + 6\\pi^2 x^2 - 4\\pi^3 x + \\pi^4\\right) dx",
+    "answer": "\\frac{\\pi^5}{155}",
+    "accepted": ["pi^5/155"],
+    "source": "Bonn 2025 Qualifying Round Problem 25"
+  },
+  {
+    "id": 288,
+    "integrand": "\\int \\tan^3(\\sin x) \\cos x \\, dx",
+    "answer": "\\ln|\\cos(\\sin x)| + \\frac{1}{2\\cos^2(\\sin x)} + C",
+    "accepted": ["log(cos(sin(x)))+1/(2cos^2(sin(x)))", "ln(cos(sin(x)))+1/(2cos(sin(x))^2)"],
+    "source": "Bonn 2025 Quarterfinals First Leg Problem 1"
+  },
+  {
+    "id": 289,
+    "integrand": "\\int_{1}^{\\infty} \\left(\\frac{1}{x^2+x+1} + \\frac{1}{x^3+x^2+x} + \\frac{1}{x^4+x^3+x^2}\\right) dx",
+    "answer": "1",
+    "accepted": ["1"],
+    "source": "Bonn 2025 Quarterfinals First Leg Problem 2"
+  },
+  {
+    "id": 290,
+    "integrand": "\\int_{0}^{\\infty} 2x^2 e^{-x^2} \\, dx",
+    "answer": "\\frac{\\sqrt{\\pi}}{2}",
+    "accepted": ["sqrt(pi)/2"],
+    "source": "Bonn 2025 Quarterfinals First Leg Problem 3"
+  },
+  {
+    "id": 291,
+    "integrand": "\\int_{0}^{3/4} \\operatorname{arsinh}(x) \\, dx",
+    "answer": "\\frac{3\\log 2 - 1}{4}",
+    "accepted": ["(3log(2)-1)/4", "(3*log(2)-1)/4", "(3ln(2)-1)/4", "(3*ln(2)-1)/4"],
+    "source": "Bonn 2025 Quarterfinals First Leg Problem 4"
+  },
+  {
+    "id": 292,
+    "integrand": "\\int_{0}^{1} \\ln(1 + x^2) \\, dx",
+    "answer": "\\ln 2 - 2 + \\frac{\\pi}{2}",
+    "accepted": ["ln(2)-2+pi/2", "log(2)-2+pi/2"],
+    "source": "Bonn 2025 Quarterfinals First Leg Tiebreaker 1"
+  },
+  {
+    "id": 293,
+    "integrand": "\\int_{0}^{1} (1-x)(1+x+x^2+x^3+x^4+x^6+x^7) \\, dx",
+    "answer": "\\frac{109}{126}",
+    "accepted": ["109/126"],
+    "source": "Bonn 2025 Quarterfinals First Leg Tiebreaker 2"
+  },
+  {
+    "id": 294,
+    "integrand": "\\int_{0}^{\\pi} \\sin^2 x \\cos^2 x \\, dx",
+    "answer": "\\frac{\\pi}{8}",
+    "accepted": ["pi/8"],
+    "source": "Bonn 2025 Quarterfinals Second Leg Problem 1"
+  },
+  {
+    "id": 295,
+    "integrand": "\\int_{0}^{\\pi/2} \\sin x \\sinh x \\, dx",
+    "answer": "\\frac{1}{2}\\cosh\\!\\left(\\frac{\\pi}{2}\\right)",
+    "accepted": ["(1/2)cosh(pi/2)", "cosh(pi/2)/2"],
+    "source": "Bonn 2025 Quarterfinals Second Leg Problem 2"
+  },
+  {
+    "id": 296,
+    "integrand": "\\int_{e^2}^{e^4} \\frac{1}{x\\, \\log_2(x)\\, \\ln(\\ln x)} \\, dx",
+    "answer": "(\\ln 2)^2",
+    "accepted": ["(ln(2))^2", "ln(2)^2", "(log(2))^2", "log(2)^2"],
+    "source": "Bonn 2025 Quarterfinals Second Leg Problem 3"
+  },
+  {
+    "id": 297,
+    "integrand": "\\int_{0}^{1} x^{2025}(\\ln x)^{2025} \\, dx",
+    "answer": "-\\frac{2025!}{2026^{2026}}",
+    "accepted": ["-2025!/2026^2026"],
+    "source": "Bonn 2025 Quarterfinals Second Leg Problem 4"
+  },
+  {
+    "id": 298,
+    "integrand": "\\int_{0}^{\\pi/2} \\frac{\\sin x}{1 + \\sin^2 x} \\, dx",
+    "answer": "\\frac{\\log(\\sqrt{2}+1)}{\\sqrt{2}}",
+    "accepted": ["log(sqrt(2)+1)/sqrt(2)", "ln(sqrt(2)+1)/sqrt(2)"],
+    "source": "Bonn 2025 Quarterfinals Second Leg Tiebreaker 1"
+  },
+  {
+    "id": 299,
+    "integrand": "\\int_{0}^{\\pi/3} \\frac{1}{1 - \\sin x} \\, dx",
+    "answer": "\\sqrt{3} + 1",
+    "accepted": ["sqrt(3)+1"],
+    "source": "Bonn 2025 Semifinals Problem 1"
+  },
+  {
+    "id": 300,
+    "integrand": "\\int_{0}^{101} \\frac{\\lfloor x \\rfloor}{1 + 2\\lfloor x \\rfloor x - \\lfloor x \\rfloor(\\lfloor x \\rfloor + 1)} \\, dx",
+    "answer": "\\frac{\\log 10101}{2}",
+    "accepted": ["log(10101)/2", "ln(10101)/2"],
+    "source": "Bonn 2025 Semifinals Problem 2"
+  },
+  {
+    "id": 301,
+    "integrand": "\\int \\frac{\\cos(\\ln x) - \\sin(\\ln x)}{x^2} \\, dx",
+    "answer": "\\frac{\\sin(\\ln x)}{x} + C",
+    "accepted": ["sin(ln(x))/x", "sin(lnx)/x"],
+    "source": "Bonn 2025 Semifinals Problem 3"
+  },
+  {
+    "id": 302,
+    "integrand": "\\int_{0}^{2} \\lfloor \\ln x \\rfloor \\, dx",
+    "answer": "-\\frac{e}{e-1}",
+    "accepted": ["-e/(e-1)"],
+    "source": "Bonn 2025 Semifinals Problem 4"
+  },
+  {
+    "id": 303,
+    "integrand": "\\int_{0}^{1} \\arctan(x) \\, dx",
+    "answer": "\\frac{\\pi}{4} - \\frac{\\log 2}{2}",
+    "accepted": ["pi/4-log(2)/2", "pi/4-ln(2)/2"],
+    "source": "Bonn 2025 Semifinals Tiebreaker 1"
+  },
+  {
+    "id": 304,
+    "integrand": "\\int_{0}^{\\infty} e^{-x} \\cos x \\, dx",
+    "answer": "\\frac{1}{2}",
+    "accepted": ["1/2"],
+    "source": "Bonn 2025 Semifinals Tiebreaker 2"
+  },
+  {
+    "id": 305,
+    "integrand": "\\int_{0}^{\\infty} \\frac{1+x^2}{1+x^4} \\, dx",
+    "answer": "\\frac{\\pi}{\\sqrt{2}}",
+    "accepted": ["pi/sqrt(2)"],
+    "source": "Bonn 2025 Third Place Playoff Problem 1"
+  },
+  {
+    "id": 306,
+    "integrand": "\\int_{0}^{3/4} \\left(2x\\operatorname{arsinh} x + \\sqrt{x^2+1}\\right) dx",
+    "answer": "\\frac{25}{16}\\log 2",
+    "accepted": ["25log(2)/16", "25*log(2)/16", "25ln(2)/16", "25*ln(2)/16"],
+    "source": "Bonn 2025 Third Place Playoff Problem 2"
+  },
+  {
+    "id": 307,
+    "integrand": "\\int_{-\\ln 2}^{0} \\sqrt{1 - e^x} \\, dx",
+    "answer": "2\\log(\\sqrt{2}+1) - \\sqrt{2}",
+    "accepted": ["2log(sqrt(2)+1)-sqrt(2)", "2ln(sqrt(2)+1)-sqrt(2)"],
+    "source": "Bonn 2025 Third Place Playoff Problem 3"
+  },
+  {
+    "id": 308,
+    "integrand": "\\int_{e^2}^{e^4} \\log_x(2)\\,\\log_{\\log x}(4)\\,\\log_{e^x}(8) \\, dx",
+    "answer": "6(\\log 2)^4",
+    "accepted": ["6(log(2))^4", "6log(2)^4", "6(ln(2))^4", "6*log(2)^4"],
+    "source": "Bonn 2025 Third Place Playoff Tiebreaker 1"
+  },
+  {
+    "id": 309,
+    "integrand": "\\int_{0}^{1} \\min(2x^2-1,\\, 1-x^2) \\, dx",
+    "answer": "\\frac{2}{3} - \\frac{4\\sqrt{6}}{9}",
+    "accepted": ["2/3-4sqrt(6)/9"],
+    "source": "Bonn 2025 Third Place Playoff Tiebreaker 2"
+  },
+  {
+    "id": 310,
+    "integrand": "\\int_{0}^{1} \\ln\\!\\left(1 + \\sqrt[3]{x}\\right) dx",
+    "answer": "2\\ln 2 - \\frac{5}{6}",
+    "accepted": ["2ln(2)-5/6", "2log(2)-5/6"],
+    "source": "Bonn 2025 Epic Finale Problem 1"
+  },
+  {
+    "id": 311,
+    "integrand": "\\int_{1/2}^{1} \\frac{1}{x^2}\\sqrt[3]{\\frac{x}{1-x}} \\, dx",
+    "answer": "3 + 2\\sqrt{3}",
+    "accepted": ["3+2sqrt(3)"],
+    "source": "Bonn 2025 Epic Finale Problem 2"
+  },
+  {
+    "id": 312,
+    "integrand": "\\int_{0}^{1} \\frac{\\ln x}{1-x} \\, dx",
+    "answer": "-\\frac{\\pi^2}{6}",
+    "accepted": ["-pi^2/6"],
+    "source": "Bonn 2025 Epic Finale Problem 3"
+  },
+  {
+    "id": 313,
+    "integrand": "\\int_{0}^{1} \\frac{x^2}{\\sqrt{x^2+3}} \\, dx",
+    "answer": "1 - \\frac{3}{2}\\operatorname{arsinh}\\!\\left(\\frac{1}{\\sqrt{3}}\\right)",
+    "accepted": ["1-(3/2)*arsinh(1/sqrt(3))", "1-3*arsinh(1/sqrt(3))/2"],
+    "source": "Bonn 2025 Epic Finale Problem 4"
+  },
+  {
+    "id": 314,
+    "integrand": "\\int_{0}^{\\pi/2} \\sin(51x)\\cos(24x) \\, dx",
+    "answer": "\\frac{51}{2025}",
+    "accepted": ["51/2025"],
+    "source": "Bonn 2025 Epic Finale Tiebreaker 1"
+  },
+  {
+    "id": 315,
+    "integrand": "\\int_{2}^{3} \\frac{x^2+2026x+2025}{x^2+2024x-2025} \\, dx",
+    "answer": "1 + 2\\log 2",
+    "accepted": ["1+2log(2)", "1+2ln(2)", "1+2*log(2)", "1+2*ln(2)"],
+    "source": "Bonn 2025 Epic Finale Tiebreaker 2"
+  },
+  {
+    "id": 316,
+    "integrand": "\\int_{0}^{2\\pi} \\log\\!\\left(\\frac{5}{4} + \\cos t\\right) dt",
+    "answer": "0",
+    "accepted": ["0"],
+    "source": "Bonn 2025 Reserves Problem 1"
+  },
+  {
+    "id": 317,
+    "integrand": "\\int_{0}^{1} \\sqrt{\\frac{\\sqrt{x^5}}{1-\\sqrt{x^3}}} \\, dx",
+    "answer": "\\frac{\\pi}{3}",
+    "accepted": ["pi/3"],
+    "source": "Bonn 2025 Removed Problem 1"
+  },
+  {
+    "id": 318,
+    "integrand": "\\int_{0}^{1/2} \\sqrt{1-x^2} \\, dx",
+    "answer": "\\frac{\\sqrt{3}}{8} + \\frac{\\pi}{12}",
+    "accepted": ["sqrt(3)/8+pi/12"],
+    "source": "Bonn 2025 Removed Problem 2"
+  },
+  {
+    "id": 319,
+    "integrand": "\\int \\frac{\\ln(\\sin x)}{\\cos^2 x} \\, dx",
+    "answer": "\\tan(x)\\ln(\\sin x) - x + C",
+    "accepted": ["tan(x)ln(sin(x))-x", "tan(x)*ln(sin(x))-x"],
+    "source": "Bonn 2024 Semi Finale 1 Problem 1"
+  },
+  {
+    "id": 320,
+    "integrand": "\\int_{0}^{\\pi} \\frac{1}{2024 - \\cos x} \\, dx",
+    "answer": "\\frac{\\pi}{\\sqrt{2025 \\cdot 2023}}",
+    "accepted": ["pi/sqrt(2025*2023)", "pi/sqrt(4094475)"],
+    "source": "Bonn 2024 Semi Finale 1 Problem 2"
+  },
+  {
+    "id": 321,
+    "integrand": "\\int_{0}^{\\pi/2} \\frac{\\cos x}{2 - \\sin(2x)} \\, dx",
+    "answer": "\\frac{\\pi}{4}",
+    "accepted": ["pi/4"],
+    "source": "Bonn 2024 Semi Finale 1 Problem 3"
+  },
+  {
+    "id": 322,
+    "integrand": "\\int_{0}^{\\pi/6} \\frac{1}{\\cos x} \\, dx",
+    "answer": "\\frac{\\ln 3}{2}",
+    "accepted": ["ln(3)/2", "log(3)/2"],
+    "source": "Bonn 2024 Semi Finale 1 Problem 4"
+  },
+  {
+    "id": 323,
+    "integrand": "\\int \\frac{x}{\\cos^2 x} \\, dx",
+    "answer": "x\\tan x + \\ln|\\cos x| + C",
+    "accepted": ["x*tan(x)+ln(cos(x))", "xtan(x)+ln(cos(x))", "tan(x)*x+ln(cos(x))"],
+    "source": "Bonn 2024 Semi Finale 1 Problem 5"
+  },
+  {
+    "id": 324,
+    "integrand": "\\int \\frac{x e^{x^2}}{e^{2x^2} + 2e^{x^2} - 3} \\, dx",
+    "answer": "\\frac{1}{8}\\ln\\!\\left(\\frac{1-e^{x^2}}{3+e^{x^2}}\\right) + C",
+    "accepted": [],
+    "source": "Bonn 2024 Semi Finale 1 Tiebreaker"
+  },
+  {
+    "id": 325,
+    "integrand": "\\int \\sin x \\cos x \\ln(\\sin^4 x - \\cos^4 x) \\, dx",
+    "answer": "\\frac{1}{4}(1-2\\cos^2 x)\\bigl(\\ln(1-2\\cos^2 x) - 1\\bigr) + C",
+    "accepted": [],
+    "source": "Bonn 2024 Semi Finale 2 Problem 1"
+  },
+  {
+    "id": 326,
+    "integrand": "\\int_{0}^{\\pi/3} \\frac{1}{\\cos^3 x} \\, dx",
+    "answer": "\\frac{1}{3} + \\frac{\\ln 3}{4}",
+    "accepted": ["1/3+ln(3)/4", "1/3+log(3)/4"],
+    "source": "Bonn 2024 Semi Finale 2 Problem 3"
+  },
+  {
+    "id": 327,
+    "integrand": "\\int_{1/e}^{e} \\frac{1+\\ln x}{x} \\cdot \\frac{x^2+x+1}{x^2+1} \\, dx",
+    "answer": "2 + \\arctan(e) - \\arctan\\!\\left(\\frac{1}{e}\\right)",
+    "accepted": ["2+arctan(e)-arctan(1/e)"],
+    "source": "Bonn 2024 Semi Finale 2 Problem 4"
+  },
+  {
+    "id": 328,
+    "integrand": "\\int_{0}^{\\infty} x^{-\\frac{x^2}{2\\ln x}} \\, dx",
+    "answer": "\\sqrt{\\frac{\\pi}{2}}",
+    "accepted": ["sqrt(pi/2)", "sqrt(pi)/sqrt(2)"],
+    "source": "Bonn 2024 Semi Finale 2 Tiebreaker"
+  },
+  {
+    "id": 329,
+    "integrand": "\\int x\\arctan^2(x) \\, dx",
+    "answer": "\\frac{x^2+1}{2}\\arctan^2(x) - x\\arctan(x) + \\frac{1}{2}\\ln(1+x^2) + C",
+    "accepted": [],
+    "source": "Bonn 2024 Third Place Problem 1"
+  },
+  {
+    "id": 330,
+    "integrand": "\\int_{0}^{\\infty} \\left(e^{-2/x^2} - e^{-8/x^2}\\right) dx",
+    "answer": "\\sqrt{2\\pi}",
+    "accepted": ["sqrt(2pi)", "sqrt(2*pi)"],
+    "source": "Bonn 2024 Third Place Problem 2"
+  },
+  {
+    "id": 331,
+    "integrand": "\\int_{1}^{\\infty} \\frac{\\ln x}{x(x-1)} \\, dx",
+    "answer": "\\frac{\\pi^2}{6}",
+    "accepted": ["pi^2/6"],
+    "source": "Bonn 2024 Third Place Problem 3"
+  },
+  {
+    "id": 332,
+    "integrand": "\\int_{0}^{\\infty} \\frac{\\cos(184x)}{x^2 + 121} \\, dx",
+    "answer": "\\frac{\\pi}{22}e^{-2024}",
+    "accepted": ["pi*e^(-2024)/22", "pi/(22*e^2024)"],
+    "source": "Bonn 2024 Third Place Problem 4"
+  },
+  {
+    "id": 333,
+    "integrand": "\\int_{0}^{1} \\frac{x^2}{(1+x^2)^2} \\, dx",
+    "answer": "-\\frac{1}{4} + \\frac{\\pi}{8}",
+    "accepted": ["pi/8-1/4", "-1/4+pi/8"],
+    "source": "Bonn 2024 Third Place Problem 5"
+  },
+  {
+    "id": 334,
+    "integrand": "\\int_{0}^{2\\pi} \\frac{1}{9\\cos^2 t + 4\\sin^2 t} \\, dt",
+    "answer": "\\frac{\\pi}{3}",
+    "accepted": ["pi/3"],
+    "source": "Bonn 2024 Third Place Problem 6"
+  },
+  {
+    "id": 335,
+    "integrand": "\\int \\frac{1}{x^{2024}+x} \\, dx",
+    "answer": "\\ln x - \\frac{1}{2023}\\ln(x^{2023}+1) + C",
+    "accepted": ["ln(x)-ln(x^2023+1)/2023", "ln(x)-(1/2023)*ln(x^2023+1)"],
+    "source": "Bonn 2024 Finale Problem 1"
+  },
+  {
+    "id": 336,
+    "integrand": "\\int_{0}^{8} \\frac{\\ln x}{\\sqrt{x(8-x)}} \\, dx",
+    "answer": "\\pi\\ln 2",
+    "accepted": ["pi*ln(2)", "piln(2)", "pi*log(2)", "pilog(2)"],
+    "source": "Bonn 2024 Finale Problem 2"
+  },
+  {
+    "id": 337,
+    "integrand": "\\int_{1}^{\\infty} \\frac{x^4-1}{\\ln(x)(x^6+1)} \\, dx",
+    "answer": "\\ln(2+\\sqrt{3})",
+    "accepted": ["ln(2+sqrt(3))", "log(2+sqrt(3))"],
+    "source": "Bonn 2024 Finale Problem 3"
+  },
+  {
+    "id": 338,
+    "integrand": "\\int_{-1}^{1} \\frac{1+x^{2024}}{1+(x^{2024})^{\\arctan x}} \\, dx",
+    "answer": "1 + \\frac{1}{2025}",
+    "accepted": ["1+1/2025", "2026/2025"],
+    "source": "Bonn 2024 Finale Problem 4"
+  },
+  {
+    "id": 339,
+    "integrand": "\\int_{0}^{\\infty} \\frac{1}{\\sqrt{x}(1+x)(x^{2024}+1)} \\, dx",
+    "answer": "\\frac{\\pi}{2}",
+    "accepted": ["pi/2"],
+    "source": "Bonn 2024 Finale Problem 5"
+  },
+  {
+    "id": 340,
+    "integrand": "\\int \\sqrt{\\frac{x}{x+1}} \\, dx",
+    "answer": "\\sqrt{x(x+1)} - \\ln(\\sqrt{x}+\\sqrt{x+1}) + C",
+    "accepted": ["sqrt(x(x+1))-ln(sqrt(x)+sqrt(x+1))", "sqrt(x)*sqrt(x+1)-ln(sqrt(x)+sqrt(x+1))"],
+    "source": "Bonn 2024 Finale Tiebreaker"
   }
 ]
