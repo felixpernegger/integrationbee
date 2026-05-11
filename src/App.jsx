@@ -136,6 +136,7 @@ export default function App() {
     setStatus(null)
     setRevealed(false)
     setRatingDelta(null)
+    setShowLatex(false)
     setReviewMode(false)
     setShowLogin(false)
   }
@@ -284,6 +285,15 @@ export default function App() {
               <span className="source">{currentProblem.source}</span>
               {problemRating && <span className="problem-rating">· {Math.round(problemRating.rating)}</span>}
             </div>
+          )}
+
+          <div className="archive-problem-body-header">
+            <button className="btn-view-latex" onClick={() => setShowLatex(v => !v)}>
+              {showLatex ? 'Hide LaTeX' : 'View LaTeX'}
+            </button>
+          </div>
+          {showLatex && (
+            <code className="archive-latex-source">{currentProblem.integrand}</code>
           )}
 
           <IntegralDisplay latex={currentProblem.integrand} />
