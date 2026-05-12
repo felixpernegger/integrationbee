@@ -328,6 +328,7 @@ export default function App() {
 
       {currentPage === 'practice' && (
       <main className="main">
+      <div className="practice-container">
         <div className="relaxed-toggle-bar">
           <label className="relaxed-switch">
             <input
@@ -453,6 +454,7 @@ export default function App() {
             </>
           )}
         </div>
+      </div>
       </main>
       )}
     </div>

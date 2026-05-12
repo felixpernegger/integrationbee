@@ -217,13 +217,18 @@ body {
 }
 
 /* Relaxed mode toggle */
+.practice-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 640px;
+}
+
 .relaxed-toggle-bar {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem 0;
-  max-width: 640px;
-  margin: 0 auto;
+  padding: 0 0.25rem 0.4rem;
 }
 
 .relaxed-switch {
