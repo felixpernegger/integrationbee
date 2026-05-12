@@ -411,8 +411,8 @@ export default function App() {
               )}
               {revealed && !done && (
                 <div className="actions relaxed-assess-actions">
-                  <button className="btn btn-easier" onClick={() => handleRelaxedAssess(false)}>✗ Missed it</button>
-                  <button className="btn btn-harder" onClick={() => handleRelaxedAssess(true)}>✓ Got it</button>
+                  <button className="btn btn-harder" onClick={() => handleRelaxedAssess(false)}>✗ Missed it</button>
+                  <button className="btn btn-easier" onClick={() => handleRelaxedAssess(true)}>✓ Got it</button>
                 </div>
               )}
               {done && (
