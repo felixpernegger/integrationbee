@@ -9,6 +9,19 @@ function parsePath(source) {
     const m = source.match(/^MIT (.+?) (\d{4}) Problem \d+$/)
     if (m) return ['MIT', m[1], m[2]]
   }
+  if (source.startsWith('Heidelberg ')) {
+    const rest = source.slice(11)
+    const yearM = rest.match(/^(\d{4}) /)
+    if (yearM) {
+      const year = yearM[1]
+      let round = rest.slice(year.length + 1)
+      round = round
+        .replace(/ Tiebreaker( \d+)?$/, '')
+        .replace(/ Problem \d+$/, '')
+        .trim()
+      return ['Heidelberg', year, round]
+    }
+  }
   if (source.startsWith('Bonn ')) {
     const rest = source.slice(5)
     const yearM = rest.match(/^(\d{4}) /)

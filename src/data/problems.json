@@ -3,98 +3,147 @@
     "id": 1,
     "integrand": "\\int \\log(x^2) - 2\\log(2x) \\, dx",
     "answer": "-x\\log(4) + C",
-    "accepted": ["-xlog(4)", "-x*log(4)", "-2xlog(2)", "-2x*log(2)", "-xlog4"],
+    "accepted": [
+      "-xlog(4)",
+      "-x*log(4)",
+      "-2xlog(2)",
+      "-2x*log(2)",
+      "-xlog4"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 1"
   },
   {
     "id": 2,
     "integrand": "\\int_{-1}^{3} e^{|x|} \\, dx",
     "answer": "e^3 + e - 2",
-    "accepted": ["e^3+e-2", "e^(3)+e-2"],
+    "accepted": [
+      "e^3+e-2",
+      "e^(3)+e-2"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 2"
   },
   {
     "id": 3,
     "integrand": "\\int \\frac{(\\log x)(\\cos x) - (\\sin x)(1/x)}{(\\log x)^2} \\, dx",
     "answer": "\\frac{\\sin x}{\\log x} + C",
-    "accepted": ["sin(x)/log(x)", "sinx/logx", "sin(x)/ln(x)"],
+    "accepted": [
+      "sin(x)/log(x)",
+      "sinx/logx",
+      "sin(x)/ln(x)"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 3"
   },
   {
     "id": 4,
     "integrand": "\\int_{1}^{11} x^3 - 3x^2 + 3x - 1 \\, dx",
     "answer": "2500",
-    "accepted": ["2500"],
+    "accepted": [
+      "2500"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 4"
   },
   {
     "id": 5,
     "integrand": "\\int_{0}^{2} \\sqrt{12 - 3x^2} \\, dx",
     "answer": "\\pi\\sqrt{3}",
-    "accepted": ["pi*sqrt(3)", "pisqrt(3)", "sqrt(3)*pi", "sqrt(3)pi", "pi\\sqrt{3}"],
+    "accepted": [
+      "pi*sqrt(3)",
+      "pisqrt(3)",
+      "sqrt(3)*pi",
+      "sqrt(3)pi",
+      "pi\\sqrt{3}"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 5"
   },
   {
     "id": 6,
     "integrand": "\\int_{0}^{6} x + (x-3)^7 + \\sin(x-3) \\, dx",
     "answer": "18",
-    "accepted": ["18"],
+    "accepted": [
+      "18"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 6"
   },
   {
     "id": 7,
     "integrand": "\\int \\sin x \\sqrt{1 + \\tan^2 x} \\, dx",
     "answer": "-\\log\\cos x + C",
-    "accepted": ["-log(cos(x))", "-log(cosx)", "-ln(cos(x))", "-log|cos(x)|"],
+    "accepted": [
+      "-log(cos(x))",
+      "-log(cosx)",
+      "-ln(cos(x))",
+      "-log|cos(x)|"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 7"
   },
   {
     "id": 8,
     "integrand": "\\int \\frac{x^5 - x^3 + x^2 - 1}{x^4 - x^3 + x - 1} \\, dx",
     "answer": "\\frac{x^2}{2} + x + C",
-    "accepted": ["x^2/2+x", "(1/2)x^2+x", "x+x^2/2"],
+    "accepted": [
+      "x^2/2+x",
+      "(1/2)x^2+x",
+      "x+x^2/2"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 8"
   },
   {
     "id": 9,
     "integrand": "\\int_{0}^{1} \\log x \\, dx",
     "answer": "-1",
-    "accepted": ["-1"],
+    "accepted": [
+      "-1"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 9"
   },
   {
     "id": 10,
     "integrand": "\\int \\frac{1}{1 - e^{-x}} \\, dx",
     "answer": "\\log(1 - e^x) + C",
-    "accepted": ["log(1-e^x)", "ln(1-e^x)", "log(e^x-1)", "log|1-e^x|"],
+    "accepted": [
+      "log(1-e^x)",
+      "ln(1-e^x)",
+      "log(e^x-1)",
+      "log|1-e^x|"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 10"
   },
   {
     "id": 11,
     "integrand": "\\int_{0}^{\\pi} \\sin^2 x \\cos^2 x \\, dx",
     "answer": "\\frac{\\pi}{8}",
-    "accepted": ["pi/8"],
+    "accepted": [
+      "pi/8"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 11"
   },
   {
     "id": 12,
     "integrand": "\\int_{0}^{441} \\frac{\\pi \\sin(\\pi\\sqrt{x})}{\\sqrt{x}} \\, dx",
     "answer": "4",
-    "accepted": ["4"],
+    "accepted": [
+      "4"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 12"
   },
   {
     "id": 13,
     "integrand": "\\int \\tan^2 x \\, dx",
     "answer": "-x + \\tan x + C",
-    "accepted": ["tan(x)-x", "-x+tan(x)", "tanx-x"],
+    "accepted": [
+      "tan(x)-x",
+      "-x+tan(x)",
+      "tanx-x"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 13"
   },
   {
     "id": 14,
     "integrand": "\\int_{0}^{256} (x - \\lfloor x \\rfloor)^2 \\, dx",
     "answer": "\\frac{256}{3}",
-    "accepted": ["256/3"],
+    "accepted": [
+      "256/3"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 14"
   },
   {
@@ -115,21 +164,36 @@
     "id": 17,
     "integrand": "\\int 2\\log x + (\\log x)^2 \\, dx",
     "answer": "x(\\log x)^2 + C",
-    "accepted": ["x(log(x))^2", "x*log(x)^2", "xlog(x)^2", "x(ln(x))^2", "x*(log(x))^2"],
+    "accepted": [
+      "x(log(x))^2",
+      "x*log(x)^2",
+      "xlog(x)^2",
+      "x(ln(x))^2",
+      "x*(log(x))^2"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 17"
   },
   {
     "id": 18,
     "integrand": "\\int \\frac{x^3}{1 + x^2} \\, dx",
     "answer": "\\frac{x^2}{2} - \\frac{1}{2}\\log(x^2 + 1) + C",
-    "accepted": ["x^2/2-log(x^2+1)/2", "x^2/2-(1/2)log(x^2+1)", "(1/2)(x^2-log(x^2+1))"],
+    "accepted": [
+      "x^2/2-log(x^2+1)/2",
+      "x^2/2-(1/2)log(x^2+1)",
+      "(1/2)(x^2-log(x^2+1))"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 18"
   },
   {
     "id": 19,
     "integrand": "\\int \\frac{1}{2 - 2x + x^2} \\, dx",
     "answer": "-\\arctan(1 - x) + C",
-    "accepted": ["-arctan(1-x)", "arctan(x-1)", "-tan^-1(1-x)", "tan^-1(x-1)"],
+    "accepted": [
+      "-arctan(1-x)",
+      "arctan(x-1)",
+      "-tan^-1(1-x)",
+      "tan^-1(x-1)"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 19"
   },
   {
@@ -143,7 +207,11 @@
     "id": 21,
     "integrand": "\\int \\frac{x}{1 - x^4} \\, dx",
     "answer": "\\frac{1}{4}\\left(\\log(1 + x^2) - \\log(1 - x^2)\\right) + C",
-    "accepted": ["(1/4)(log(1+x^2)-log(1-x^2))", "(log(1+x^2)-log(1-x^2))/4", "(1/4)log((1+x^2)/(1-x^2))"],
+    "accepted": [
+      "(1/4)(log(1+x^2)-log(1-x^2))",
+      "(log(1+x^2)-log(1-x^2))/4",
+      "(1/4)log((1+x^2)/(1-x^2))"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 21"
   },
   {
@@ -164,7 +232,9 @@
     "id": 24,
     "integrand": "\\int_{-\\pi/4}^{\\pi/4} \\frac{1}{1 - \\sin x} \\, dx",
     "answer": "2",
-    "accepted": ["2"],
+    "accepted": [
+      "2"
+    ],
     "source": "MIT Qualifying Round 2013 Problem 24"
   },
   {
@@ -178,357 +248,508 @@
     "id": 26,
     "integrand": "\\int_{1}^{e} \\log(x^2) \\, dx",
     "answer": "2",
-    "accepted": ["2"],
+    "accepted": [
+      "2"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 1"
   },
   {
     "id": 27,
     "integrand": "\\int_{-9}^{9} \\sin(\\sqrt[3]{x}) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 2"
   },
   {
     "id": 28,
     "integrand": "\\int_{0}^{\\infty} \\frac{d}{dx}\\left[e^{1+x-x^2}\\right] \\, dx",
     "answer": "-e",
-    "accepted": ["-e"],
+    "accepted": [
+      "-e"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 3"
   },
   {
     "id": 29,
     "integrand": "\\int_{0}^{2} \\sqrt{x + \\sqrt{x + \\sqrt{x + \\cdots}}} \\, dx",
     "answer": "\\frac{19}{6}",
-    "accepted": ["19/6"],
+    "accepted": [
+      "19/6"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 4"
   },
   {
     "id": 30,
     "integrand": "\\int \\sqrt{x}\\, e^{\\sqrt{x}} \\, dx",
     "answer": "2e^{\\sqrt{x}}(x - 2\\sqrt{x} + 2) + C",
-    "accepted": ["2e^sqrt(x)(x-2sqrt(x)+2)", "2(x-2sqrt(x)+2)e^sqrt(x)"],
+    "accepted": [
+      "2e^sqrt(x)(x-2sqrt(x)+2)",
+      "2(x-2sqrt(x)+2)e^sqrt(x)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 5"
   },
   {
     "id": 31,
     "integrand": "\\int \\sin(2x) \\cos(3x) \\, dx",
     "answer": "\\frac{\\cos x}{2} - \\frac{\\cos 5x}{10} + C",
-    "accepted": ["cos(x)/2-cos(5x)/10", "(1/2)cos(x)-(1/10)cos(5x)"],
+    "accepted": [
+      "cos(x)/2-cos(5x)/10",
+      "(1/2)cos(x)-(1/10)cos(5x)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 6"
   },
   {
     "id": 32,
     "integrand": "\\int_{0}^{2\\pi} |1 + 2\\sin x| \\, dx",
     "answer": "\\frac{2\\pi}{3} + 4\\sqrt{3}",
-    "accepted": ["2pi/3+4sqrt(3)", "4sqrt(3)+2pi/3"],
+    "accepted": [
+      "2pi/3+4sqrt(3)",
+      "4sqrt(3)+2pi/3"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 7"
   },
   {
     "id": 33,
     "integrand": "\\int x(1 - x)^{2014} \\, dx",
     "answer": "\\frac{(1-x)^{2016}}{2016} - \\frac{(1-x)^{2015}}{2015} + C",
-    "accepted": ["(1-x)^2016/2016-(1-x)^2015/2015"],
+    "accepted": [
+      "(1-x)^2016/2016-(1-x)^2015/2015"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 8"
   },
   {
     "id": 34,
     "integrand": "\\int \\operatorname{arcsinh}(x) \\, dx",
     "answer": "x\\,\\operatorname{arcsinh}(x) - \\sqrt{x^2 + 1} + C",
-    "accepted": ["x*arcsinh(x)-sqrt(x^2+1)", "xarcsinh(x)-sqrt(x^2+1)", "x*sinh^-1(x)-sqrt(x^2+1)"],
+    "accepted": [
+      "x*arcsinh(x)-sqrt(x^2+1)",
+      "xarcsinh(x)-sqrt(x^2+1)",
+      "x*sinh^-1(x)-sqrt(x^2+1)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 9"
   },
   {
     "id": 35,
     "integrand": "\\int_{-1}^{0} \\frac{x^2}{x - 1} \\, dx",
     "answer": "\\frac{1}{2} - \\log 2",
-    "accepted": ["1/2-log(2)", "1/2-ln(2)", "(1/2)-log(2)"],
+    "accepted": [
+      "1/2-log(2)",
+      "1/2-ln(2)",
+      "(1/2)-log(2)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 10"
   },
   {
     "id": 36,
     "integrand": "\\int x \\arctan x \\, dx",
     "answer": "\\frac{1}{2}x^2 \\arctan(x) - \\frac{x}{2} + \\frac{1}{2}\\arctan(x) + C",
-    "accepted": ["(1/2)x^2*arctan(x)-x/2+(1/2)arctan(x)", "(x^2*arctan(x))/2-x/2+arctan(x)/2"],
+    "accepted": [
+      "(1/2)x^2*arctan(x)-x/2+(1/2)arctan(x)",
+      "(x^2*arctan(x))/2-x/2+arctan(x)/2"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 11"
   },
   {
     "id": 37,
     "integrand": "\\int \\frac{dx}{x^2 - 15x - 2014}",
     "answer": "\\frac{1}{91}\\log\\left|\\frac{x - 53}{x + 38}\\right| + C",
-    "accepted": ["(1/91)log((x-53)/(x+38))", "log|(x-53)/(x+38)|/91"],
+    "accepted": [
+      "(1/91)log((x-53)/(x+38))",
+      "log|(x-53)/(x+38)|/91"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 12"
   },
   {
     "id": 38,
     "integrand": "\\int e^x \\left[\\log(1 + x^2) - 2(1 + x)\\arctan x\\right] \\, dx",
     "answer": "e^x\\left[\\log(1 + x^2) - 2x\\arctan x\\right] + C",
-    "accepted": ["e^x(log(1+x^2)-2x*arctan(x))", "e^x*(log(1+x^2)-2xarctan(x))"],
+    "accepted": [
+      "e^x(log(1+x^2)-2x*arctan(x))",
+      "e^x*(log(1+x^2)-2xarctan(x))"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 13"
   },
   {
     "id": 39,
     "integrand": "\\int (\\arcsin x)^2 \\, dx",
     "answer": "2\\sqrt{1 - x^2}\\arcsin x - 2x + x(\\arcsin x)^2 + C",
-    "accepted": ["2sqrt(1-x^2)arcsin(x)-2x+x*arcsin(x)^2", "x(arcsin(x))^2+2sqrt(1-x^2)arcsin(x)-2x"],
+    "accepted": [
+      "2sqrt(1-x^2)arcsin(x)-2x+x*arcsin(x)^2",
+      "x(arcsin(x))^2+2sqrt(1-x^2)arcsin(x)-2x"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 14"
   },
   {
     "id": 40,
     "integrand": "\\int \\frac{\\sqrt{x^2 - 1}}{x} \\, dx",
     "answer": "\\sqrt{x^2 - 1} - \\arctan\\sqrt{x^2 - 1} + C",
-    "accepted": ["sqrt(x^2-1)-arctan(sqrt(x^2-1))"],
+    "accepted": [
+      "sqrt(x^2-1)-arctan(sqrt(x^2-1))"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 15"
   },
   {
     "id": 41,
     "integrand": "\\int x \\sec^2(4x) \\, dx",
     "answer": "\\frac{x\\tan(4x)}{4} + \\frac{\\log(\\cos(4x))}{16} + C",
-    "accepted": ["x*tan(4x)/4+log(cos(4x))/16"],
+    "accepted": [
+      "x*tan(4x)/4+log(cos(4x))/16"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 16"
   },
   {
     "id": 42,
     "integrand": "\\int \\frac{2}{6 - 11x + 6x^2 - x^3} \\, dx",
     "answer": "2\\log(2 - x) - \\log(x^2 - 4x + 3) + C",
-    "accepted": ["2log(2-x)-log(x^2-4x+3)"],
+    "accepted": [
+      "2log(2-x)-log(x^2-4x+3)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 17"
   },
   {
     "id": 43,
     "integrand": "\\int_{0}^{1} \\frac{1}{\\lfloor 1 - \\log_2(1 - x) \\rfloor} \\, dx",
     "answer": "\\log 2",
-    "accepted": ["log(2)", "ln(2)"],
+    "accepted": [
+      "log(2)",
+      "ln(2)"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 18"
   },
   {
     "id": 44,
     "integrand": "\\int_{0}^{1/\\sqrt{3}} \\sqrt{x + \\sqrt{x^2 + 1}} \\, dx",
     "answer": "\\frac{2}{3}",
-    "accepted": ["2/3"],
+    "accepted": [
+      "2/3"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 19"
   },
   {
     "id": 45,
     "integrand": "\\int_{0}^{5\\pi/2} \\frac{dx}{2 + \\cos x}",
     "answer": "\\frac{7\\sqrt{3}\\pi}{9}",
-    "accepted": ["7sqrt(3)pi/9", "7pi*sqrt(3)/9", "(7sqrt(3)/9)pi"],
+    "accepted": [
+      "7sqrt(3)pi/9",
+      "7pi*sqrt(3)/9",
+      "(7sqrt(3)/9)pi"
+    ],
     "source": "MIT Qualifying Round 2014 Problem 20"
   },
   {
     "id": 46,
     "integrand": "\\int (\\cos^4 x - \\sin^4 x) \\, dx",
     "answer": "\\frac{1}{2}\\sin 2x + C",
-    "accepted": ["sin(2x)/2", "(1/2)sin(2x)", "sin(x)cos(x)"],
+    "accepted": [
+      "sin(2x)/2",
+      "(1/2)sin(2x)",
+      "sin(x)cos(x)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 1"
   },
   {
     "id": 47,
     "integrand": "\\int \\frac{x}{\\sqrt{2 + 4x}} \\, dx",
     "answer": "\\frac{1}{3}(x - 1)\\sqrt{x + \\frac{1}{2}} + C",
-    "accepted": ["(1/3)(x-1)sqrt(x+1/2)", "(x-1)sqrt(x+1/2)/3"],
+    "accepted": [
+      "(1/3)(x-1)sqrt(x+1/2)",
+      "(x-1)sqrt(x+1/2)/3"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 2"
   },
   {
     "id": 48,
     "integrand": "\\int_{0}^{8} \\frac{\\cos\\sqrt{x}}{\\sqrt{x}} \\, dx",
     "answer": "2\\sin(2\\sqrt{2})",
-    "accepted": ["2sin(2sqrt(2))", "2*sin(2*sqrt(2))"],
+    "accepted": [
+      "2sin(2sqrt(2))",
+      "2*sin(2*sqrt(2))"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 3"
   },
   {
     "id": 49,
     "integrand": "\\int \\sec x \\, dx",
     "answer": "\\operatorname{sech}^{-1}\\cos x + C",
-    "accepted": ["sech^-1(cos(x))", "arcsech(cos(x))", "log(sec(x)+tan(x))", "log|sec(x)+tan(x)|"],
+    "accepted": [
+      "sech^-1(cos(x))",
+      "arcsech(cos(x))",
+      "log(sec(x)+tan(x))",
+      "log|sec(x)+tan(x)|"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 4"
   },
   {
     "id": 50,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{e^{\\sin x}}{\\tan x \\csc x} \\, dx",
     "answer": "e - 1",
-    "accepted": ["e-1"],
+    "accepted": [
+      "e-1"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 5"
   },
   {
     "id": 51,
     "integrand": "\\int_{1}^{e} x(\\log x)^2 \\, dx",
     "answer": "\\frac{e^2}{4} - \\frac{1}{4}",
-    "accepted": ["e^2/4-1/4", "(e^2-1)/4"],
+    "accepted": [
+      "e^2/4-1/4",
+      "(e^2-1)/4"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 6"
   },
   {
     "id": 52,
     "integrand": "\\int \\frac{1}{5 + 4\\sqrt{x} + x} \\, dx",
     "answer": "\\log(x + 4\\sqrt{x} + 5) - 4\\arctan(\\sqrt{x} + 2) + C",
-    "accepted": ["log(x+4sqrt(x)+5)-4arctan(sqrt(x)+2)"],
+    "accepted": [
+      "log(x+4sqrt(x)+5)-4arctan(sqrt(x)+2)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 7"
   },
   {
     "id": 53,
     "integrand": "\\int 2015^x \\, dx",
     "answer": "\\frac{2015^x}{\\log(2015)} + C",
-    "accepted": ["2015^x/log(2015)", "2015^x/ln(2015)"],
+    "accepted": [
+      "2015^x/log(2015)",
+      "2015^x/ln(2015)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 8"
   },
   {
     "id": 54,
     "integrand": "\\int_{0}^{2} \\frac{x}{(x - 3)(x + 5)^2} \\, dx",
     "answer": "\\frac{1}{28} - \\frac{3}{64}\\log\\left(\\frac{21}{5}\\right)",
-    "accepted": ["1/28-(3/64)log(21/5)", "1/28-3log(21/5)/64"],
+    "accepted": [
+      "1/28-(3/64)log(21/5)",
+      "1/28-3log(21/5)/64"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 9"
   },
   {
     "id": 55,
     "integrand": "\\int \\frac{\\log(1 + \\log x)}{x} \\, dx",
     "answer": "\\log(1 + \\log x) + \\log x(\\log(1 + \\log x) - 1) + C",
-    "accepted": ["log(1+log(x))+log(x)(log(1+log(x))-1)"],
+    "accepted": [
+      "log(1+log(x))+log(x)(log(1+log(x))-1)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 10"
   },
   {
     "id": 56,
     "integrand": "\\int \\sqrt{\\csc x - \\sin x} \\, dx",
     "answer": "2^{3/4}",
-    "accepted": ["2^(3/4)", "2^3/4"],
+    "accepted": [
+      "2^(3/4)",
+      "2^3/4"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 11"
   },
   {
     "id": 57,
     "integrand": "\\int \\frac{1}{\\sqrt{x^2 + 25}} \\, dx",
     "answer": "\\log|x + \\sqrt{x^2 + 25}| + C",
-    "accepted": ["log(x+sqrt(x^2+25))", "log|x+sqrt(x^2+25)|", "sinh^-1(x/5)", "arcsinh(x/5)"],
+    "accepted": [
+      "log(x+sqrt(x^2+25))",
+      "log|x+sqrt(x^2+25)|",
+      "sinh^-1(x/5)",
+      "arcsinh(x/5)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 12"
   },
   {
     "id": 58,
     "integrand": "\\int_{2}^{e} \\frac{\\log^2 x - 1}{x \\log^2 x} \\, dx",
     "answer": "-\\frac{(\\log 2 - 1)^2}{\\log 2}",
-    "accepted": ["-(log(2)-1)^2/log(2)", "-(ln(2)-1)^2/ln(2)"],
+    "accepted": [
+      "-(log(2)-1)^2/log(2)",
+      "-(ln(2)-1)^2/ln(2)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 13"
   },
   {
     "id": 59,
     "integrand": "\\int e^{3x} \\arctan e^x \\, dx",
     "answer": "\\frac{e^{3x}\\arctan(e^x)}{3} - \\frac{e^{2x}}{6} + \\frac{\\log(1 + e^{2x})}{6} + C",
-    "accepted": ["e^(3x)arctan(e^x)/3-e^(2x)/6+log(1+e^(2x))/6"],
+    "accepted": [
+      "e^(3x)arctan(e^x)/3-e^(2x)/6+log(1+e^(2x))/6"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 14"
   },
   {
     "id": 60,
     "integrand": "\\int_{0}^{4} \\frac{|x - 1|}{|x - 2| + |x - 3|} \\, dx",
     "answer": "2 + \\frac{9}{4}\\log 3 - \\frac{3}{4}\\log 5",
-    "accepted": ["2+(9/4)log(3)-(3/4)log(5)", "2+9log(3)/4-3log(5)/4"],
+    "accepted": [
+      "2+(9/4)log(3)-(3/4)log(5)",
+      "2+9log(3)/4-3log(5)/4"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 15"
   },
   {
     "id": 61,
     "integrand": "\\int_{0}^{2\\pi} \\frac{1}{\\sin^4 x + \\cos^4 x} \\, dx",
     "answer": "2\\pi\\sqrt{2}",
-    "accepted": ["2pi*sqrt(2)", "2sqrt(2)pi"],
+    "accepted": [
+      "2pi*sqrt(2)",
+      "2sqrt(2)pi"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 16"
   },
   {
     "id": 62,
     "integrand": "\\int \\frac{1 + e^x}{1 - e^x} \\, dx",
     "answer": "x - 2\\log|1 - e^x| + C",
-    "accepted": ["x-2log|1-e^x|", "x-2log(1-e^x)", "x-2ln|1-e^x|"],
+    "accepted": [
+      "x-2log|1-e^x|",
+      "x-2log(1-e^x)",
+      "x-2ln|1-e^x|"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 17"
   },
   {
     "id": 63,
     "integrand": "\\int \\tan^4 x \\, dx",
     "answer": "\\frac{\\tan^3 x}{3} - \\tan x + x + C",
-    "accepted": ["tan(x)^3/3-tan(x)+x", "tan^3(x)/3-tan(x)+x"],
+    "accepted": [
+      "tan(x)^3/3-tan(x)+x",
+      "tan^3(x)/3-tan(x)+x"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 18"
   },
   {
     "id": 64,
     "integrand": "\\int \\sin x \\tan^2 x \\, dx",
     "answer": "\\cos x + \\frac{1}{\\cos x} + C",
-    "accepted": ["cos(x)+1/cos(x)", "cos(x)+sec(x)", "sec(x)+cos(x)"],
+    "accepted": [
+      "cos(x)+1/cos(x)",
+      "cos(x)+sec(x)",
+      "sec(x)+cos(x)"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 19"
   },
   {
     "id": 65,
     "integrand": "\\int \\frac{x + 1}{x^2 + 2x + 3} \\, dx",
     "answer": "\\frac{1}{2}\\log(x^2 + 2x + 3) + C",
-    "accepted": ["log(x^2+2x+3)/2", "(1/2)log(x^2+2x+3)", "ln(x^2+2x+3)/2"],
+    "accepted": [
+      "log(x^2+2x+3)/2",
+      "(1/2)log(x^2+2x+3)",
+      "ln(x^2+2x+3)/2"
+    ],
     "source": "MIT Qualifying Round 2015 Problem 20"
   },
   {
     "id": 66,
     "integrand": "\\int \\tanh x \\, dx",
     "answer": "\\log(\\cosh x) + C",
-    "accepted": ["log(cosh(x))", "ln(cosh(x))"],
+    "accepted": [
+      "log(cosh(x))",
+      "ln(cosh(x))"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 1"
   },
   {
     "id": 67,
     "integrand": "\\int_{-4}^{4} |x^3 - x| \\, dx",
     "answer": "113",
-    "accepted": ["113"],
+    "accepted": [
+      "113"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 2"
   },
   {
     "id": 68,
     "integrand": "\\int_{1}^{e} \\log(\\sqrt{x}) \\, dx",
     "answer": "\\frac{1}{2}",
-    "accepted": ["1/2", "0.5"],
+    "accepted": [
+      "1/2",
+      "0.5"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 3"
   },
   {
     "id": 69,
     "integrand": "\\int \\left(e^{e^x + e^{-x} + x} - e^{e^x + e^{-x} - x}\\right) \\, dx",
     "answer": "e^{e^x + e^{-x}} + C",
-    "accepted": ["e^(e^x+e^-x)", "e^(e^x+e^(-x))"],
+    "accepted": [
+      "e^(e^x+e^-x)",
+      "e^(e^x+e^(-x))"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 4"
   },
   {
     "id": 70,
     "integrand": "\\int \\frac{\\log(\\log(x))}{x \\log(x)} \\, dx",
     "answer": "\\frac{1}{2}\\log(\\log(x))^2 + C",
-    "accepted": ["log(log(x))^2/2", "(1/2)log(log(x))^2", "(log(log(x)))^2/2"],
+    "accepted": [
+      "log(log(x))^2/2",
+      "(1/2)log(log(x))^2",
+      "(log(log(x)))^2/2"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 5"
   },
   {
     "id": 71,
     "integrand": "\\int_{0}^{\\pi/3} \\frac{dx}{1 + \\tan^2(x)}",
     "answer": "\\frac{\\pi}{6} + \\frac{\\sqrt{3}}{8}",
-    "accepted": ["pi/6+sqrt(3)/8"],
+    "accepted": [
+      "pi/6+sqrt(3)/8"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 6"
   },
   {
     "id": 72,
     "integrand": "\\int_{-27}^{27} \\arcsin\\left(\\frac{x^{1/3}}{3}\\right) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 7"
   },
   {
     "id": 73,
     "integrand": "\\int_{50}^{100} \\lfloor \\log_2 x \\rfloor \\, dx",
     "answer": "286",
-    "accepted": ["286"],
+    "accepted": [
+      "286"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 8"
   },
   {
     "id": 74,
     "integrand": "\\int (e^x \\cos x - e^x \\sin x) \\, dx",
     "answer": "e^x \\cos x + C",
-    "accepted": ["e^x*cos(x)", "e^xcos(x)", "cos(x)e^x", "e^x*cosx"],
+    "accepted": [
+      "e^x*cos(x)",
+      "e^xcos(x)",
+      "cos(x)e^x",
+      "e^x*cosx"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 9"
   },
   {
     "id": 75,
     "integrand": "\\int_{0}^{\\infty} x^3 e^{-x^2} \\, dx",
     "answer": "\\frac{1}{2}",
-    "accepted": ["1/2", "0.5"],
+    "accepted": [
+      "1/2",
+      "0.5"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 10"
   },
   {
     "id": 76,
     "integrand": "\\int \\left((2e^{x^2}x + 1)\\cos x - (e^{x^2} + x)\\sin x\\right) \\, dx",
     "answer": "(x + e^{x^2})\\cos x + C",
-    "accepted": ["(x+e^(x^2))cos(x)", "(e^(x^2)+x)cos(x)", "cos(x)(x+e^(x^2))"],
+    "accepted": [
+      "(x+e^(x^2))cos(x)",
+      "(e^(x^2)+x)cos(x)",
+      "cos(x)(x+e^(x^2))"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 11"
   },
   {
@@ -542,28 +763,41 @@
     "id": 78,
     "integrand": "\\int \\sin(\\sin(x))\\cos(\\sin(x))\\cos(x) \\, dx",
     "answer": "\\frac{1}{2}\\sin^2(\\sin(x)) + C",
-    "accepted": ["sin(sin(x))^2/2", "(1/2)sin^2(sin(x))", "sin^2(sin(x))/2"],
+    "accepted": [
+      "sin(sin(x))^2/2",
+      "(1/2)sin^2(sin(x))",
+      "sin^2(sin(x))/2"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 13"
   },
   {
     "id": 79,
     "integrand": "\\int \\left(\\frac{\\cos(x) + \\sin(x)}{x^2} + \\frac{\\sin(x) - \\cos(x)}{x}\\right) \\, dx",
     "answer": "-\\frac{\\sin x + \\cos x}{x} + C",
-    "accepted": ["-(sin(x)+cos(x))/x", "-sin(x)/x-cos(x)/x"],
+    "accepted": [
+      "-(sin(x)+cos(x))/x",
+      "-sin(x)/x-cos(x)/x"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 14"
   },
   {
     "id": 80,
     "integrand": "\\int x^3 \\sqrt{x^2 + 1} \\, dx",
     "answer": "\\frac{1}{15}(x^2 + 1)^{3/2}(3x^2 - 2) + C",
-    "accepted": ["(x^2+1)^(3/2)(3x^2-2)/15", "(1/15)(x^2+1)^(3/2)(3x^2-2)"],
+    "accepted": [
+      "(x^2+1)^(3/2)(3x^2-2)/15",
+      "(1/15)(x^2+1)^(3/2)(3x^2-2)"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 15"
   },
   {
     "id": 81,
     "integrand": "\\int \\frac{x}{x^4 + x^2 + 1} \\, dx",
     "answer": "\\frac{1}{\\sqrt{3}}\\arctan\\left(\\frac{2x^2 + 1}{\\sqrt{3}}\\right) + C",
-    "accepted": ["arctan((2x^2+1)/sqrt(3))/sqrt(3)", "(1/sqrt(3))arctan((2x^2+1)/sqrt(3))"],
+    "accepted": [
+      "arctan((2x^2+1)/sqrt(3))/sqrt(3)",
+      "(1/sqrt(3))arctan((2x^2+1)/sqrt(3))"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 16"
   },
   {
@@ -577,609 +811,855 @@
     "id": 83,
     "integrand": "\\int_{\\pi/3}^{\\pi/2} \\frac{1 - \\cos x}{\\sin x} \\, dx",
     "answer": "\\log(3/2)",
-    "accepted": ["log(3/2)", "ln(3/2)", "log(1.5)"],
+    "accepted": [
+      "log(3/2)",
+      "ln(3/2)",
+      "log(1.5)"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 18"
   },
   {
     "id": 84,
     "integrand": "\\int \\frac{dx}{1 - x + x^2 - x^3}",
     "answer": "\\frac{1}{2}\\left(\\arctan(x) - \\log(1 - x) + \\log\\sqrt{1 + x^2}\\right) + C",
-    "accepted": ["(1/2)(arctan(x)-log(1-x)+log(sqrt(1+x^2)))"],
+    "accepted": [
+      "(1/2)(arctan(x)-log(1-x)+log(sqrt(1+x^2)))"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 19"
   },
   {
     "id": 85,
     "integrand": "\\int_{0}^{\\infty} \\frac{dx}{2 + \\cosh x}",
     "answer": "\\frac{\\log(2 + \\sqrt{3})}{\\sqrt{3}}",
-    "accepted": ["log(2+sqrt(3))/sqrt(3)", "ln(2+sqrt(3))/sqrt(3)"],
+    "accepted": [
+      "log(2+sqrt(3))/sqrt(3)",
+      "ln(2+sqrt(3))/sqrt(3)"
+    ],
     "source": "MIT Qualifying Round 2016 Problem 20"
   },
   {
     "id": 86,
     "integrand": "\\int \\frac{x^2}{\\sqrt{x^3 + 2}} \\, dx",
     "answer": "\\frac{2\\sqrt{x^3 + 2}}{3} + C",
-    "accepted": ["2sqrt(x^3+2)/3", "(2/3)sqrt(x^3+2)"],
+    "accepted": [
+      "2sqrt(x^3+2)/3",
+      "(2/3)sqrt(x^3+2)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 1"
   },
   {
     "id": 87,
     "integrand": "\\int_{1}^{\\infty} \\frac{\\log x}{x^2} \\, dx",
     "answer": "1",
-    "accepted": ["1"],
+    "accepted": [
+      "1"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 2"
   },
   {
     "id": 88,
     "integrand": "\\int \\operatorname{sech}(x) \\, dx",
     "answer": "2\\arctan(e^x) + C",
-    "accepted": ["2arctan(e^x)", "2tan^-1(e^x)"],
+    "accepted": [
+      "2arctan(e^x)",
+      "2tan^-1(e^x)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 3"
   },
   {
     "id": 89,
     "integrand": "\\int x^3 e^{x^2} \\, dx",
     "answer": "\\frac{1}{2}(x^2 - 1)e^{x^2} + C",
-    "accepted": ["(x^2-1)e^(x^2)/2", "(1/2)(x^2-1)e^(x^2)"],
+    "accepted": [
+      "(x^2-1)e^(x^2)/2",
+      "(1/2)(x^2-1)e^(x^2)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 4"
   },
   {
     "id": 90,
     "integrand": "\\int_{1}^{2} \\frac{1}{x\\sqrt{x^2 - 1}} \\, dx",
     "answer": "\\frac{\\pi}{3}",
-    "accepted": ["pi/3"],
+    "accepted": [
+      "pi/3"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 5"
   },
   {
     "id": 91,
     "integrand": "\\int_{1}^{\\infty} \\frac{dx}{x(x^2 + 1)}",
     "answer": "\\frac{\\log 2}{2}",
-    "accepted": ["log(2)/2", "ln(2)/2", "(1/2)log(2)"],
+    "accepted": [
+      "log(2)/2",
+      "ln(2)/2",
+      "(1/2)log(2)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 6"
   },
   {
     "id": 92,
     "integrand": "\\int \\cosh^{-1} x \\, dx",
     "answer": "x \\cosh^{-1} x - \\sqrt{x^2 - 1} + C",
-    "accepted": ["x*cosh^-1(x)-sqrt(x^2-1)", "x*arccosh(x)-sqrt(x^2-1)"],
+    "accepted": [
+      "x*cosh^-1(x)-sqrt(x^2-1)",
+      "x*arccosh(x)-sqrt(x^2-1)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 7"
   },
   {
     "id": 93,
     "integrand": "\\int_{-\\infty}^{\\infty} e^{-2x^2 - 5x - 3} \\, dx",
     "answer": "e^{1/8}\\sqrt{\\pi/2}",
-    "accepted": ["e^(1/8)sqrt(pi/2)", "e^(1/8)*sqrt(pi/2)"],
+    "accepted": [
+      "e^(1/8)sqrt(pi/2)",
+      "e^(1/8)*sqrt(pi/2)"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 8"
   },
   {
     "id": 94,
     "integrand": "\\int \\sin\\sqrt{x} \\, dx",
     "answer": "2\\sin\\sqrt{x} - 2\\sqrt{x}\\cos\\sqrt{x} + C",
-    "accepted": ["2sin(sqrt(x))-2sqrt(x)cos(sqrt(x))"],
+    "accepted": [
+      "2sin(sqrt(x))-2sqrt(x)cos(sqrt(x))"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 9"
   },
   {
     "id": 95,
     "integrand": "\\int_{0}^{\\infty} \\frac{dx}{(x + 1/x)^2}",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 10"
   },
   {
     "id": 96,
     "integrand": "\\int \\frac{(2 + x)e^{-x}}{x^3} \\, dx",
     "answer": "-\\frac{e^{-x}}{x^2} + C",
-    "accepted": ["-e^(-x)/x^2", "-e^-x/x^2"],
+    "accepted": [
+      "-e^(-x)/x^2",
+      "-e^-x/x^2"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 11"
   },
   {
     "id": 97,
     "integrand": "\\int_{0}^{1} \\frac{dx}{\\sqrt{x(1 - x)}}",
     "answer": "\\pi",
-    "accepted": ["pi"],
+    "accepted": [
+      "pi"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 12"
   },
   {
     "id": 98,
     "integrand": "\\int_{0}^{\\infty} \\frac{\\tanh(x)}{\\exp(x)} \\, dx",
     "answer": "\\frac{\\pi}{2} - 1",
-    "accepted": ["pi/2-1"],
+    "accepted": [
+      "pi/2-1"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 13"
   },
   {
     "id": 99,
     "integrand": "\\int_{0}^{\\pi/2} \\sqrt{\\sin(x) + 1} \\, dx",
     "answer": "2",
-    "accepted": ["2"],
+    "accepted": [
+      "2"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 14"
   },
   {
     "id": 100,
     "integrand": "\\lim_{n\\to\\infty} I_n, \\text{ where } I_1 = \\int_{0}^{1} \\frac{dx}{1 + \\sqrt{x}}, \\; I_2 = \\int_{0}^{1} \\frac{dx}{1 + \\frac{1}{1+\\sqrt{x}}}, \\ldots",
     "answer": "\\frac{\\sqrt{5} - 1}{2}",
-    "accepted": ["(sqrt(5)-1)/2"],
+    "accepted": [
+      "(sqrt(5)-1)/2"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 15"
   },
   {
     "id": 101,
     "integrand": "\\int_{-\\infty}^{\\infty} \\frac{\\sin^2(x + \\pi/4)}{e^{x^2}} \\, dx",
     "answer": "\\frac{\\sqrt{\\pi}}{2}",
-    "accepted": ["sqrt(pi)/2"],
+    "accepted": [
+      "sqrt(pi)/2"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 16"
   },
   {
     "id": 102,
     "integrand": "\\int_{-\\infty}^{\\infty} 3x^2(x^3 + 1)^2 e^{-x^6 - 2x^3} \\, dx",
     "answer": "\\frac{e\\sqrt{\\pi}}{2}",
-    "accepted": ["e*sqrt(pi)/2", "esqrt(pi)/2"],
+    "accepted": [
+      "e*sqrt(pi)/2",
+      "esqrt(pi)/2"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 17"
   },
   {
     "id": 103,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{dx}{1 + \\tan^{2017} x}",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 18"
   },
   {
     "id": 104,
     "integrand": "\\int e^{2x} \\cos(3x) \\, dx",
     "answer": "\\frac{1}{13}e^{2x}(3\\sin(3x) + 2\\cos(3x)) + C",
-    "accepted": ["e^(2x)(3sin(3x)+2cos(3x))/13", "(1/13)e^(2x)(3sin(3x)+2cos(3x))"],
+    "accepted": [
+      "e^(2x)(3sin(3x)+2cos(3x))/13",
+      "(1/13)e^(2x)(3sin(3x)+2cos(3x))"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 19"
   },
   {
     "id": 105,
     "integrand": "\\int (\\cos(x))^{\\cos(x)+1} \\tan(x)(1 + \\log(\\cos(x))) \\, dx",
     "answer": "-\\cos(x)^{\\cos(x)} + C",
-    "accepted": ["-cos(x)^cos(x)", "-(cos(x))^(cos(x))"],
+    "accepted": [
+      "-cos(x)^cos(x)",
+      "-(cos(x))^(cos(x))"
+    ],
     "source": "MIT Qualifying Round 2017 Problem 20"
   },
   {
     "id": 106,
     "integrand": "\\int \\frac{e^x}{e^x + 2} \\, dx",
     "answer": "\\log(e^x + 2) + C",
-    "accepted": ["log(e^x+2)", "ln(e^x+2)"],
+    "accepted": [
+      "log(e^x+2)",
+      "ln(e^x+2)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 1"
   },
   {
     "id": 107,
     "integrand": "\\int \\sqrt{x \\cdot \\sqrt[3]{x \\cdot \\sqrt[4]{x \\cdot \\sqrt[5]{x \\cdots}}}} \\, dx",
     "answer": "\\frac{x^{e-1}}{e - 1} + C",
-    "accepted": ["x^(e-1)/(e-1)"],
+    "accepted": [
+      "x^(e-1)/(e-1)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 2"
   },
   {
     "id": 108,
     "integrand": "\\int_{0}^{2018\\pi} |\\sin(2018x)| \\, dx",
     "answer": "4036",
-    "accepted": ["4036"],
+    "accepted": [
+      "4036"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 3"
   },
   {
     "id": 109,
     "integrand": "\\int \\frac{dx}{\\tan x + \\cot x}",
     "answer": "\\frac{1}{2}\\sin^2(x) + C",
-    "accepted": ["sin(x)^2/2", "(1/2)sin^2(x)", "sin^2(x)/2", "-cos(2x)/4"],
+    "accepted": [
+      "sin(x)^2/2",
+      "(1/2)sin^2(x)",
+      "sin^2(x)/2",
+      "-cos(2x)/4"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 4"
   },
   {
     "id": 110,
     "integrand": "\\int \\frac{x^5}{2 + x^{12}} \\, dx",
     "answer": "\\frac{1}{6\\sqrt{2}}\\arctan(x^6/\\sqrt{2}) + C",
-    "accepted": ["arctan(x^6/sqrt(2))/(6sqrt(2))", "(1/(6sqrt(2)))arctan(x^6/sqrt(2))"],
+    "accepted": [
+      "arctan(x^6/sqrt(2))/(6sqrt(2))",
+      "(1/(6sqrt(2)))arctan(x^6/sqrt(2))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 5"
   },
   {
     "id": 111,
     "integrand": "\\int (\\cos x \\cosh x + \\sin x \\sinh x) \\, dx",
     "answer": "\\sin(x)\\cosh(x) + C",
-    "accepted": ["sin(x)cosh(x)", "sin(x)*cosh(x)", "cosh(x)sin(x)"],
+    "accepted": [
+      "sin(x)cosh(x)",
+      "sin(x)*cosh(x)",
+      "cosh(x)sin(x)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 6"
   },
   {
     "id": 112,
     "integrand": "\\int \\frac{e^x + \\cos x}{e^x + \\sin x} \\, dx",
     "answer": "\\log(e^x + \\sin x) + C",
-    "accepted": ["log(e^x+sin(x))", "ln(e^x+sin(x))"],
+    "accepted": [
+      "log(e^x+sin(x))",
+      "ln(e^x+sin(x))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 7"
   },
   {
     "id": 113,
     "integrand": "\\int \\sin(\\cos(\\sin x))\\sin(\\sin x)\\cos x \\, dx",
     "answer": "\\cos(\\cos(\\sin(x))) + C",
-    "accepted": ["cos(cos(sin(x)))"],
+    "accepted": [
+      "cos(cos(sin(x)))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 8"
   },
   {
     "id": 114,
     "integrand": "\\int \\frac{dx}{1 + \\sin(x)}",
     "answer": "\\tan x - \\sec x + C",
-    "accepted": ["tan(x)-sec(x)", "tanx-secx"],
+    "accepted": [
+      "tan(x)-sec(x)",
+      "tanx-secx"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 9"
   },
   {
     "id": 115,
     "integrand": "\\int \\frac{\\cos x}{1 - \\cos(2x)} \\, dx",
     "answer": "-\\frac{1}{2}\\csc x + C",
-    "accepted": ["-csc(x)/2", "-(1/2)csc(x)", "-1/(2sin(x))"],
+    "accepted": [
+      "-csc(x)/2",
+      "-(1/2)csc(x)",
+      "-1/(2sin(x))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 10"
   },
   {
     "id": 116,
     "integrand": "\\int e^x(1/x + \\log x) \\, dx",
     "answer": "e^x \\log x + C",
-    "accepted": ["e^x*log(x)", "e^xlog(x)", "log(x)e^x", "e^x*ln(x)"],
+    "accepted": [
+      "e^x*log(x)",
+      "e^xlog(x)",
+      "log(x)e^x",
+      "e^x*ln(x)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 11"
   },
   {
     "id": 117,
     "integrand": "\\int \\tanh^2(x) \\, dx",
     "answer": "x - \\tanh x + C",
-    "accepted": ["x-tanh(x)"],
+    "accepted": [
+      "x-tanh(x)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 12"
   },
   {
     "id": 118,
     "integrand": "\\int \\frac{2017x^{2016} + 2018x^{2017}}{1 + x^{4034} + 2x^{4035} + x^{4036}} \\, dx",
     "answer": "\\arctan(x^{2018} + x^{2017}) + C",
-    "accepted": ["arctan(x^2018+x^2017)", "arctan(x^2017+x^2018)"],
+    "accepted": [
+      "arctan(x^2018+x^2017)",
+      "arctan(x^2017+x^2018)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 13"
   },
   {
     "id": 119,
     "integrand": "\\int \\frac{\\sin(2x) - \\sin^2 x}{\\cos(2x) - \\cos^2 x} \\, dx",
     "answer": "x - 2\\log(\\sin x) + C",
-    "accepted": ["x-2log(sin(x))", "x-2ln(sin(x))"],
+    "accepted": [
+      "x-2log(sin(x))",
+      "x-2ln(sin(x))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 14"
   },
   {
     "id": 120,
     "integrand": "\\int \\frac{dx}{x^{25/25} \\cdot x^{16/25} + x^{9/25}}",
     "answer": "\\frac{25}{16}\\arctan(x^{16/25}) + C",
-    "accepted": ["(25/16)arctan(x^(16/25))", "25arctan(x^(16/25))/16"],
+    "accepted": [
+      "(25/16)arctan(x^(16/25))",
+      "25arctan(x^(16/25))/16"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 15"
   },
   {
     "id": 121,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{\\cos(x)}{2 - \\cos^2(x)} \\, dx",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 16"
   },
   {
     "id": 122,
     "integrand": "\\int \\frac{dx}{(1 + x^2)^{3/2}}",
     "answer": "\\frac{x}{\\sqrt{1 + x^2}} + C",
-    "accepted": ["x/sqrt(1+x^2)", "x/(1+x^2)^(1/2)"],
+    "accepted": [
+      "x/sqrt(1+x^2)",
+      "x/(1+x^2)^(1/2)"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 17"
   },
   {
     "id": 123,
     "integrand": "\\int \\frac{dx}{\\sqrt{x\\sqrt{x} - x^2}}",
     "answer": "4\\arcsin(\\sqrt[4]{x}) + C",
-    "accepted": ["4arcsin(x^(1/4))", "4arcsin(sqrt(sqrt(x)))"],
+    "accepted": [
+      "4arcsin(x^(1/4))",
+      "4arcsin(sqrt(sqrt(x)))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 18"
   },
   {
     "id": 124,
     "integrand": "\\int \\frac{x - 1}{x + x^2 \\log x} \\, dx",
     "answer": "\\log(1/x + \\log x) + C",
-    "accepted": ["log(1/x+log(x))", "ln(1/x+ln(x))"],
+    "accepted": [
+      "log(1/x+log(x))",
+      "ln(1/x+ln(x))"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 19"
   },
   {
     "id": 125,
     "integrand": "\\int \\csc(x)\\sec(x) \\, dx",
     "answer": "\\log(\\tan(x)) + C",
-    "accepted": ["log(tan(x))", "ln(tan(x))", "log|tan(x)|"],
+    "accepted": [
+      "log(tan(x))",
+      "ln(tan(x))",
+      "log|tan(x)|"
+    ],
     "source": "MIT Qualifying Round 2018 Problem 20"
   },
   {
     "id": 126,
     "integrand": "\\int_{0}^{2\\pi} \\tan(\\cos(x)) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 1"
   },
   {
     "id": 127,
     "integrand": "\\int \\frac{x + 1}{x(x + \\log x)} \\, dx",
     "answer": "\\log(x + \\log x) + C",
-    "accepted": ["log(x+log(x))", "ln(x+ln(x))"],
+    "accepted": [
+      "log(x+log(x))",
+      "ln(x+ln(x))"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 2"
   },
   {
     "id": 128,
     "integrand": "\\int e^{x + e^x} + e^{x - e^x} \\, dx",
     "answer": "e^{e^x} - e^{-e^x} + C",
-    "accepted": ["e^(e^x)-e^(-e^x)", "e^e^x-e^-e^x"],
+    "accepted": [
+      "e^(e^x)-e^(-e^x)",
+      "e^e^x-e^-e^x"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 3"
   },
   {
     "id": 129,
     "integrand": "\\int_{-1/2}^{1/2} \\frac{dx}{1 - x^2}",
     "answer": "\\log 3",
-    "accepted": ["log(3)", "ln(3)"],
+    "accepted": [
+      "log(3)",
+      "ln(3)"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 4"
   },
   {
     "id": 130,
     "integrand": "\\int_{0}^{2} 2^{\\log x} \\, dx",
     "answer": "\\frac{2^{1 + \\log 2}}{1 + \\log 2}",
-    "accepted": ["2^(1+log(2))/(1+log(2))", "2^(1+ln(2))/(1+ln(2))"],
+    "accepted": [
+      "2^(1+log(2))/(1+log(2))",
+      "2^(1+ln(2))/(1+ln(2))"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 5"
   },
   {
     "id": 131,
     "integrand": "\\int_{-2\\pi}^{2\\pi} (\\cos 3x + \\sin 2x)(-\\sin 2019x + \\cos 3x) \\, dx",
     "answer": "2\\pi",
-    "accepted": ["2pi", "2*pi"],
+    "accepted": [
+      "2pi",
+      "2*pi"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 6"
   },
   {
     "id": 132,
     "integrand": "\\int \\cos x \\cdot \\cos\\sin x \\cdot \\cos\\sin\\sin x \\, dx",
     "answer": "\\sin\\sin\\sin x + C",
-    "accepted": ["sin(sin(sin(x)))"],
+    "accepted": [
+      "sin(sin(sin(x)))"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 7"
   },
   {
     "id": 133,
     "integrand": "\\int_{0}^{\\infty} \\frac{e^{-2019/(4t^2)}}{t^2} \\, dt",
     "answer": "\\sqrt{\\frac{\\pi}{2019}}",
-    "accepted": ["sqrt(pi/2019)"],
+    "accepted": [
+      "sqrt(pi/2019)"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 8"
   },
   {
     "id": 134,
     "integrand": "\\int \\sin(\\sqrt{x}) \\, dx",
     "answer": "2\\sin(\\sqrt{x}) - 2\\sqrt{x}\\cos(\\sqrt{x}) + C",
-    "accepted": ["2sin(sqrt(x))-2sqrt(x)cos(sqrt(x))"],
+    "accepted": [
+      "2sin(sqrt(x))-2sqrt(x)cos(sqrt(x))"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 9"
   },
   {
     "id": 135,
     "integrand": "\\int_{0}^{1} \\frac{\\sqrt{x}}{1 + x} \\, dx",
     "answer": "2 - \\frac{\\pi}{2}",
-    "accepted": ["2-pi/2"],
+    "accepted": [
+      "2-pi/2"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 10"
   },
   {
     "id": 136,
     "integrand": "\\int_{0}^{2\\pi} \\cos(x)\\cos(2x)\\cos(3x) \\, dx",
     "answer": "\\frac{\\pi}{2}",
-    "accepted": ["pi/2"],
+    "accepted": [
+      "pi/2"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 11"
   },
   {
     "id": 137,
     "integrand": "\\lim_{n\\to\\infty} \\int_{-\\infty}^{\\infty} e^{-x^{2n}} \\, dx",
     "answer": "2",
-    "accepted": ["2"],
+    "accepted": [
+      "2"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 12"
   },
   {
     "id": 138,
     "integrand": "\\int_{0}^{e} x^{1/\\log x} \\, dx",
     "answer": "e^2",
-    "accepted": ["e^2"],
+    "accepted": [
+      "e^2"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 13"
   },
   {
     "id": 139,
     "integrand": "\\int_{0}^{\\pi/100} \\frac{\\sin(20x) + \\sin(19x)}{\\cos(20x) + \\cos(19x)} \\, dx",
     "answer": "-\\frac{2}{39}\\log\\cos\\frac{39\\pi}{200}",
-    "accepted": ["-(2/39)log(cos(39pi/200))", "-2log(cos(39pi/200))/39"],
+    "accepted": [
+      "-(2/39)log(cos(39pi/200))",
+      "-2log(cos(39pi/200))/39"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 14"
   },
   {
     "id": 140,
     "integrand": "\\int (e^x \\cos^2(x) + e^x \\cos(x)\\sin(x) - e^x \\sin^2(x)) \\, dx",
     "answer": "e^x \\cos(x)\\sin(x) + C",
-    "accepted": ["e^x*cos(x)sin(x)", "e^x*sin(x)cos(x)", "e^xsin(x)cos(x)"],
+    "accepted": [
+      "e^x*cos(x)sin(x)",
+      "e^x*sin(x)cos(x)",
+      "e^xsin(x)cos(x)"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 15"
   },
   {
     "id": 141,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{\\sin x}{\\sin(x + \\pi/4)} \\, dx",
     "answer": "\\frac{\\pi}{2\\sqrt{2}}",
-    "accepted": ["pi/(2sqrt(2))", "pi/2sqrt(2)"],
+    "accepted": [
+      "pi/(2sqrt(2))",
+      "pi/2sqrt(2)"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 16"
   },
   {
     "id": 142,
     "integrand": "\\int \\frac{dx}{x + \\sqrt[3]{x}}",
     "answer": "\\frac{3}{2}\\log(1 + x^{2/3}) + C",
-    "accepted": ["(3/2)log(1+x^(2/3))", "3log(1+x^(2/3))/2"],
+    "accepted": [
+      "(3/2)log(1+x^(2/3))",
+      "3log(1+x^(2/3))/2"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 17"
   },
   {
     "id": 143,
     "integrand": "\\int_{0}^{2} x^{x^2 + 1}(2\\log(x) + 1) \\, dx",
     "answer": "15",
-    "accepted": ["15"],
+    "accepted": [
+      "15"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 18"
   },
   {
     "id": 144,
     "integrand": "\\int \\frac{2x^3 - 1}{x(x^3 + 1)} \\, dx",
     "answer": "\\log(x^3 + 1) - \\log x + C",
-    "accepted": ["log(x^3+1)-log(x)", "log((x^3+1)/x)"],
+    "accepted": [
+      "log(x^3+1)-log(x)",
+      "log((x^3+1)/x)"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 19"
   },
   {
     "id": 145,
     "integrand": "\\int \\cos(\\arctan(x)) \\, dx",
     "answer": "\\sinh^{-1} x = \\log(\\sqrt{x^2 + 1} + x) + C",
-    "accepted": ["sinh^-1(x)", "arcsinh(x)", "log(sqrt(x^2+1)+x)", "log(x+sqrt(x^2+1))"],
+    "accepted": [
+      "sinh^-1(x)",
+      "arcsinh(x)",
+      "log(sqrt(x^2+1)+x)",
+      "log(x+sqrt(x^2+1))"
+    ],
     "source": "MIT Qualifying Round 2019 Problem 20"
   },
   {
     "id": 146,
     "integrand": "\\int \\frac{\\log(2x)}{x \\log x} \\, dx",
     "answer": "\\log x + (\\log 2)\\log\\log x + C",
-    "accepted": ["log(x)+log(2)log(log(x))", "log(x)+log(2)*log(log(x))"],
+    "accepted": [
+      "log(x)+log(2)log(log(x))",
+      "log(x)+log(2)*log(log(x))"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 1"
   },
   {
     "id": 147,
     "integrand": "\\int_{0}^{\\infty} \\frac{1}{e^x + 1} \\, dx",
     "answer": "\\log 2",
-    "accepted": ["log(2)", "ln(2)"],
+    "accepted": [
+      "log(2)",
+      "ln(2)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 2"
   },
   {
     "id": 148,
     "integrand": "\\int_{e}^{e^e} \\frac{\\log x \\cdot \\log(\\log x)}{x} \\, dx",
     "answer": "\\frac{1}{4}(1 + e^2)",
-    "accepted": ["(1+e^2)/4", "(1/4)(1+e^2)"],
+    "accepted": [
+      "(1+e^2)/4",
+      "(1/4)(1+e^2)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 3"
   },
   {
     "id": 149,
     "integrand": "\\int_{0}^{1} \\log\\left(\\frac{1 + x}{1 - x}\\right) \\, dx",
     "answer": "\\log 4",
-    "accepted": ["log(4)", "ln(4)", "2log(2)", "2ln(2)"],
+    "accepted": [
+      "log(4)",
+      "ln(4)",
+      "2log(2)",
+      "2ln(2)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 4"
   },
   {
     "id": 150,
     "integrand": "\\int \\frac{1}{x^2 + (x - 1)^2} \\, dx",
     "answer": "\\arctan(2x - 1) + C",
-    "accepted": ["arctan(2x-1)", "tan^-1(2x-1)"],
+    "accepted": [
+      "arctan(2x-1)",
+      "tan^-1(2x-1)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 5"
   },
   {
     "id": 151,
     "integrand": "\\int \\sqrt{x\\sqrt{x\\sqrt{x \\cdots}}} \\, dx",
     "answer": "\\frac{x^2}{2} + C",
-    "accepted": ["x^2/2", "(1/2)x^2"],
+    "accepted": [
+      "x^2/2",
+      "(1/2)x^2"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 6"
   },
   {
     "id": 152,
     "integrand": "\\int \\sin^4 x \\cos^4 x(\\cos x + \\sin x)(\\cos x - \\sin x) \\, dx",
     "answer": "\\frac{1}{5}\\sin^5(x)\\cos^5(x) + C",
-    "accepted": ["sin(x)^5*cos(x)^5/5", "(1/5)sin^5(x)cos^5(x)"],
+    "accepted": [
+      "sin(x)^5*cos(x)^5/5",
+      "(1/5)sin^5(x)cos^5(x)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 7"
   },
   {
     "id": 153,
     "integrand": "\\int \\log(x^2 + 1) \\, dx",
     "answer": "x\\log(x^2 + 1) + 2\\arctan(x) - 2x + C",
-    "accepted": ["x*log(x^2+1)+2arctan(x)-2x", "xlog(x^2+1)+2arctan(x)-2x"],
+    "accepted": [
+      "x*log(x^2+1)+2arctan(x)-2x",
+      "xlog(x^2+1)+2arctan(x)-2x"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 8"
   },
   {
     "id": 154,
     "integrand": "\\int_{0}^{2\\pi} \\cos^{2020}(x) \\, dx",
     "answer": "2^{-2019}\\pi\\binom{2020}{1010}",
-    "accepted": ["2^(-2019)*pi*binomial(2020,1010)", "pi*C(2020,1010)/2^2019"],
+    "accepted": [
+      "2^(-2019)*pi*binomial(2020,1010)",
+      "pi*C(2020,1010)/2^2019"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 9"
   },
   {
     "id": 155,
     "integrand": "\\int \\frac{2x + 1}{2x^2 + 2x + 1} \\, dx",
     "answer": "\\frac{1}{2}\\log(2x^2 + 2x + 1) + C",
-    "accepted": ["log(2x^2+2x+1)/2", "(1/2)log(2x^2+2x+1)", "ln(2x^2+2x+1)/2"],
+    "accepted": [
+      "log(2x^2+2x+1)/2",
+      "(1/2)log(2x^2+2x+1)",
+      "ln(2x^2+2x+1)/2"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 10"
   },
   {
     "id": 156,
     "integrand": "\\int_{1/\\sqrt{2}}^{1} \\frac{\\arcsin(x)}{x^3} \\, dx",
     "answer": "\\frac{1}{2}",
-    "accepted": ["1/2", "0.5"],
+    "accepted": [
+      "1/2",
+      "0.5"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 11"
   },
   {
     "id": 157,
     "integrand": "\\int_{0}^{\\pi/2} \\sin(2x)\\cos(\\cos(x)) \\, dx",
     "answer": "2(\\cos(1) + \\sin(1) - 1)",
-    "accepted": ["2(cos(1)+sin(1)-1)", "2cos(1)+2sin(1)-2"],
+    "accepted": [
+      "2(cos(1)+sin(1)-1)",
+      "2cos(1)+2sin(1)-2"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 12"
   },
   {
     "id": 158,
     "integrand": "\\int_{0}^{2\\pi} \\sin(\\sin(x) - x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 13"
   },
   {
     "id": 159,
     "integrand": "\\int \\frac{1}{x - 1} + \\frac{\\sum_{k=0}^{2018}(k+1)x^k}{\\sum_{k=0}^{2019} x^k} \\, dx",
     "answer": "\\log(1 - x^{2020}) + C",
-    "accepted": ["log(1-x^2020)", "ln(1-x^2020)"],
+    "accepted": [
+      "log(1-x^2020)",
+      "ln(1-x^2020)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 14"
   },
   {
     "id": 160,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{1}{\\tan^{\\sqrt{2020}}(x) + 1} \\, dx",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 15"
   },
   {
     "id": 161,
     "integrand": "\\int x(1 - x)^{2020} \\, dx",
     "answer": "\\frac{(1-x)^{2022}}{2022} - \\frac{(1-x)^{2021}}{2021} + C",
-    "accepted": ["(1-x)^2022/2022-(1-x)^2021/2021"],
+    "accepted": [
+      "(1-x)^2022/2022-(1-x)^2021/2021"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 16"
   },
   {
     "id": 162,
     "integrand": "\\int \\frac{\\sec^4(x)\\tan(x)}{\\sec^4(x) + 4} \\, dx",
     "answer": "\\frac{1}{4}\\log(\\sec^4(x) + 4) + C",
-    "accepted": ["log(sec(x)^4+4)/4", "(1/4)log(sec^4(x)+4)"],
+    "accepted": [
+      "log(sec(x)^4+4)/4",
+      "(1/4)log(sec^4(x)+4)"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 17"
   },
   {
     "id": 163,
     "integrand": "\\int x^{2x}(2\\log(x) + 2) \\, dx",
     "answer": "x^{2x} + C",
-    "accepted": ["x^(2x)", "x^2x"],
+    "accepted": [
+      "x^(2x)",
+      "x^2x"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 18"
   },
   {
     "id": 164,
     "integrand": "\\int_{0}^{1} \\sqrt{1 - x^2} \\, dx",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 19"
   },
   {
     "id": 165,
     "integrand": "\\int_{0}^{\\infty} x^5 e^{-x^4} \\, dx",
     "answer": "\\frac{\\sqrt{\\pi}}{8}",
-    "accepted": ["sqrt(pi)/8"],
+    "accepted": [
+      "sqrt(pi)/8"
+    ],
     "source": "MIT Qualifying Round 2020 Problem 20"
   },
   {
     "id": 166,
     "integrand": "\\int \\frac{1 + \\cos x}{x + \\sin x} \\, dx",
     "answer": "\\log(x + \\sin x) + C",
-    "accepted": ["log(x+sin(x))", "ln(x+sin(x))"],
+    "accepted": [
+      "log(x+sin(x))",
+      "ln(x+sin(x))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 1"
   },
   {
     "id": 167,
     "integrand": "\\int_{1}^{\\sqrt{3}} \\frac{\\arctan x + \\operatorname{arccot} x}{x} \\, dx",
     "answer": "\\frac{\\pi}{4}\\log(3)",
-    "accepted": ["pi*log(3)/4", "(pi/4)log(3)", "pi*ln(3)/4"],
+    "accepted": [
+      "pi*log(3)/4",
+      "(pi/4)log(3)",
+      "pi*ln(3)/4"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 2"
   },
   {
     "id": 168,
     "integrand": "\\int_{0}^{2022} x^2 - \\lfloor x \\rfloor\\lceil x \\rceil \\, dx",
     "answer": "674",
-    "accepted": ["674"],
+    "accepted": [
+      "674"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 3"
   },
   {
     "id": 169,
     "integrand": "\\int \\frac{\\sinh(x)}{\\cosh(x) - \\sinh(x)} \\, dx",
     "answer": "-\\frac{1}{2}x + \\frac{1}{4}e^{2x} + C",
-    "accepted": ["-x/2+e^(2x)/4", "e^(2x)/4-x/2"],
+    "accepted": [
+      "-x/2+e^(2x)/4",
+      "e^(2x)/4-x/2"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 4"
   },
   {
@@ -1193,651 +1673,894 @@
     "id": 171,
     "integrand": "\\int_{0}^{\\pi} \\cos(x + \\cos x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 6"
   },
   {
     "id": 172,
     "integrand": "\\int x^3 \\sin(x^2) \\, dx",
     "answer": "\\frac{\\sin(x^2) - x^2 \\cos(x^2)}{2} + C",
-    "accepted": ["(sin(x^2)-x^2*cos(x^2))/2", "sin(x^2)/2-x^2*cos(x^2)/2"],
+    "accepted": [
+      "(sin(x^2)-x^2*cos(x^2))/2",
+      "sin(x^2)/2-x^2*cos(x^2)/2"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 7"
   },
   {
     "id": 173,
     "integrand": "\\int \\frac{x}{1 - x^4} \\, dx",
     "answer": "\\frac{1}{4}\\log\\left(\\frac{1 + x^2}{1 - x^2}\\right) + C",
-    "accepted": ["log((1+x^2)/(1-x^2))/4", "(1/4)log((1+x^2)/(1-x^2))"],
+    "accepted": [
+      "log((1+x^2)/(1-x^2))/4",
+      "(1/4)log((1+x^2)/(1-x^2))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 8"
   },
   {
     "id": 174,
     "integrand": "\\int \\frac{1}{\\cosh^2 x} \\, dx",
     "answer": "\\tanh(x) + C",
-    "accepted": ["tanh(x)"],
+    "accepted": [
+      "tanh(x)"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 9"
   },
   {
     "id": 175,
     "integrand": "\\int_{0}^{1} e^{e^x} - e^{e^x - x} \\, dx",
     "answer": "e^{e-1} - e",
-    "accepted": ["e^(e-1)-e"],
+    "accepted": [
+      "e^(e-1)-e"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 10"
   },
   {
     "id": 176,
     "integrand": "\\lim_{n\\to\\infty} \\int_{0}^{3} \\underbrace{\\sin\\left(\\frac{\\pi}{3}\\sin\\left(\\frac{\\pi}{3}\\sin\\left(\\ldots\\sin\\left(\\frac{\\pi}{3}x\\right)\\ldots\\right)\\right)\\right)}_{n \\text{ sin's}} \\, dx",
     "answer": "\\frac{3}{2}",
-    "accepted": ["3/2", "1.5"],
+    "accepted": [
+      "3/2",
+      "1.5"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 11"
   },
   {
     "id": 177,
     "integrand": "\\int_{0}^{1} \\sqrt{1 - \\sqrt{x}} \\, dx",
     "answer": "\\frac{8}{15}",
-    "accepted": ["8/15"],
+    "accepted": [
+      "8/15"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 12"
   },
   {
     "id": 178,
     "integrand": "\\int \\frac{x^3}{1 + x + \\frac{x^2}{2} + \\frac{x^3}{6}} \\, dx",
     "answer": "6\\left(x - \\log\\left(1 + x + \\frac{x^2}{2} + \\frac{x^3}{6}\\right)\\right) + C",
-    "accepted": ["6(x-log(1+x+x^2/2+x^3/6))"],
+    "accepted": [
+      "6(x-log(1+x+x^2/2+x^3/6))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 13"
   },
   {
     "id": 179,
     "integrand": "\\int \\sin(x + \\sin(x)) - \\sin(x - \\sin(x)) \\, dx",
     "answer": "-2\\cos(\\sin(x)) + C",
-    "accepted": ["-2cos(sin(x))"],
+    "accepted": [
+      "-2cos(sin(x))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 14"
   },
   {
     "id": 180,
     "integrand": "\\int \\tan^4(x)\\sec^3(x) + \\tan^2(x)\\sec^5(x) \\, dx",
     "answer": "\\frac{1}{3}\\tan^3(x)\\sec^3(x) + C",
-    "accepted": ["tan(x)^3*sec(x)^3/3", "(1/3)tan^3(x)sec^3(x)"],
+    "accepted": [
+      "tan(x)^3*sec(x)^3/3",
+      "(1/3)tan^3(x)sec^3(x)"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 15"
   },
   {
     "id": 181,
     "integrand": "\\int (1 + \\log x)\\log\\log x \\, dx",
     "answer": "x\\log x\\log\\log x - x + C",
-    "accepted": ["x*log(x)*log(log(x))-x", "xlog(x)log(log(x))-x"],
+    "accepted": [
+      "x*log(x)*log(log(x))-x",
+      "xlog(x)log(log(x))-x"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 16"
   },
   {
     "id": 182,
     "integrand": "\\int \\frac{1}{1 + \\sin x} + \\frac{1}{1 + \\cos x} + \\frac{1}{1 + \\tan x} + \\frac{1}{1 + \\cot x} + \\frac{1}{1 + \\sec x} + \\frac{1}{1 + \\csc x} \\, dx",
     "answer": "3x + C",
-    "accepted": ["3x"],
+    "accepted": [
+      "3x"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 17"
   },
   {
     "id": 183,
     "integrand": "\\int \\frac{1}{\\sqrt{x - x^2}} \\, dx",
     "answer": "2\\arcsin(\\sqrt{x}) + C",
-    "accepted": ["2arcsin(sqrt(x))", "2sin^-1(sqrt(x))"],
+    "accepted": [
+      "2arcsin(sqrt(x))",
+      "2sin^-1(sqrt(x))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 18"
   },
   {
     "id": 184,
     "integrand": "\\int_{0}^{1/2} \\sum_{n=0}^{\\infty} \\binom{n+3}{n} x^n \\, dx",
     "answer": "\\frac{7}{3}",
-    "accepted": ["7/3"],
+    "accepted": [
+      "7/3"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 19"
   },
   {
     "id": 185,
     "integrand": "\\int \\frac{1}{1 + \\cos^2 x} \\, dx",
     "answer": "\\frac{1}{\\sqrt{2}}\\arctan\\left(\\frac{\\tan(x)}{\\sqrt{2}}\\right) + C",
-    "accepted": ["arctan(tan(x)/sqrt(2))/sqrt(2)", "(1/sqrt(2))arctan(tan(x)/sqrt(2))"],
+    "accepted": [
+      "arctan(tan(x)/sqrt(2))/sqrt(2)",
+      "(1/sqrt(2))arctan(tan(x)/sqrt(2))"
+    ],
     "source": "MIT Qualifying Round 2022 Problem 20"
   },
   {
     "id": 186,
     "integrand": "\\int x^{1/\\log x} \\, dx",
     "answer": "ex + C",
-    "accepted": ["e*x", "ex"],
+    "accepted": [
+      "e*x",
+      "ex"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 1"
   },
   {
     "id": 187,
     "integrand": "\\int \\operatorname{sech}(x) \\, dx",
     "answer": "2\\arctan(e^x) + C",
-    "accepted": ["2arctan(e^x)", "2tan^-1(e^x)"],
+    "accepted": [
+      "2arctan(e^x)",
+      "2tan^-1(e^x)"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 2"
   },
   {
     "id": 188,
     "integrand": "\\int \\frac{e^x}{(1 + e^x)\\log(1 + e^x)} \\, dx",
     "answer": "\\log(\\log(1 + e^x)) + C",
-    "accepted": ["log(log(1+e^x))", "ln(ln(1+e^x))"],
+    "accepted": [
+      "log(log(1+e^x))",
+      "ln(ln(1+e^x))"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 3"
   },
   {
     "id": 189,
     "integrand": "\\int (1 + x + x^2 + x^3 + x^4)(1 - x + x^2 - x^3 + x^4) \\, dx",
     "answer": "x + \\frac{x^3}{3} + \\frac{x^5}{5} + \\frac{x^7}{7} + \\frac{x^9}{9} + C",
-    "accepted": ["x+x^3/3+x^5/5+x^7/7+x^9/9"],
+    "accepted": [
+      "x+x^3/3+x^5/5+x^7/7+x^9/9"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 4"
   },
   {
     "id": 190,
     "integrand": "\\int_{0}^{4} \\binom{x}{5} \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 5"
   },
   {
     "id": 191,
     "integrand": "\\int (x + \\sin(x) + x\\cos(x) + \\sin(x)\\cos(x)) \\, dx",
     "answer": "\\frac{(x + \\sin(x))^2}{2} + C",
-    "accepted": ["(x+sin(x))^2/2", "(1/2)(x+sin(x))^2"],
+    "accepted": [
+      "(x+sin(x))^2/2",
+      "(1/2)(x+sin(x))^2"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 6"
   },
   {
     "id": 192,
     "integrand": "\\int \\left(\\sin^2(x) + \\cos^2(x) + \\tan^2(x) + \\cot^2(x) + \\sec^2(x) + \\csc^2(x)\\right) \\, dx",
     "answer": "2\\tan(x) - 2\\cot(x) - x + C",
-    "accepted": ["2tan(x)-2cot(x)-x"],
+    "accepted": [
+      "2tan(x)-2cot(x)-x"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 7"
   },
   {
     "id": 193,
     "integrand": "\\int_{0}^{2\\pi} \\lfloor 2023\\sin(x) \\rfloor \\, dx",
     "answer": "-\\pi",
-    "accepted": ["-pi"],
+    "accepted": [
+      "-pi"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 8"
   },
   {
     "id": 194,
     "integrand": "\\int (2\\log x + 1)e^{(\\log x)^2} \\, dx",
     "answer": "xe^{(\\log x)^2} + C",
-    "accepted": ["x*e^(log(x)^2)", "xe^((log(x))^2)", "x*e^(ln(x)^2)"],
+    "accepted": [
+      "x*e^(log(x)^2)",
+      "xe^((log(x))^2)",
+      "x*e^(ln(x)^2)"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 9"
   },
   {
     "id": 195,
     "integrand": "\\int \\left((1-x)^3 + (x-x^2)^3 + (x^2-1)^3 - 3(1-x)(x-x^2)(x^2-1)\\right) \\, dx",
     "answer": "0 + C",
-    "accepted": ["0", "c"],
+    "accepted": [
+      "0",
+      "c"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 10"
   },
   {
     "id": 196,
     "integrand": "\\int_{-2023}^{2023} \\underbrace{|||||x| - 1| - 1| \\cdots | - 1|}_{2023\\;(-1)\\text{'s}} \\, dx",
     "answer": "2023",
-    "accepted": ["2023"],
+    "accepted": [
+      "2023"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 11"
   },
   {
     "id": 197,
     "integrand": "\\int (\\sin^6 x + \\cos^6 x + 3\\sin^2 x \\cos^2 x) \\, dx",
     "answer": "x + C",
-    "accepted": ["x"],
+    "accepted": [
+      "x"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 12"
   },
   {
     "id": 198,
     "integrand": "\\int (x + e + 1)x^e e^x \\, dx",
     "answer": "x^{e+1} e^x + C",
-    "accepted": ["x^(e+1)*e^x", "x^(e+1)e^x"],
+    "accepted": [
+      "x^(e+1)*e^x",
+      "x^(e+1)e^x"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 13"
   },
   {
     "id": 199,
     "integrand": "\\int_{0}^{1} \\left(\\frac{x^2}{2 - x^2} + \\sqrt{\\frac{2x}{x + 1}}\\right) \\, dx",
     "answer": "1",
-    "accepted": ["1"],
+    "accepted": [
+      "1"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 14"
   },
   {
     "id": 200,
     "integrand": "\\int \\frac{1 + 2x^{2022}}{x + x^{2023}} \\, dx",
     "answer": "\\frac{1}{2022}\\log(x^{2022} + x^{4044}) + C",
-    "accepted": ["log(x^2022+x^4044)/2022", "(1/2022)log(x^2022+x^4044)"],
+    "accepted": [
+      "log(x^2022+x^4044)/2022",
+      "(1/2022)log(x^2022+x^4044)"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 15"
   },
   {
     "id": 201,
     "integrand": "\\int (3\\sin(20x)\\cos(23x) + 20\\sin(43x)) \\, dx",
     "answer": "\\sin(20x)\\sin(23x) + C",
-    "accepted": ["sin(20x)sin(23x)", "sin(20x)*sin(23x)"],
+    "accepted": [
+      "sin(20x)sin(23x)",
+      "sin(20x)*sin(23x)"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 16"
   },
   {
     "id": 202,
     "integrand": "\\int_{0}^{1} \\prod_{k=0}^{\\infty} \\left(\\frac{1}{1 + x^{2^k}}\\right) \\, dx",
     "answer": "\\frac{1}{2}",
-    "accepted": ["1/2", "0.5"],
+    "accepted": [
+      "1/2",
+      "0.5"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 17"
   },
   {
     "id": 203,
     "integrand": "\\int \\frac{\\sin x}{2e^x + \\cos x + \\sin x} \\, dx",
     "answer": "\\frac{x - \\log(2e^x + \\cos x + \\sin x)}{2} + C",
-    "accepted": ["(x-log(2e^x+cos(x)+sin(x)))/2", "x/2-log(2e^x+cos(x)+sin(x))/2"],
+    "accepted": [
+      "(x-log(2e^x+cos(x)+sin(x)))/2",
+      "x/2-log(2e^x+cos(x)+sin(x))/2"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 18"
   },
   {
     "id": 204,
     "integrand": "\\int \\frac{\\log(x/\\pi)}{(\\log x)^{\\log(\\pi e)}} \\, dx",
     "answer": "\\frac{x}{(\\log x)^{\\log\\pi}} + C",
-    "accepted": ["x/(log(x)^log(pi))", "x/log(x)^log(pi)"],
+    "accepted": [
+      "x/(log(x)^log(pi))",
+      "x/log(x)^log(pi)"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 19"
   },
   {
     "id": 205,
     "integrand": "\\int_{-3/2}^{-1/2} (x^5 + 5x^4 + 10x^3 + 8x^2 + x) \\, dx",
     "answer": "\\frac{5}{6}",
-    "accepted": ["5/6"],
+    "accepted": [
+      "5/6"
+    ],
     "source": "MIT Qualifying Round 2023 Problem 20"
   },
   {
     "id": 206,
     "integrand": "\\int_{2023}^{2025} 2024 \\, dx",
     "answer": "4048",
-    "accepted": ["4048"],
+    "accepted": [
+      "4048"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 1"
   },
   {
     "id": 207,
     "integrand": "\\int \\frac{(x - 1)^{\\log(x + 1)}}{(x + 1)^{\\log(x - 1)}} \\, dx",
     "answer": "x + C",
-    "accepted": ["x"],
+    "accepted": [
+      "x"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 2"
   },
   {
     "id": 208,
     "integrand": "\\int (x\\log x + 2x) \\, dx",
     "answer": "\\frac{1}{2}x^2 \\log x + \\frac{3}{4}x^2 + C",
-    "accepted": ["x^2*log(x)/2+3x^2/4", "(1/2)x^2*log(x)+(3/4)x^2"],
+    "accepted": [
+      "x^2*log(x)/2+3x^2/4",
+      "(1/2)x^2*log(x)+(3/4)x^2"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 3"
   },
   {
     "id": 209,
     "integrand": "\\int \\frac{dx}{x\\log x + 2x}",
     "answer": "\\log(\\log x + 2) + C",
-    "accepted": ["log(log(x)+2)", "ln(ln(x)+2)"],
+    "accepted": [
+      "log(log(x)+2)",
+      "ln(ln(x)+2)"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 4"
   },
   {
     "id": 210,
     "integrand": "\\int_{0}^{2\\pi} \\arccos(\\sin x) \\, dx",
     "answer": "\\pi^2",
-    "accepted": ["pi^2"],
+    "accepted": [
+      "pi^2"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 5"
   },
   {
     "id": 211,
     "integrand": "\\int \\frac{\\cos x + \\cot x + \\csc x + 1}{\\sin x + \\tan x + \\sec x + 1} \\, dx",
     "answer": "\\log(\\sin x) + C",
-    "accepted": ["log(sin(x))", "ln(sin(x))"],
+    "accepted": [
+      "log(sin(x))",
+      "ln(sin(x))"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 6"
   },
   {
     "id": 212,
     "integrand": "\\int \\frac{x^{2024} - 1}{x^{506} - 1} \\, dx",
     "answer": "x + \\frac{x^{507}}{507} + \\frac{x^{1013}}{1013} + \\frac{x^{1519}}{1519} + C",
-    "accepted": ["x+x^507/507+x^1013/1013+x^1519/1519"],
+    "accepted": [
+      "x+x^507/507+x^1013/1013+x^1519/1519"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 7"
   },
   {
     "id": 213,
     "integrand": "\\int_{-1}^{1} (5x^3 - 3x)^2 \\, dx",
     "answer": "\\frac{8}{7}",
-    "accepted": ["8/7"],
+    "accepted": [
+      "8/7"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 8"
   },
   {
     "id": 214,
     "integrand": "\\int_{0}^{2\\pi} (\\sin x + \\cos x)^{11} \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 9"
   },
   {
     "id": 215,
     "integrand": "\\int_{0}^{2\\pi} (\\sinh x + \\cosh x)^{11} \\, dx",
     "answer": "\\frac{e^{22\\pi} - 1}{11}",
-    "accepted": ["(e^(22pi)-1)/11"],
+    "accepted": [
+      "(e^(22pi)-1)/11"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 10"
   },
   {
     "id": 216,
     "integrand": "\\int \\csc^2(x)\\tan^{2024}(x) \\, dx",
     "answer": "\\frac{\\tan^{2023}(x)}{2023} + C",
-    "accepted": ["tan(x)^2023/2023", "tan^2023(x)/2023"],
+    "accepted": [
+      "tan(x)^2023/2023",
+      "tan^2023(x)/2023"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 11"
   },
   {
     "id": 217,
     "integrand": "\\int \\cos^x(x)(\\log(\\cos x) - x\\tan x) \\, dx",
     "answer": "\\cos^x(x) + C",
-    "accepted": ["cos(x)^x", "cos^x(x)", "(cos(x))^x"],
+    "accepted": [
+      "cos(x)^x",
+      "cos^x(x)",
+      "(cos(x))^x"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 12"
   },
   {
     "id": 218,
     "integrand": "\\int_{-\\infty}^{\\infty} e^{-(x - 2024)^2/4} \\, dx",
     "answer": "2\\sqrt{\\pi}",
-    "accepted": ["2sqrt(pi)", "2*sqrt(pi)"],
+    "accepted": [
+      "2sqrt(pi)",
+      "2*sqrt(pi)"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 13"
   },
   {
     "id": 219,
     "integrand": "\\int_{1/e}^{e} \\left(1 - \\frac{1}{x^2}\\right) e^{e^{x + 1/x}} \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 14"
   },
   {
     "id": 220,
     "integrand": "\\int (x + 1 - e^{-x}) e^{x e^x} \\, dx",
     "answer": "e^{(e^x - 1)x} + C",
-    "accepted": ["e^((e^x-1)x)", "e^(x(e^x-1))"],
+    "accepted": [
+      "e^((e^x-1)x)",
+      "e^(x(e^x-1))"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 15"
   },
   {
     "id": 221,
     "integrand": "\\int \\left(\\frac{\\arctan(x)}{1 - x^2} + \\frac{\\operatorname{arctanh}(x)}{1 + x^2}\\right) \\, dx",
     "answer": "\\arctan(x)\\,\\operatorname{arctanh}(x) + C",
-    "accepted": ["arctan(x)*arctanh(x)", "arctan(x)arctanh(x)"],
+    "accepted": [
+      "arctan(x)*arctanh(x)",
+      "arctan(x)arctanh(x)"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 16"
   },
   {
     "id": 222,
     "integrand": "\\int \\left(\\sum_{k=0}^{\\infty} \\sin\\left(\\frac{k\\pi}{2}\\right) x^k\\right) \\, dx",
     "answer": "\\frac{\\log(x^2 + 1)}{2} + C",
-    "accepted": ["log(x^2+1)/2", "(1/2)log(x^2+1)"],
+    "accepted": [
+      "log(x^2+1)/2",
+      "(1/2)log(x^2+1)"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 17"
   },
   {
     "id": 223,
     "integrand": "\\int_{0}^{1} \\left(\\sum_{n=0}^{2024} x^{2^{n-1012}}\\right) \\, dx",
     "answer": "\\frac{2025}{2}",
-    "accepted": ["2025/2", "1012.5"],
+    "accepted": [
+      "2025/2",
+      "1012.5"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 18"
   },
   {
     "id": 224,
     "integrand": "\\int \\frac{x^4}{3 - 6x + 6x^2 - 4x^3 + 2x^4} \\, dx",
     "answer": "\\frac{x}{2} + \\frac{1}{4}\\log(3 - 6x + 6x^2 - 4x^3 + 2x^4) + C",
-    "accepted": ["x/2+log(3-6x+6x^2-4x^3+2x^4)/4"],
+    "accepted": [
+      "x/2+log(3-6x+6x^2-4x^3+2x^4)/4"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 19"
   },
   {
     "id": 225,
     "integrand": "\\int_{1}^{3} \\frac{x + \\frac{x + \\cdots}{1 + \\cdots}}{1 + \\frac{x + \\cdots}{1 + \\cdots}} \\, dx",
     "answer": "2\\sqrt{3} - \\frac{2}{3}",
-    "accepted": ["2sqrt(3)-2/3"],
+    "accepted": [
+      "2sqrt(3)-2/3"
+    ],
     "source": "MIT Qualifying Round 2024 Problem 20"
   },
   {
     "id": 226,
     "integrand": "\\int \\frac{x + \\sqrt{x}}{1 + \\sqrt{x}} \\, dx",
     "answer": "\\frac{2}{3}x^{3/2} + C",
-    "accepted": ["2x^(3/2)/3", "(2/3)x^(3/2)", "2sqrt(x^3)/3"],
+    "accepted": [
+      "2x^(3/2)/3",
+      "(2/3)x^(3/2)",
+      "2sqrt(x^3)/3"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 1"
   },
   {
     "id": 227,
     "integrand": "\\int \\frac{e^{x+1}}{e^x + 1} \\, dx",
     "answer": "e\\log(e^x + 1) + C",
-    "accepted": ["e*log(e^x+1)", "elog(e^x+1)", "e*ln(e^x+1)"],
+    "accepted": [
+      "e*log(e^x+1)",
+      "elog(e^x+1)",
+      "e*ln(e^x+1)"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 2"
   },
   {
     "id": 228,
     "integrand": "\\int \\sqrt[3]{3\\sin(x) - \\sin(3x)} \\, dx",
     "answer": "-\\sqrt[3]{4}\\cos(x) + C",
-    "accepted": ["-4^(1/3)cos(x)", "-cbrt(4)cos(x)", "-(4)^(1/3)cos(x)"],
+    "accepted": [
+      "-4^(1/3)cos(x)",
+      "-cbrt(4)cos(x)",
+      "-(4)^(1/3)cos(x)"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 3"
   },
   {
     "id": 229,
     "integrand": "\\int_{1}^{e^e} \\frac{\\log(x^{\\log(x^x)})}{x^2} \\, dx",
     "answer": "\\frac{e^3}{3}",
-    "accepted": ["e^3/3", "(1/3)e^3"],
+    "accepted": [
+      "e^3/3",
+      "(1/3)e^3"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 4"
   },
   {
     "id": 230,
     "integrand": "\\int_{-\\pi/2}^{\\pi/2} \\cos(20x)\\sin(25x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 5"
   },
   {
     "id": 231,
     "integrand": "\\int_{0}^{2\\pi} \\sin(x)\\cos(x)\\tan(x)\\cot(x)\\sec(x)\\csc(x) \\, dx",
     "answer": "2\\pi",
-    "accepted": ["2pi", "2*pi"],
+    "accepted": [
+      "2pi",
+      "2*pi"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 6"
   },
   {
     "id": 232,
     "integrand": "\\int \\frac{x\\log(x)\\cos(x) - \\sin(x)}{x\\log^2(x)} \\, dx",
     "answer": "\\frac{\\sin(x)}{\\log(x)} + C",
-    "accepted": ["sin(x)/log(x)", "sin(x)/ln(x)"],
+    "accepted": [
+      "sin(x)/log(x)",
+      "sin(x)/ln(x)"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 7"
   },
   {
     "id": 233,
     "integrand": "\\int_{1}^{2} (2^{x-1} + \\log_2(2x)) \\, dx",
     "answer": "3",
-    "accepted": ["3"],
+    "accepted": [
+      "3"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 8"
   },
   {
     "id": 234,
     "integrand": "\\int_{0}^{1} x^{2024}(1 - x^{2025})^{2025} \\, dx",
     "answer": "\\frac{1}{2025 \\cdot 2026}",
-    "accepted": ["1/(2025*2026)", "1/2025/2026", "1/4102650"],
+    "accepted": [
+      "1/(2025*2026)",
+      "1/2025/2026",
+      "1/4102650"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 9"
   },
   {
     "id": 235,
     "integrand": "\\int_{0}^{10} x\\left(x - \\frac{1}{2}\\right)(x - 1) \\, dx",
     "answer": "2025",
-    "accepted": ["2025"],
+    "accepted": [
+      "2025"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 10"
   },
   {
     "id": 236,
     "integrand": "\\int_{0}^{20} \\left\\lceil \\frac{\\lfloor x \\rfloor}{2} \\right\\rceil \\, dx",
     "answer": "100",
-    "accepted": ["100"],
+    "accepted": [
+      "100"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 11"
   },
   {
     "id": 237,
     "integrand": "\\int \\sqrt[3/1]{x\\sqrt[4/2]{x\\sqrt[5/3]{x\\sqrt[6/4]{\\cdots}}}} \\, dx",
     "answer": "\\frac{x^2}{2} + C",
-    "accepted": ["x^2/2", "(1/2)x^2"],
+    "accepted": [
+      "x^2/2",
+      "(1/2)x^2"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 12"
   },
   {
     "id": 238,
     "integrand": "\\int \\frac{e^{2x}(x^2 + x)}{(xe^x)^4 + 1} \\, dx",
     "answer": "\\frac{1}{2}\\arctan(x^2 e^{2x}) + C",
-    "accepted": ["arctan(x^2*e^(2x))/2", "(1/2)arctan(x^2*e^(2x))"],
+    "accepted": [
+      "arctan(x^2*e^(2x))/2",
+      "(1/2)arctan(x^2*e^(2x))"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 13"
   },
   {
     "id": 239,
     "integrand": "\\int (\\sec^4(x) - \\tan^4(x)) \\, dx",
     "answer": "2\\tan(x) - x + C",
-    "accepted": ["2tan(x)-x"],
+    "accepted": [
+      "2tan(x)-x"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 14"
   },
   {
     "id": 240,
     "integrand": "\\int_{0}^{1} \\sqrt{x(1 - x)} \\, dx",
     "answer": "\\frac{\\pi}{8}",
-    "accepted": ["pi/8"],
+    "accepted": [
+      "pi/8"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 15"
   },
   {
     "id": 241,
     "integrand": "\\int \\frac{\\sin(4x)\\cos(x)}{\\cos(2x)\\sin(x)} \\, dx",
     "answer": "2x + \\sin(2x) + C",
-    "accepted": ["2x+sin(2x)"],
+    "accepted": [
+      "2x+sin(2x)"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 16"
   },
   {
     "id": 242,
     "integrand": "\\int \\sin(x)\\sinh(x) \\, dx",
     "answer": "\\frac{1}{2}(\\sin(x)\\cosh(x) - \\cos(x)\\sinh(x)) + C",
-    "accepted": ["(sin(x)cosh(x)-cos(x)sinh(x))/2"],
+    "accepted": [
+      "(sin(x)cosh(x)-cos(x)sinh(x))/2"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 17"
   },
   {
     "id": 243,
     "integrand": "\\int_{0}^{\\pi/3} \\sin(x)\\cos\\left(\\frac{\\pi}{3} - x\\right) \\, dx",
     "answer": "\\frac{\\pi}{4\\sqrt{3}}",
-    "accepted": ["pi/(4sqrt(3))", "pi/4sqrt(3)"],
+    "accepted": [
+      "pi/(4sqrt(3))",
+      "pi/4sqrt(3)"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 18"
   },
   {
     "id": 244,
     "integrand": "\\int \\left(\\cos(x) + \\cos\\left(x + \\frac{2\\pi}{3}\\right) + \\cos\\left(x - \\frac{2\\pi}{3}\\right)\\right)^2 \\, dx",
     "answer": "0 + C",
-    "accepted": ["0", "c"],
+    "accepted": [
+      "0",
+      "c"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 19"
   },
   {
     "id": 245,
     "integrand": "\\int_{0}^{1} \\left(\\sum_{k=1}^{\\infty} (-1)^k x^{2k}\\right) \\, dx",
     "answer": "\\frac{\\pi}{4} - 1",
-    "accepted": ["pi/4-1"],
+    "accepted": [
+      "pi/4-1"
+    ],
     "source": "MIT Qualifying Round 2025 Problem 20"
   },
   {
     "id": 246,
     "integrand": "\\int_{-\\pi}^{\\pi} \\sin^{2025}(x)\\cos^{2026}(x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 1"
   },
   {
     "id": 247,
     "integrand": "\\int e^{2026 e^x + x} \\, dx",
     "answer": "\\frac{e^{2026 e^x}}{2026} + C",
-    "accepted": ["e^(2026e^x)/2026", "(1/2026)e^(2026e^x)"],
+    "accepted": [
+      "e^(2026e^x)/2026",
+      "(1/2026)e^(2026e^x)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 2"
   },
   {
     "id": 248,
     "integrand": "\\int_{0}^{2026} \\left\\{\\frac{\\lfloor x \\rfloor}{3}\\right\\} \\, dx",
     "answer": "675",
-    "accepted": ["675"],
+    "accepted": [
+      "675"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 3"
   },
   {
     "id": 249,
     "integrand": "\\int_{-1}^{1} \\underbrace{|x + |x + |\\cdots + |x + |x|| \\cdots |||}_{2026\\;x\\text{'s}} \\, dx",
     "answer": "1013",
-    "accepted": ["1013"],
+    "accepted": [
+      "1013"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 4"
   },
   {
     "id": 250,
     "integrand": "\\int \\frac{dx}{\\sqrt{x + 1} - \\sqrt{x - 1}}",
     "answer": "\\frac{1}{3}\\left((x + 1)^{3/2} + (x - 1)^{3/2}\\right) + C",
-    "accepted": ["((x+1)^(3/2)+(x-1)^(3/2))/3", "(1/3)((x+1)^(3/2)+(x-1)^(3/2))"],
+    "accepted": [
+      "((x+1)^(3/2)+(x-1)^(3/2))/3",
+      "(1/3)((x+1)^(3/2)+(x-1)^(3/2))"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 5"
   },
   {
     "id": 251,
     "integrand": "\\int \\sqrt{1 + \\cosh(x)} \\, dx",
     "answer": "2\\sqrt{2}\\sinh(x/2) + C",
-    "accepted": ["2sqrt(2)sinh(x/2)", "2*sqrt(2)*sinh(x/2)"],
+    "accepted": [
+      "2sqrt(2)sinh(x/2)",
+      "2*sqrt(2)*sinh(x/2)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 6"
   },
   {
     "id": 252,
     "integrand": "\\int \\frac{2^{\\log(x)}}{x^2} \\, dx",
     "answer": "\\frac{x^{\\log(2) - 1}}{\\log(2) - 1} + C",
-    "accepted": ["x^(log(2)-1)/(log(2)-1)", "x^(ln(2)-1)/(ln(2)-1)"],
+    "accepted": [
+      "x^(log(2)-1)/(log(2)-1)",
+      "x^(ln(2)-1)/(ln(2)-1)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 7"
   },
   {
     "id": 253,
     "integrand": "\\int_{0}^{1/2} \\left(\\sum_{n=2}^{\\infty} x^n\\right) \\, dx",
     "answer": "\\log(2) - \\frac{5}{8}",
-    "accepted": ["log(2)-5/8", "ln(2)-5/8"],
+    "accepted": [
+      "log(2)-5/8",
+      "ln(2)-5/8"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 8"
   },
   {
     "id": 254,
     "integrand": "\\int x^2 \\sin(x) \\, dx",
     "answer": "2x\\sin(x) - (x^2 - 2)\\cos(x) + C",
-    "accepted": ["2x*sin(x)-(x^2-2)cos(x)", "2xsin(x)-(x^2-2)cos(x)"],
+    "accepted": [
+      "2x*sin(x)-(x^2-2)cos(x)",
+      "2xsin(x)-(x^2-2)cos(x)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 9"
   },
   {
     "id": 255,
     "integrand": "\\int \\frac{(x - 1)^2}{2e^x + x^2 + 1} \\, dx",
     "answer": "x - \\log(2e^x + x^2 + 1) + C",
-    "accepted": ["x-log(2e^x+x^2+1)", "x-ln(2e^x+x^2+1)"],
+    "accepted": [
+      "x-log(2e^x+x^2+1)",
+      "x-ln(2e^x+x^2+1)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 10"
   },
   {
     "id": 256,
     "integrand": "\\int_{-1}^{1} \\max\\left(0, \\sqrt{1 - x^2} - \\frac{1}{2}\\right) \\, dx",
     "answer": "\\frac{\\pi}{3} - \\frac{\\sqrt{3}}{4}",
-    "accepted": ["pi/3-sqrt(3)/4"],
+    "accepted": [
+      "pi/3-sqrt(3)/4"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 11"
   },
   {
     "id": 257,
     "integrand": "\\int_{0}^{1} \\sqrt{x^2 + x + \\sqrt{x^2 + x + \\sqrt{\\cdots}}} \\, dx",
     "answer": "\\frac{3}{2}",
-    "accepted": ["3/2", "1.5"],
+    "accepted": [
+      "3/2",
+      "1.5"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 12"
   },
   {
     "id": 258,
     "integrand": "\\int (\\cos^5(x) - 10\\cos^3(x)\\sin^2(x) + 5\\cos(x)\\sin^4(x)) \\, dx",
     "answer": "\\frac{1}{5}\\sin(5x) + C",
-    "accepted": ["sin(5x)/5", "(1/5)sin(5x)"],
+    "accepted": [
+      "sin(5x)/5",
+      "(1/5)sin(5x)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 13"
   },
   {
     "id": 259,
     "integrand": "\\int \\arctan(\\sqrt{x}) \\, dx",
     "answer": "(x + 1)\\arctan(\\sqrt{x}) - \\sqrt{x} + C",
-    "accepted": ["(x+1)arctan(sqrt(x))-sqrt(x)"],
+    "accepted": [
+      "(x+1)arctan(sqrt(x))-sqrt(x)"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 14"
   },
   {
     "id": 260,
     "integrand": "\\int_{0}^{1000} (\\lfloor \\lceil x \\rceil \\rfloor + \\lceil \\lfloor x \\rfloor \\rceil + \\lfloor \\{x\\} \\rfloor + \\{\\lfloor x \\rfloor\\} + \\lceil \\{x\\} \\rceil + \\{\\lceil x \\rceil\\}) \\, dx",
     "answer": "1001000",
-    "accepted": ["1001000"],
+    "accepted": [
+      "1001000"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 15"
   },
   {
     "id": 261,
     "integrand": "\\int \\sqrt{\\frac{\\cos(x)\\cot(x)\\csc(x)}{\\sin(x)\\tan(x)\\sec(x)}} \\, dx",
     "answer": "-x - \\cot(x) + C",
-    "accepted": ["-x-cot(x)", "-cot(x)-x"],
+    "accepted": [
+      "-x-cot(x)",
+      "-cot(x)-x"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 16"
   },
   {
     "id": 262,
     "integrand": "\\int_{-\\infty}^{\\infty} \\frac{e^{-x^2}}{1 + e^{2x}} \\, dx",
     "answer": "\\frac{\\sqrt{\\pi}}{2}",
-    "accepted": ["sqrt(pi)/2"],
+    "accepted": [
+      "sqrt(pi)/2"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 17"
   },
   {
     "id": 263,
     "integrand": "\\int \\left(\\frac{\\sin^2(x)}{x^2} - \\frac{\\sin(2x)}{x}\\right) \\, dx",
     "answer": "-\\frac{\\sin^2(x)}{x} + C",
-    "accepted": ["-sin(x)^2/x", "-sin^2(x)/x"],
+    "accepted": [
+      "-sin(x)^2/x",
+      "-sin^2(x)/x"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 18"
   },
   {
@@ -1851,413 +2574,568 @@
     "id": 265,
     "integrand": "\\int_{0}^{\\pi/2} \\cos^2\\left(\\frac{\\pi}{2}\\cos^2\\left(\\frac{\\pi}{2}\\cos^2(x)\\right)\\right) \\, dx",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "MIT Qualifying Round 2026 Problem 20"
   },
   {
     "id": 266,
     "integrand": "\\int_{0}^{2025} \\lfloor x \\rfloor \\, dx",
     "answer": "2049300",
-    "accepted": ["2049300"],
+    "accepted": [
+      "2049300"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 2"
   },
   {
     "id": 267,
     "integrand": "\\int_{0}^{\\pi/2} \\sin x \\sin 2x \\, dx",
     "answer": "\\frac{2}{3}",
-    "accepted": ["2/3"],
+    "accepted": [
+      "2/3"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 3"
   },
   {
     "id": 268,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{\\cos x}{1 + \\sin x} \\, dx",
     "answer": "\\ln 2",
-    "accepted": ["ln(2)", "log(2)", "ln2", "log2"],
+    "accepted": [
+      "ln(2)",
+      "log(2)",
+      "ln2",
+      "log2"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 4"
   },
   {
     "id": 269,
     "integrand": "\\int_{-\\pi}^{\\pi} \\lfloor \\sin(\\lfloor x \\rfloor) \\rfloor \\, dx",
     "answer": "-3",
-    "accepted": ["-3"],
+    "accepted": [
+      "-3"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 5"
   },
   {
     "id": 270,
     "integrand": "\\int_{0}^{\\pi} \\sin^{2025}(x) \\cos^{2025}(x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 6"
   },
   {
     "id": 271,
     "integrand": "\\int_{0}^{1} \\lfloor 4x(1-x) \\rfloor \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 7"
   },
   {
     "id": 272,
     "integrand": "\\int_{1}^{e} \\frac{\\cos(1 + \\ln x)}{x} \\, dx",
     "answer": "\\sin(2) - \\sin(1)",
-    "accepted": ["sin(2)-sin(1)"],
+    "accepted": [
+      "sin(2)-sin(1)"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 9"
   },
   {
     "id": 273,
     "integrand": "\\int_{0}^{\\pi/2} \\min(\\sin x,\\, \\cos x)\\, \\max(\\tan x,\\, 1) \\, dx",
     "answer": "1",
-    "accepted": ["1"],
+    "accepted": [
+      "1"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 10"
   },
   {
     "id": 274,
     "integrand": "\\int_{0}^{1} \\frac{\\arcsin x}{\\sqrt{1-x^2}} \\, dx",
     "answer": "\\frac{\\pi^2}{8}",
-    "accepted": ["pi^2/8"],
+    "accepted": [
+      "pi^2/8"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 11"
   },
   {
     "id": 275,
     "integrand": "\\int_{1/e}^{1} x^{1/\\ln x} \\, dx",
     "answer": "e - 1",
-    "accepted": ["e-1"],
+    "accepted": [
+      "e-1"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 12"
   },
   {
     "id": 276,
     "integrand": "\\int_{0}^{4\\pi} \\sin(\\sin x - x) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 13"
   },
   {
     "id": 277,
     "integrand": "\\int_{0}^{\\infty} \\frac{x^{1011}}{1 + x^{2024}} \\, dx",
     "answer": "\\frac{\\pi}{2024}",
-    "accepted": ["pi/2024"],
+    "accepted": [
+      "pi/2024"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 14"
   },
   {
     "id": 278,
     "integrand": "\\int_{-\\infty}^{0} e^{e^x + x} \\, dx",
     "answer": "e - 1",
-    "accepted": ["e-1"],
+    "accepted": [
+      "e-1"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 15"
   },
   {
     "id": 279,
     "integrand": "\\int_{0}^{\\infty} \\frac{e^{-x}}{e^{-x} + 2025} \\, dx",
     "answer": "\\ln\\!\\left(\\frac{2026}{2025}\\right)",
-    "accepted": ["ln(2026/2025)", "log(2026/2025)"],
+    "accepted": [
+      "ln(2026/2025)",
+      "log(2026/2025)"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 16"
   },
   {
     "id": 280,
     "integrand": "\\int_{0}^{1} 45x^{45} \\, dx",
     "answer": "\\frac{45}{46}",
-    "accepted": ["45/46"],
+    "accepted": [
+      "45/46"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 17"
   },
   {
     "id": 281,
     "integrand": "\\int_{0}^{e} \\ln(x^2) \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 18"
   },
   {
     "id": 282,
     "integrand": "\\int_{1/2025}^{2025} e^{x+1/x} \\frac{\\log_{2025} x}{x} \\, dx",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 20"
   },
   {
     "id": 283,
     "integrand": "\\int_{0}^{2} 1 + 2x + 3x^2 + 4x^3 + 5x^4 + 6x^5 \\, dx",
     "answer": "126",
-    "accepted": ["126"],
+    "accepted": [
+      "126"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 21"
   },
   {
     "id": 284,
     "integrand": "\\int_{1}^{e} \\frac{\\ln(\\ln x + 1)}{x} \\, dx",
     "answer": "2\\log 2 - 1",
-    "accepted": ["2log(2)-1", "2ln(2)-1", "2*log(2)-1", "2*ln(2)-1"],
+    "accepted": [
+      "2log(2)-1",
+      "2ln(2)-1",
+      "2*log(2)-1",
+      "2*ln(2)-1"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 22"
   },
   {
     "id": 285,
     "integrand": "\\int_{0}^{1} \\frac{\\sqrt{x}}{2(1+x)} \\, dx",
     "answer": "1 - \\frac{\\pi}{4}",
-    "accepted": ["1-pi/4"],
+    "accepted": [
+      "1-pi/4"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 23"
   },
   {
     "id": 286,
     "integrand": "\\int_{0}^{\\pi/2} \\left(\\cot x - x\\csc^2 x\\right) dx",
     "answer": "-1",
-    "accepted": ["-1"],
+    "accepted": [
+      "-1"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 24"
   },
   {
     "id": 287,
     "integrand": "\\int_{0}^{\\pi/2} \\left(x^4 - 4\\pi x^3 + 6\\pi^2 x^2 - 4\\pi^3 x + \\pi^4\\right) dx",
     "answer": "\\frac{\\pi^5}{155}",
-    "accepted": ["pi^5/155"],
+    "accepted": [
+      "pi^5/155"
+    ],
     "source": "Bonn 2025 Qualifying Round Problem 25"
   },
   {
     "id": 288,
     "integrand": "\\int \\tan^3(\\sin x) \\cos x \\, dx",
     "answer": "\\ln|\\cos(\\sin x)| + \\frac{1}{2\\cos^2(\\sin x)} + C",
-    "accepted": ["log(cos(sin(x)))+1/(2cos^2(sin(x)))", "ln(cos(sin(x)))+1/(2cos(sin(x))^2)"],
+    "accepted": [
+      "log(cos(sin(x)))+1/(2cos^2(sin(x)))",
+      "ln(cos(sin(x)))+1/(2cos(sin(x))^2)"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Problem 1"
   },
   {
     "id": 289,
     "integrand": "\\int_{1}^{\\infty} \\left(\\frac{1}{x^2+x+1} + \\frac{1}{x^3+x^2+x} + \\frac{1}{x^4+x^3+x^2}\\right) dx",
     "answer": "1",
-    "accepted": ["1"],
+    "accepted": [
+      "1"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Problem 2"
   },
   {
     "id": 290,
     "integrand": "\\int_{0}^{\\infty} 2x^2 e^{-x^2} \\, dx",
     "answer": "\\frac{\\sqrt{\\pi}}{2}",
-    "accepted": ["sqrt(pi)/2"],
+    "accepted": [
+      "sqrt(pi)/2"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Problem 3"
   },
   {
     "id": 291,
     "integrand": "\\int_{0}^{3/4} \\operatorname{arsinh}(x) \\, dx",
     "answer": "\\frac{3\\log 2 - 1}{4}",
-    "accepted": ["(3log(2)-1)/4", "(3*log(2)-1)/4", "(3ln(2)-1)/4", "(3*ln(2)-1)/4"],
+    "accepted": [
+      "(3log(2)-1)/4",
+      "(3*log(2)-1)/4",
+      "(3ln(2)-1)/4",
+      "(3*ln(2)-1)/4"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Problem 4"
   },
   {
     "id": 292,
     "integrand": "\\int_{0}^{1} \\ln(1 + x^2) \\, dx",
     "answer": "\\ln 2 - 2 + \\frac{\\pi}{2}",
-    "accepted": ["ln(2)-2+pi/2", "log(2)-2+pi/2"],
+    "accepted": [
+      "ln(2)-2+pi/2",
+      "log(2)-2+pi/2"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Tiebreaker 1"
   },
   {
     "id": 293,
     "integrand": "\\int_{0}^{1} (1-x)(1+x+x^2+x^3+x^4+x^6+x^7) \\, dx",
     "answer": "\\frac{109}{126}",
-    "accepted": ["109/126"],
+    "accepted": [
+      "109/126"
+    ],
     "source": "Bonn 2025 Quarterfinals First Leg Tiebreaker 2"
   },
   {
     "id": 294,
     "integrand": "\\int_{0}^{\\pi} \\sin^2 x \\cos^2 x \\, dx",
     "answer": "\\frac{\\pi}{8}",
-    "accepted": ["pi/8"],
+    "accepted": [
+      "pi/8"
+    ],
     "source": "Bonn 2025 Quarterfinals Second Leg Problem 1"
   },
   {
     "id": 295,
     "integrand": "\\int_{0}^{\\pi/2} \\sin x \\sinh x \\, dx",
     "answer": "\\frac{1}{2}\\cosh\\!\\left(\\frac{\\pi}{2}\\right)",
-    "accepted": ["(1/2)cosh(pi/2)", "cosh(pi/2)/2"],
+    "accepted": [
+      "(1/2)cosh(pi/2)",
+      "cosh(pi/2)/2"
+    ],
     "source": "Bonn 2025 Quarterfinals Second Leg Problem 2"
   },
   {
     "id": 296,
     "integrand": "\\int_{e^2}^{e^4} \\frac{1}{x\\, \\log_2(x)\\, \\ln(\\ln x)} \\, dx",
     "answer": "(\\ln 2)^2",
-    "accepted": ["(ln(2))^2", "ln(2)^2", "(log(2))^2", "log(2)^2"],
+    "accepted": [
+      "(ln(2))^2",
+      "ln(2)^2",
+      "(log(2))^2",
+      "log(2)^2"
+    ],
     "source": "Bonn 2025 Quarterfinals Second Leg Problem 3"
   },
   {
     "id": 297,
     "integrand": "\\int_{0}^{1} x^{2025}(\\ln x)^{2025} \\, dx",
     "answer": "-\\frac{2025!}{2026^{2026}}",
-    "accepted": ["-2025!/2026^2026"],
+    "accepted": [
+      "-2025!/2026^2026"
+    ],
     "source": "Bonn 2025 Quarterfinals Second Leg Problem 4"
   },
   {
     "id": 298,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{\\sin x}{1 + \\sin^2 x} \\, dx",
     "answer": "\\frac{\\log(\\sqrt{2}+1)}{\\sqrt{2}}",
-    "accepted": ["log(sqrt(2)+1)/sqrt(2)", "ln(sqrt(2)+1)/sqrt(2)"],
+    "accepted": [
+      "log(sqrt(2)+1)/sqrt(2)",
+      "ln(sqrt(2)+1)/sqrt(2)"
+    ],
     "source": "Bonn 2025 Quarterfinals Second Leg Tiebreaker 1"
   },
   {
     "id": 299,
     "integrand": "\\int_{0}^{\\pi/3} \\frac{1}{1 - \\sin x} \\, dx",
     "answer": "\\sqrt{3} + 1",
-    "accepted": ["sqrt(3)+1"],
+    "accepted": [
+      "sqrt(3)+1"
+    ],
     "source": "Bonn 2025 Semifinals Problem 1"
   },
   {
     "id": 300,
     "integrand": "\\int_{0}^{101} \\frac{\\lfloor x \\rfloor}{1 + 2\\lfloor x \\rfloor x - \\lfloor x \\rfloor(\\lfloor x \\rfloor + 1)} \\, dx",
     "answer": "\\frac{\\log 10101}{2}",
-    "accepted": ["log(10101)/2", "ln(10101)/2"],
+    "accepted": [
+      "log(10101)/2",
+      "ln(10101)/2"
+    ],
     "source": "Bonn 2025 Semifinals Problem 2"
   },
   {
     "id": 301,
     "integrand": "\\int \\frac{\\cos(\\ln x) - \\sin(\\ln x)}{x^2} \\, dx",
     "answer": "\\frac{\\sin(\\ln x)}{x} + C",
-    "accepted": ["sin(ln(x))/x", "sin(lnx)/x"],
+    "accepted": [
+      "sin(ln(x))/x",
+      "sin(lnx)/x"
+    ],
     "source": "Bonn 2025 Semifinals Problem 3"
   },
   {
     "id": 302,
     "integrand": "\\int_{0}^{2} \\lfloor \\ln x \\rfloor \\, dx",
     "answer": "-\\frac{e}{e-1}",
-    "accepted": ["-e/(e-1)"],
+    "accepted": [
+      "-e/(e-1)"
+    ],
     "source": "Bonn 2025 Semifinals Problem 4"
   },
   {
     "id": 303,
     "integrand": "\\int_{0}^{1} \\arctan(x) \\, dx",
     "answer": "\\frac{\\pi}{4} - \\frac{\\log 2}{2}",
-    "accepted": ["pi/4-log(2)/2", "pi/4-ln(2)/2"],
+    "accepted": [
+      "pi/4-log(2)/2",
+      "pi/4-ln(2)/2"
+    ],
     "source": "Bonn 2025 Semifinals Tiebreaker 1"
   },
   {
     "id": 304,
     "integrand": "\\int_{0}^{\\infty} e^{-x} \\cos x \\, dx",
     "answer": "\\frac{1}{2}",
-    "accepted": ["1/2"],
+    "accepted": [
+      "1/2"
+    ],
     "source": "Bonn 2025 Semifinals Tiebreaker 2"
   },
   {
     "id": 305,
     "integrand": "\\int_{0}^{\\infty} \\frac{1+x^2}{1+x^4} \\, dx",
     "answer": "\\frac{\\pi}{\\sqrt{2}}",
-    "accepted": ["pi/sqrt(2)"],
+    "accepted": [
+      "pi/sqrt(2)"
+    ],
     "source": "Bonn 2025 Third Place Playoff Problem 1"
   },
   {
     "id": 306,
     "integrand": "\\int_{0}^{3/4} \\left(2x\\operatorname{arsinh} x + \\sqrt{x^2+1}\\right) dx",
     "answer": "\\frac{25}{16}\\log 2",
-    "accepted": ["25log(2)/16", "25*log(2)/16", "25ln(2)/16", "25*ln(2)/16"],
+    "accepted": [
+      "25log(2)/16",
+      "25*log(2)/16",
+      "25ln(2)/16",
+      "25*ln(2)/16"
+    ],
     "source": "Bonn 2025 Third Place Playoff Problem 2"
   },
   {
     "id": 307,
     "integrand": "\\int_{-\\ln 2}^{0} \\sqrt{1 - e^x} \\, dx",
     "answer": "2\\log(\\sqrt{2}+1) - \\sqrt{2}",
-    "accepted": ["2log(sqrt(2)+1)-sqrt(2)", "2ln(sqrt(2)+1)-sqrt(2)"],
+    "accepted": [
+      "2log(sqrt(2)+1)-sqrt(2)",
+      "2ln(sqrt(2)+1)-sqrt(2)"
+    ],
     "source": "Bonn 2025 Third Place Playoff Problem 3"
   },
   {
     "id": 308,
     "integrand": "\\int_{e^2}^{e^4} \\log_x(2)\\,\\log_{\\log x}(4)\\,\\log_{e^x}(8) \\, dx",
     "answer": "6(\\log 2)^4",
-    "accepted": ["6(log(2))^4", "6log(2)^4", "6(ln(2))^4", "6*log(2)^4"],
+    "accepted": [
+      "6(log(2))^4",
+      "6log(2)^4",
+      "6(ln(2))^4",
+      "6*log(2)^4"
+    ],
     "source": "Bonn 2025 Third Place Playoff Tiebreaker 1"
   },
   {
     "id": 309,
     "integrand": "\\int_{0}^{1} \\min(2x^2-1,\\, 1-x^2) \\, dx",
     "answer": "\\frac{2}{3} - \\frac{4\\sqrt{6}}{9}",
-    "accepted": ["2/3-4sqrt(6)/9"],
+    "accepted": [
+      "2/3-4sqrt(6)/9"
+    ],
     "source": "Bonn 2025 Third Place Playoff Tiebreaker 2"
   },
   {
     "id": 310,
     "integrand": "\\int_{0}^{1} \\ln\\!\\left(1 + \\sqrt[3]{x}\\right) dx",
     "answer": "2\\ln 2 - \\frac{5}{6}",
-    "accepted": ["2ln(2)-5/6", "2log(2)-5/6"],
+    "accepted": [
+      "2ln(2)-5/6",
+      "2log(2)-5/6"
+    ],
     "source": "Bonn 2025 Epic Finale Problem 1"
   },
   {
     "id": 311,
     "integrand": "\\int_{1/2}^{1} \\frac{1}{x^2}\\sqrt[3]{\\frac{x}{1-x}} \\, dx",
     "answer": "3 + 2\\sqrt{3}",
-    "accepted": ["3+2sqrt(3)"],
+    "accepted": [
+      "3+2sqrt(3)"
+    ],
     "source": "Bonn 2025 Epic Finale Problem 2"
   },
   {
     "id": 312,
     "integrand": "\\int_{0}^{1} \\frac{\\ln x}{1-x} \\, dx",
     "answer": "-\\frac{\\pi^2}{6}",
-    "accepted": ["-pi^2/6"],
+    "accepted": [
+      "-pi^2/6"
+    ],
     "source": "Bonn 2025 Epic Finale Problem 3"
   },
   {
     "id": 313,
     "integrand": "\\int_{0}^{1} \\frac{x^2}{\\sqrt{x^2+3}} \\, dx",
     "answer": "1 - \\frac{3}{2}\\operatorname{arsinh}\\!\\left(\\frac{1}{\\sqrt{3}}\\right)",
-    "accepted": ["1-(3/2)*arsinh(1/sqrt(3))", "1-3*arsinh(1/sqrt(3))/2"],
+    "accepted": [
+      "1-(3/2)*arsinh(1/sqrt(3))",
+      "1-3*arsinh(1/sqrt(3))/2"
+    ],
     "source": "Bonn 2025 Epic Finale Problem 4"
   },
   {
     "id": 314,
     "integrand": "\\int_{0}^{\\pi/2} \\sin(51x)\\cos(24x) \\, dx",
     "answer": "\\frac{51}{2025}",
-    "accepted": ["51/2025"],
+    "accepted": [
+      "51/2025"
+    ],
     "source": "Bonn 2025 Epic Finale Tiebreaker 1"
   },
   {
     "id": 315,
     "integrand": "\\int_{2}^{3} \\frac{x^2+2026x+2025}{x^2+2024x-2025} \\, dx",
     "answer": "1 + 2\\log 2",
-    "accepted": ["1+2log(2)", "1+2ln(2)", "1+2*log(2)", "1+2*ln(2)"],
+    "accepted": [
+      "1+2log(2)",
+      "1+2ln(2)",
+      "1+2*log(2)",
+      "1+2*ln(2)"
+    ],
     "source": "Bonn 2025 Epic Finale Tiebreaker 2"
   },
   {
     "id": 316,
     "integrand": "\\int_{0}^{2\\pi} \\log\\!\\left(\\frac{5}{4} + \\cos t\\right) dt",
     "answer": "0",
-    "accepted": ["0"],
+    "accepted": [
+      "0"
+    ],
     "source": "Bonn 2025 Reserves Problem 1"
   },
   {
     "id": 317,
     "integrand": "\\int_{0}^{1} \\sqrt{\\frac{\\sqrt{x^5}}{1-\\sqrt{x^3}}} \\, dx",
     "answer": "\\frac{\\pi}{3}",
-    "accepted": ["pi/3"],
+    "accepted": [
+      "pi/3"
+    ],
     "source": "Bonn 2025 Removed Problem 1"
   },
   {
     "id": 318,
     "integrand": "\\int_{0}^{1/2} \\sqrt{1-x^2} \\, dx",
     "answer": "\\frac{\\sqrt{3}}{8} + \\frac{\\pi}{12}",
-    "accepted": ["sqrt(3)/8+pi/12"],
+    "accepted": [
+      "sqrt(3)/8+pi/12"
+    ],
     "source": "Bonn 2025 Removed Problem 2"
   },
   {
     "id": 319,
     "integrand": "\\int \\frac{\\ln(\\sin x)}{\\cos^2 x} \\, dx",
     "answer": "\\tan(x)\\ln(\\sin x) - x + C",
-    "accepted": ["tan(x)ln(sin(x))-x", "tan(x)*ln(sin(x))-x"],
+    "accepted": [
+      "tan(x)ln(sin(x))-x",
+      "tan(x)*ln(sin(x))-x"
+    ],
     "source": "Bonn 2024 Semi Finale 1 Problem 1"
   },
   {
     "id": 320,
     "integrand": "\\int_{0}^{\\pi} \\frac{1}{2024 - \\cos x} \\, dx",
     "answer": "\\frac{\\pi}{\\sqrt{2025 \\cdot 2023}}",
-    "accepted": ["pi/sqrt(2025*2023)", "pi/sqrt(4094475)"],
+    "accepted": [
+      "pi/sqrt(2025*2023)",
+      "pi/sqrt(4094475)"
+    ],
     "source": "Bonn 2024 Semi Finale 1 Problem 2"
   },
   {
     "id": 321,
     "integrand": "\\int_{0}^{\\pi/2} \\frac{\\cos x}{2 - \\sin(2x)} \\, dx",
     "answer": "\\frac{\\pi}{4}",
-    "accepted": ["pi/4"],
+    "accepted": [
+      "pi/4"
+    ],
     "source": "Bonn 2024 Semi Finale 1 Problem 3"
   },
   {
     "id": 322,
     "integrand": "\\int_{0}^{\\pi/6} \\frac{1}{\\cos x} \\, dx",
     "answer": "\\frac{\\ln 3}{2}",
-    "accepted": ["ln(3)/2", "log(3)/2"],
+    "accepted": [
+      "ln(3)/2",
+      "log(3)/2"
+    ],
     "source": "Bonn 2024 Semi Finale 1 Problem 4"
   },
   {
     "id": 323,
     "integrand": "\\int \\frac{x}{\\cos^2 x} \\, dx",
     "answer": "x\\tan x + \\ln|\\cos x| + C",
-    "accepted": ["x*tan(x)+ln(cos(x))", "xtan(x)+ln(cos(x))", "tan(x)*x+ln(cos(x))"],
+    "accepted": [
+      "x*tan(x)+ln(cos(x))",
+      "xtan(x)+ln(cos(x))",
+      "tan(x)*x+ln(cos(x))"
+    ],
     "source": "Bonn 2024 Semi Finale 1 Problem 5"
   },
   {
@@ -2278,21 +3156,29 @@
     "id": 326,
     "integrand": "\\int_{0}^{\\pi/3} \\frac{1}{\\cos^3 x} \\, dx",
     "answer": "\\frac{1}{3} + \\frac{\\ln 3}{4}",
-    "accepted": ["1/3+ln(3)/4", "1/3+log(3)/4"],
+    "accepted": [
+      "1/3+ln(3)/4",
+      "1/3+log(3)/4"
+    ],
     "source": "Bonn 2024 Semi Finale 2 Problem 3"
   },
   {
     "id": 327,
     "integrand": "\\int_{1/e}^{e} \\frac{1+\\ln x}{x} \\cdot \\frac{x^2+x+1}{x^2+1} \\, dx",
     "answer": "2 + \\arctan(e) - \\arctan\\!\\left(\\frac{1}{e}\\right)",
-    "accepted": ["2+arctan(e)-arctan(1/e)"],
+    "accepted": [
+      "2+arctan(e)-arctan(1/e)"
+    ],
     "source": "Bonn 2024 Semi Finale 2 Problem 4"
   },
   {
     "id": 328,
     "integrand": "\\int_{0}^{\\infty} x^{-\\frac{x^2}{2\\ln x}} \\, dx",
     "answer": "\\sqrt{\\frac{\\pi}{2}}",
-    "accepted": ["sqrt(pi/2)", "sqrt(pi)/sqrt(2)"],
+    "accepted": [
+      "sqrt(pi/2)",
+      "sqrt(pi)/sqrt(2)"
+    ],
     "source": "Bonn 2024 Semi Finale 2 Tiebreaker"
   },
   {
@@ -2306,77 +3192,941 @@
     "id": 330,
     "integrand": "\\int_{0}^{\\infty} \\left(e^{-2/x^2} - e^{-8/x^2}\\right) dx",
     "answer": "\\sqrt{2\\pi}",
-    "accepted": ["sqrt(2pi)", "sqrt(2*pi)"],
+    "accepted": [
+      "sqrt(2pi)",
+      "sqrt(2*pi)"
+    ],
     "source": "Bonn 2024 Third Place Problem 2"
   },
   {
     "id": 331,
     "integrand": "\\int_{1}^{\\infty} \\frac{\\ln x}{x(x-1)} \\, dx",
     "answer": "\\frac{\\pi^2}{6}",
-    "accepted": ["pi^2/6"],
+    "accepted": [
+      "pi^2/6"
+    ],
     "source": "Bonn 2024 Third Place Problem 3"
   },
   {
     "id": 332,
     "integrand": "\\int_{0}^{\\infty} \\frac{\\cos(184x)}{x^2 + 121} \\, dx",
     "answer": "\\frac{\\pi}{22}e^{-2024}",
-    "accepted": ["pi*e^(-2024)/22", "pi/(22*e^2024)"],
+    "accepted": [
+      "pi*e^(-2024)/22",
+      "pi/(22*e^2024)"
+    ],
     "source": "Bonn 2024 Third Place Problem 4"
   },
   {
     "id": 333,
     "integrand": "\\int_{0}^{1} \\frac{x^2}{(1+x^2)^2} \\, dx",
     "answer": "-\\frac{1}{4} + \\frac{\\pi}{8}",
-    "accepted": ["pi/8-1/4", "-1/4+pi/8"],
+    "accepted": [
+      "pi/8-1/4",
+      "-1/4+pi/8"
+    ],
     "source": "Bonn 2024 Third Place Problem 5"
   },
   {
     "id": 334,
     "integrand": "\\int_{0}^{2\\pi} \\frac{1}{9\\cos^2 t + 4\\sin^2 t} \\, dt",
     "answer": "\\frac{\\pi}{3}",
-    "accepted": ["pi/3"],
+    "accepted": [
+      "pi/3"
+    ],
     "source": "Bonn 2024 Third Place Problem 6"
   },
   {
     "id": 335,
     "integrand": "\\int \\frac{1}{x^{2024}+x} \\, dx",
     "answer": "\\ln x - \\frac{1}{2023}\\ln(x^{2023}+1) + C",
-    "accepted": ["ln(x)-ln(x^2023+1)/2023", "ln(x)-(1/2023)*ln(x^2023+1)"],
+    "accepted": [
+      "ln(x)-ln(x^2023+1)/2023",
+      "ln(x)-(1/2023)*ln(x^2023+1)"
+    ],
     "source": "Bonn 2024 Finale Problem 1"
   },
   {
     "id": 336,
     "integrand": "\\int_{0}^{8} \\frac{\\ln x}{\\sqrt{x(8-x)}} \\, dx",
     "answer": "\\pi\\ln 2",
-    "accepted": ["pi*ln(2)", "piln(2)", "pi*log(2)", "pilog(2)"],
+    "accepted": [
+      "pi*ln(2)",
+      "piln(2)",
+      "pi*log(2)",
+      "pilog(2)"
+    ],
     "source": "Bonn 2024 Finale Problem 2"
   },
   {
     "id": 337,
     "integrand": "\\int_{1}^{\\infty} \\frac{x^4-1}{\\ln(x)(x^6+1)} \\, dx",
     "answer": "\\ln(2+\\sqrt{3})",
-    "accepted": ["ln(2+sqrt(3))", "log(2+sqrt(3))"],
+    "accepted": [
+      "ln(2+sqrt(3))",
+      "log(2+sqrt(3))"
+    ],
     "source": "Bonn 2024 Finale Problem 3"
   },
   {
     "id": 338,
     "integrand": "\\int_{-1}^{1} \\frac{1+x^{2024}}{1+(x^{2024})^{\\arctan x}} \\, dx",
     "answer": "1 + \\frac{1}{2025}",
-    "accepted": ["1+1/2025", "2026/2025"],
+    "accepted": [
+      "1+1/2025",
+      "2026/2025"
+    ],
     "source": "Bonn 2024 Finale Problem 4"
   },
   {
     "id": 339,
     "integrand": "\\int_{0}^{\\infty} \\frac{1}{\\sqrt{x}(1+x)(x^{2024}+1)} \\, dx",
     "answer": "\\frac{\\pi}{2}",
-    "accepted": ["pi/2"],
+    "accepted": [
+      "pi/2"
+    ],
     "source": "Bonn 2024 Finale Problem 5"
   },
   {
     "id": 340,
     "integrand": "\\int \\sqrt{\\frac{x}{x+1}} \\, dx",
     "answer": "\\sqrt{x(x+1)} - \\ln(\\sqrt{x}+\\sqrt{x+1}) + C",
-    "accepted": ["sqrt(x(x+1))-ln(sqrt(x)+sqrt(x+1))", "sqrt(x)*sqrt(x+1)-ln(sqrt(x)+sqrt(x+1))"],
+    "accepted": [
+      "sqrt(x(x+1))-ln(sqrt(x)+sqrt(x+1))",
+      "sqrt(x)*sqrt(x+1)-ln(sqrt(x)+sqrt(x+1))"
+    ],
     "source": "Bonn 2024 Finale Tiebreaker"
+  },
+  {
+    "id": 341,
+    "integrand": "\\int_0^{2\\pi} x^{\\sqrt{4+\\sqrt{131+\\sqrt{154+\\sqrt{211+\\sqrt{196}}}}}}\\,dx",
+    "answer": "\\frac{(2\\pi)^5}{5}",
+    "accepted": [
+      "(2pi)^5/5"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 1"
+  },
+  {
+    "id": 342,
+    "integrand": "\\int_0^{\\pi} \\sqrt{1+x^{-2}}\\,d(x^2)",
+    "answer": "\\operatorname{arsinh}(\\pi)+\\pi\\sqrt{\\pi^2+1}",
+    "accepted": [
+      "arsinh(pi)+pi*sqrt(pi^2+1)"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 2"
+  },
+  {
+    "id": 343,
+    "integrand": "\\int_{-3}^{6} e^{|x|}\\,dx",
+    "answer": "e^6+e^3-2",
+    "accepted": [
+      "e^6+e^3-2"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 3"
+  },
+  {
+    "id": 344,
+    "integrand": "\\int_{3\\pi/2}^{6\\pi}\\!\\left(\\frac{i}{2s^7}\\left[\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{i}\\frac{x^{2n}s^7}{(2n)!}+\\sin(x)s^7\\right]+\\frac{1}{2}\\frac{\\partial}{\\partial x}\\sum_{n=0}^{\\infty}(-i)^n\\frac{x^{n+1}}{(n+1!)!}\\right)dx",
+    "answer": "1",
+    "accepted": [
+      "1"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 4"
+  },
+  {
+    "id": 345,
+    "integrand": "\\int_0^{\\pi/4}\\left(1+\\tan^2(x)\\right)dx",
+    "answer": "1",
+    "accepted": [
+      "1"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 5"
+  },
+  {
+    "id": 346,
+    "integrand": "\\lim_{n\\to\\infty}\\int_n^{n+1}\\sqrt[n]{x}\\,dx",
+    "answer": "1",
+    "accepted": [
+      "1"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 6"
+  },
+  {
+    "id": 347,
+    "integrand": "\\int_0^2 e^{2x}\\lfloor x^2\\rfloor\\,dx",
+    "answer": "\\frac{1}{2}\\left(-e^2+3e^4-e^{2\\sqrt{2}}-e^{2\\sqrt{3}}\\right)",
+    "accepted": [
+      "(1/2)*(-e^2+3e^4-e^(2sqrt(2))-e^(2sqrt(3)))"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 7"
+  },
+  {
+    "id": 348,
+    "integrand": "\\int_0^{\\sqrt{\\pi}} x\\sin(x^2)\\,dx",
+    "answer": "1",
+    "accepted": [
+      "1"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 8"
+  },
+  {
+    "id": 349,
+    "integrand": "\\int_{-\\pi/2}^{\\pi/2}\\!\\left(\\sin(x)\\frac{x^6+x^4+x^2}{x^4+x^2+1}+\\pi\\sin^2\\!\\left(\\frac{\\pi}{4}\\right)\\right)dx",
+    "answer": "\\frac{\\pi^2}{2}",
+    "accepted": [
+      "pi^2/2"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 9"
+  },
+  {
+    "id": 350,
+    "integrand": "\\int_0^1 \\frac{x-1}{x^3-x^2+x-1}\\,dx",
+    "answer": "\\frac{\\pi}{4}",
+    "accepted": [
+      "pi/4"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 10"
+  },
+  {
+    "id": 351,
+    "integrand": "\\int_0^{\\pi/2}\\ln(\\tan(x))\\,dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 11"
+  },
+  {
+    "id": 352,
+    "integrand": "\\int_0^{\\pi/8}\\frac{\\sin(2x)\\sin(4x)\\sin(8x)}{\\cos(2x)\\cos(4x)}\\,dx",
+    "answer": "\\frac{1}{4}",
+    "accepted": [
+      "1/4"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 12"
+  },
+  {
+    "id": 353,
+    "integrand": "\\int_{-1}^{2^{1/4}} 2^{-x^4}\\cdot\\lceil|x|\\rceil\\cdot x^3\\,dx",
+    "answer": "\\frac{1}{8\\ln(2)}",
+    "accepted": [
+      "1/(8ln(2))",
+      "1/(8*ln(2))"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 13"
+  },
+  {
+    "id": 354,
+    "integrand": "\\int_e^{e^e}\\frac{2\\ln(x)}{x\\ln^2(x^2)}\\,dx",
+    "answer": "\\frac{1}{2}",
+    "accepted": [
+      "1/2"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 14"
+  },
+  {
+    "id": 355,
+    "integrand": "\\int_0^{\\pi/6}\\sin(x)\\sin(2x)\\sin(3x)\\,dx",
+    "answer": "\\frac{1}{6}",
+    "accepted": [
+      "1/6"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 15"
+  },
+  {
+    "id": 356,
+    "integrand": "\\int_0^1\\frac{2x}{\\sqrt{1-x^4}}\\,dx",
+    "answer": "\\frac{\\pi}{2}",
+    "accepted": [
+      "pi/2"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 16"
+  },
+  {
+    "id": 357,
+    "integrand": "\\int_0^{\\infty} x^{2024}e^{-x}\\,dx",
+    "answer": "2024!",
+    "accepted": [
+      "2024!"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 17"
+  },
+  {
+    "id": 358,
+    "integrand": "\\int_0^{e-1}\\frac{1-x}{1+x}\\,dx",
+    "answer": "3-e",
+    "accepted": [
+      "3-e"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 18"
+  },
+  {
+    "id": 359,
+    "integrand": "\\int_0^1\\sin(\\arccos(x))\\,dx",
+    "answer": "\\frac{\\pi}{4}",
+    "accepted": [
+      "pi/4"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 19"
+  },
+  {
+    "id": 360,
+    "integrand": "\\int_2^3\\frac{1}{x^3-x}\\,dx",
+    "answer": "\\frac{\\ln(4)-3\\ln(3)+3\\ln(2)}{2}",
+    "accepted": [
+      "(ln(4)-3ln(3)+3ln(2))/2"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Problem 20"
+  },
+  {
+    "id": 361,
+    "integrand": "\\int\\frac{x^4-16}{x^2+4x+8}\\,dx",
+    "answer": "\\frac{x^3-6x^2+24x}{3}-40\\arctan\\!\\left(\\frac{2x+4}{4}\\right)+C",
+    "accepted": [
+      "(x^3-6x^2+24x)/3-40arctan((2x+4)/4)"
+    ],
+    "source": "Heidelberg 2024 Professors Battle Problem 1"
+  },
+  {
+    "id": 362,
+    "integrand": "\\int\\sqrt{1+e^{2x}}\\,dx",
+    "answer": "\\sqrt{1+e^{2x}}-\\operatorname{artanh}\\!\\left(\\sqrt{1+e^{2x}}\\right)+C",
+    "accepted": [
+      "sqrt(1+e^(2x))-artanh(sqrt(1+e^(2x)))"
+    ],
+    "source": "Heidelberg 2024 Professors Battle Problem 2"
+  },
+  {
+    "id": 363,
+    "integrand": "\\int_0^{\\infty}\\left(1-e^{-\\alpha/x^2}\\right)dx",
+    "answer": "\\sqrt{\\pi\\alpha}",
+    "accepted": [
+      "sqrt(pi*alpha)"
+    ],
+    "source": "Heidelberg 2024 Professors Battle Problem 3"
+  },
+  {
+    "id": 364,
+    "integrand": "\\int_0^{\\infty} e^{-\\cosh^2(x)}\\cosh(x)\\,dx",
+    "answer": "\\frac{\\sqrt{\\pi}}{2e}",
+    "accepted": [
+      "sqrt(pi)/(2e)"
+    ],
+    "source": "Heidelberg 2024 Qualifying Test Tiebreaker"
+  },
+  {
+    "id": 365,
+    "integrand": "\\int\\frac{x^3}{(x^2+a^2)^{3/2}}\\,dx",
+    "answer": "\\frac{x^2+2a^2}{(x^2+a^2)^{1/2}}+C",
+    "accepted": [
+      "(x^2+2a^2)/sqrt(x^2+a^2)"
+    ],
+    "source": "Heidelberg 2024 Quarter Final 1 Problem 1"
+  },
+  {
+    "id": 366,
+    "integrand": "\\int_0^1\\ln^2(x^2)\\,dx",
+    "answer": "8",
+    "accepted": [
+      "8"
+    ],
+    "source": "Heidelberg 2024 Quarter Final 1 Problem 2"
+  },
+  {
+    "id": 367,
+    "integrand": "\\int_1^4\\frac{1}{\\sqrt{x}\\sqrt{\\sqrt{x}-x}}\\,dx",
+    "answer": "4",
+    "accepted": [
+      "4"
+    ],
+    "source": "Heidelberg 2024 Quarter Final 2 Problem 1"
+  },
+  {
+    "id": 368,
+    "integrand": "\\int_{\\ln(\\tan(1))}^{\\infty}\\frac{1}{(e^x+e^{-x})\\arctan(e^x)}\\,dx",
+    "answer": "\\ln\\!\\left(\\frac{\\pi}{2}\\right)",
+    "accepted": [
+      "ln(pi/2)"
+    ],
+    "source": "Heidelberg 2024 Quarter Final 2 Problem 2"
+  },
+  {
+    "id": 369,
+    "integrand": "\\int_0^{\\pi}\\frac{\\sin(x)\\sin(2x)}{1-\\cos(2x)}\\,dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2024 Quarter Final 3 Problem 1"
+  },
+  {
+    "id": 370,
+    "integrand": "\\int_e^{e^n}\\!\\left(\\frac{1}{\\ln(x)}+\\ln(\\ln(x))\\right)dx",
+    "answer": "e^n\\ln(n)",
+    "accepted": [
+      "e^n*ln(n)"
+    ],
+    "source": "Heidelberg 2024 Quarter Final Tiebreaker"
+  },
+  {
+    "id": 371,
+    "integrand": "\\int_0^{\\pi/2}\\frac{1}{1+\\tan^{2024}(x)}\\,dx",
+    "answer": "\\frac{\\pi}{4}",
+    "accepted": [
+      "pi/4"
+    ],
+    "source": "Heidelberg 2024 Semi Final 1 Problem 1"
+  },
+  {
+    "id": 372,
+    "integrand": "\\int\\frac{1}{x(x^2+a^2)}\\,dx",
+    "answer": "\\frac{1}{2a^2}\\ln\\frac{x^2}{x^2+a^2}+C",
+    "accepted": [
+      "1/(2a^2)*ln(x^2/(x^2+a^2))"
+    ],
+    "source": "Heidelberg 2024 Semi Final 1 Problem 2"
+  },
+  {
+    "id": 373,
+    "integrand": "\\int\\frac{e^{ax}-1}{e^{ax}+1}\\,dx",
+    "answer": "\\frac{2}{a}\\ln(e^{ax}+1)-x+C",
+    "accepted": [
+      "(2/a)ln(e^(ax)+1)-x"
+    ],
+    "source": "Heidelberg 2024 Semi Final 2 Problem 1"
+  },
+  {
+    "id": 374,
+    "integrand": "\\int_0^1 x\\arctan(x)\\,dx",
+    "answer": "\\frac{\\pi-2}{4}",
+    "accepted": [
+      "(pi-2)/4"
+    ],
+    "source": "Heidelberg 2024 Semi Final 2 Problem 2"
+  },
+  {
+    "id": 375,
+    "integrand": "\\int\\frac{1}{x^2(x+a)^2}\\,dx",
+    "answer": "\\frac{2\\ln(x+a)-2\\ln(x)}{a^3}-\\frac{1}{a^2(x+a)}-\\frac{1}{a^2 x}+C",
+    "accepted": [
+      "(2ln(x+a)-2ln(x))/a^3-1/(a^2*(x+a))-1/(a^2*x)"
+    ],
+    "source": "Heidelberg 2024 Semi Final 2 Problem 3"
+  },
+  {
+    "id": 376,
+    "integrand": "\\int_0^{\\pi}\\ln(\\sin(x))\\,dx",
+    "answer": "-\\pi\\ln(2)",
+    "accepted": [
+      "-pi*ln(2)",
+      "-pi*log(2)"
+    ],
+    "source": "Heidelberg 2024 Final Problem 1"
+  },
+  {
+    "id": 377,
+    "integrand": "\\int_1^2\\frac{\\arcsin(\\ln(x))}{x}\\,dx",
+    "answer": "-1+\\sqrt{1-\\ln^2(2)}+\\ln(2)\\arcsin(\\ln(2))",
+    "accepted": [
+      "-1+sqrt(1-ln(2)^2)+ln(2)*arcsin(ln(2))"
+    ],
+    "source": "Heidelberg 2024 Final Problem 2"
+  },
+  {
+    "id": 378,
+    "integrand": "\\int\\frac{3\\sin(x)+4}{(3+4\\sin(x))^2}\\,dx",
+    "answer": "-\\frac{1}{\\frac{1}{\\cos(x)}+4\\tan(x)}+C",
+    "accepted": [
+      "-1/(1/cos(x)+4tan(x))"
+    ],
+    "source": "Heidelberg 2024 Final Problem 3"
+  },
+  {
+    "id": 379,
+    "integrand": "\\int_0^{\\pi} e^x\\sin^3(x)\\,dx",
+    "answer": "\\frac{3(e^{\\pi}+1)}{10}",
+    "accepted": [
+      "3*(e^pi+1)/10"
+    ],
+    "source": "Heidelberg 2024 Final Problem 4"
+  },
+  {
+    "id": 380,
+    "integrand": "\\int_0^{\\infty}\\frac{\\ln(x)}{x^2+1}\\,dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2024 Final Problem 5"
+  },
+  {
+    "id": 381,
+    "integrand": "\\int_0^1\\!\\left(\\sum_{k=1}^{999}\\frac{1}{x-e^{2\\pi ik/1000}}\\right)\\!\\left(\\prod_{n=1}^{999}(x-e^{2\\pi in/1000})\\right)dx",
+    "answer": "999",
+    "accepted": [
+      "999"
+    ],
+    "source": "Heidelberg 2025 Professors Duel Problem 1"
+  },
+  {
+    "id": 382,
+    "integrand": "q:=e^{2\\pi iz},\\quad\\int_0^1 e^{-2\\pi iz}\\cdot q\\prod_{n=1}^{\\infty}(1-q^n)^{24}\\,dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2025 Professors Duel Problem 2"
+  },
+  {
+    "id": 383,
+    "integrand": "\\int_{-\\infty}^{\\infty}\\frac{\\cos x}{1+x^2}\\,dx",
+    "answer": "\\frac{\\pi}{e}",
+    "accepted": [
+      "pi/e"
+    ],
+    "source": "Heidelberg 2025 Professors Duel Problem 3"
+  },
+  {
+    "id": 384,
+    "integrand": "\\int e^{i\\mathbf{k}\\cdot\\mathbf{r}}\\frac{4\\pi}{k^2+(\\alpha m)^2}\\,d^3k",
+    "answer": "\\frac{4\\pi^3}{r}e^{-\\alpha mr}",
+    "accepted": [
+      "4pi^3/r*e^(-alpha*m*r)"
+    ],
+    "source": "Heidelberg 2025 Professors Duel Problem 4"
+  },
+  {
+    "id": 385,
+    "integrand": "\\int_{-2}^{2}\\frac{1}{x^6+1}\\,dx",
+    "answer": "\\frac{\\ln(5+2\\sqrt{3})-\\ln(5-2\\sqrt{3})}{2\\sqrt{3}}+\\frac{\\arctan(\\sqrt{3}+4)-\\arctan(\\sqrt{3}-4)+2\\arctan(2)}{3}",
+    "accepted": [
+      "(ln(5+2sqrt(3))-ln(5-2sqrt(3)))/(2sqrt(3))+(arctan(sqrt(3)+4)-arctan(sqrt(3)-4)+2arctan(2))/3"
+    ],
+    "source": "Heidelberg 2025 Professors Duel Problem 5"
+  },
+  {
+    "id": 386,
+    "integrand": "\\int_{-\\arctan(\\sqrt[3]{3B})}^{\\arctan(\\sqrt[3]{3B})}iH\\frac{\\tan^2(x)}{\\cos^2(x)}\\,dx",
+    "answer": "2HiB",
+    "accepted": [
+      "2HiB"
+    ],
+    "source": "Heidelberg 2025 Audience Integral Problem 1"
+  },
+  {
+    "id": 387,
+    "integrand": "\\int_0^{\\infty} x^n e^{-x}\\,dx",
+    "answer": "n!",
+    "accepted": [
+      "n!"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 1"
+  },
+  {
+    "id": 388,
+    "integrand": "\\int\\frac{3x}{(1+9x^2)^4}\\,dx",
+    "answer": "-\\frac{1}{18}\\cdot\\frac{1}{(1+9x^2)^3}+C",
+    "accepted": [
+      "-1/(18*(1+9x^2)^3)"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 2"
+  },
+  {
+    "id": 389,
+    "integrand": "\\int x^{x/\\ln x}\\,dx",
+    "answer": "e^x+C",
+    "accepted": [
+      "e^x"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 3"
+  },
+  {
+    "id": 390,
+    "integrand": "\\int(8x-12)(4x^2-12x)^4\\,dx",
+    "answer": "\\frac{1}{5}(4x^2-12x)^5+C",
+    "accepted": [
+      "(1/5)*(4x^2-12x)^5",
+      "(4x^2-12x)^5/5"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 4"
+  },
+  {
+    "id": 391,
+    "integrand": "\\int 3x^{-4}(2+4x^{-3})^{-7}\\,dx",
+    "answer": "\\frac{1}{24}(2+4x^{-3})^{-6}+C",
+    "accepted": [
+      "(1/24)*(2+4x^(-3))^(-6)",
+      "(2+4*x^(-3))^(-6)/24"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 5"
+  },
+  {
+    "id": 392,
+    "integrand": "\\int(3-4x)(4x^2-6x+7)^{10}\\,dx",
+    "answer": "-\\frac{1}{22}(4x^2-6x+7)^{11}+C",
+    "accepted": [
+      "-(1/22)*(4x^2-6x+7)^11",
+      "-(4x^2-6x+7)^11/22"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 6"
+  },
+  {
+    "id": 393,
+    "integrand": "\\int\\frac{3x}{1+9x^2}\\,dx",
+    "answer": "\\frac{1}{6}\\ln(1+9x^2)+C",
+    "accepted": [
+      "(1/6)*ln(1+9x^2)",
+      "ln(1+9x^2)/6"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 7"
+  },
+  {
+    "id": 394,
+    "integrand": "\\int_{-1}^{1}\\frac{1}{x}\\sqrt{\\frac{1+x}{1-x}}\\ln\\!\\left(\\frac{2x^2+2x+1}{2x^2-2x+1}\\right)dx",
+    "answer": "4\\pi\\operatorname{arccot}(\\sqrt{\\varphi})",
+    "accepted": [
+      "4pi*arccot(sqrt(phi))"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 8"
+  },
+  {
+    "id": 395,
+    "integrand": "\\int_0^{\\infty}\\frac{\\ln x}{1+x^2}\\,dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 9"
+  },
+  {
+    "id": 396,
+    "integrand": "\\int_{\\pi/2}^{0}\\frac{1+\\cos(2x)}{2}\\,dx",
+    "answer": "-\\frac{\\pi}{4}",
+    "accepted": [
+      "-pi/4"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 10"
+  },
+  {
+    "id": 397,
+    "integrand": "\\int_{1/2}^{1}\\!\\left(\\frac{1}{x^3}-\\frac{1}{x^4}\\right)dx",
+    "answer": "-\\frac{5}{6}",
+    "accepted": [
+      "-5/6"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 11"
+  },
+  {
+    "id": 398,
+    "integrand": "\\int_9^4\\frac{1-\\sqrt{x}}{\\sqrt{x}}\\,dx",
+    "answer": "3",
+    "accepted": [
+      "3"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 12"
+  },
+  {
+    "id": 399,
+    "integrand": "\\int_0^{\\ln\\pi} e^{2x}\\cos(e^x)\\,dx",
+    "answer": "-\\sin(1)-\\cos(1)-1",
+    "accepted": [
+      "-sin(1)-cos(1)-1"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 13"
+  },
+  {
+    "id": 400,
+    "integrand": "\\int_{-1}^{1}\\sqrt{4-x^2}\\,dx",
+    "answer": "\\sqrt{3}+\\frac{2\\pi}{3}",
+    "accepted": [
+      "sqrt(3)+2pi/3",
+      "sqrt(3)+2*pi/3"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 14"
+  },
+  {
+    "id": 401,
+    "integrand": "\\int\\frac{3}{1+9x^2}\\,dx",
+    "answer": "\\arctan(3x)+C",
+    "accepted": [
+      "arctan(3x)"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Problem 15"
+  },
+  {
+    "id": 402,
+    "integrand": "\\int x^2 e^x\\,dx",
+    "answer": "(x^2-2x+2)e^x+C",
+    "accepted": [
+      "(x^2-2x+2)e^x",
+      "(x^2-2x+2)*e^x"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Tiebreaker 1"
+  },
+  {
+    "id": 403,
+    "integrand": "\\int e^x\\sin(x)\\,dx",
+    "answer": "\\frac{e^x(\\sin(x)-\\cos(x))}{2}+C",
+    "accepted": [
+      "e^x*(sin(x)-cos(x))/2"
+    ],
+    "source": "Heidelberg 2025 Qualifying Test Tiebreaker 2"
+  },
+  {
+    "id": 404,
+    "integrand": "\\int\\tan(\\arcsin(x))\\,dx",
+    "answer": "-\\sqrt{1-x^2}+C",
+    "accepted": [
+      "-sqrt(1-x^2)"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 1 Problem 1"
+  },
+  {
+    "id": 405,
+    "integrand": "\\lim_{n\\to 0}\\int_1^2\\frac{x^n-1}{n}\\,dx",
+    "answer": "\\ln(4)-1",
+    "accepted": [
+      "ln(4)-1",
+      "log(4)-1"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 1 Problem 2"
+  },
+  {
+    "id": 406,
+    "integrand": "\\int_0^{2\\pi}\\!\\left[-\\frac{1}{2}\\sin(\\omega t)\\sin\\!\\left(\\frac{\\pi}{2}-\\frac{\\pi}{4}\\sin(\\omega t)\\right)-\\frac{3\\pi}{8}\\cos(\\omega t)\\cos\\!\\left(\\frac{\\pi}{2}-\\frac{\\pi}{4}\\sin(\\omega t)\\right)-\\frac{\\pi}{8}\\cos^2(\\omega t)\\cos\\!\\left(\\frac{\\pi}{2}-\\frac{\\pi}{4}\\sin(\\omega t)\\right)\\right]dt",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 1 Problem 3"
+  },
+  {
+    "id": 407,
+    "integrand": "a<0,\\;b^2-ac>0:\\quad\\int\\frac{1}{\\sqrt{ax^2+2bx+c}}\\,dx",
+    "answer": "-\\frac{1}{\\sqrt{-a}}\\arcsin\\!\\left(\\frac{ax+b}{\\sqrt{b^2-ac}}\\right)+C",
+    "accepted": [
+      "-1/sqrt(-a)*arcsin((ax+b)/sqrt(b^2-ac))"
+    ],
+    "source": "Heidelberg 2025 Quarter Final Tiebreaker 1"
+  },
+  {
+    "id": 408,
+    "integrand": "b^2>4ac:\\quad\\int\\frac{1}{a+bx+cx^2}\\,dx",
+    "answer": "\\frac{1}{\\sqrt{b^2-4ac}}\\left[\\ln\\!\\left(x-\\frac{-b+\\sqrt{b^2-4ac}}{2c}\\right)-\\ln\\!\\left(x-\\frac{-b-\\sqrt{b^2-4ac}}{2c}\\right)\\right]+C",
+    "accepted": [
+      "1/sqrt(b^2-4ac)*ln((x+(-b+sqrt(b^2-4ac))/(2c))/(x+(-b-sqrt(b^2-4ac))/(2c)))"
+    ],
+    "source": "Heidelberg 2025 Quarter Final Tiebreaker 2"
+  },
+  {
+    "id": 409,
+    "integrand": "\\int\\frac{x^2+2025}{x^3+2x}\\,dx",
+    "answer": "\\frac{2025}{2}\\ln(x)-\\frac{2023}{4}\\ln(x^2+2)+C",
+    "accepted": [
+      "(2025/2)*ln(x)-(2023/4)*ln(x^2+2)"
+    ],
+    "source": "Heidelberg 2025 Quarter Final Tiebreaker 3"
+  },
+  {
+    "id": 410,
+    "integrand": "\\int_0^1(e^x-e)\\,dx",
+    "answer": "-1",
+    "accepted": [
+      "-1"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 2 Problem 1"
+  },
+  {
+    "id": 411,
+    "integrand": "\\int_0^{\\infty} x^5 e^{-2x}\\,dx",
+    "answer": "\\frac{15}{8}",
+    "accepted": [
+      "15/8"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 2 Problem 2"
+  },
+  {
+    "id": 412,
+    "integrand": "\\lim_{n\\to\\infty}\\int_n^{n+1}\\!\\left(\\frac{x^{1/x}}{x}-x^{1/x}\\right)dx",
+    "answer": "-1",
+    "accepted": [
+      "-1"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 2 Problem 3"
+  },
+  {
+    "id": 413,
+    "integrand": "\\int_0^1 x^2(1-x)^{2024}\\,dx",
+    "answer": "\\frac{2}{2025\\cdot2026\\cdot2027}",
+    "accepted": [
+      "2/(2025*2026*2027)"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 3 Problem 1"
+  },
+  {
+    "id": 414,
+    "integrand": "\\left\\lfloor 2\\cdot\\int_0^1\\frac{\\tan(x)}{\\Gamma(x+1)}\\,dx\\right\\rfloor",
+    "answer": "2",
+    "accepted": [
+      "2"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 3 Problem 2"
+  },
+  {
+    "id": 415,
+    "integrand": "\\int_0^1\\frac{x^2}{1+x^2}\\,dx",
+    "answer": "1-\\frac{\\pi}{4}",
+    "accepted": [
+      "1-pi/4"
+    ],
+    "source": "Heidelberg 2025 Quarter Final 3 Problem 3"
+  },
+  {
+    "id": 416,
+    "integrand": "\\int_0^{2\\pi}\\frac{1}{2+\\cos(x)}\\,dx",
+    "answer": "\\frac{2\\pi}{\\sqrt{3}}",
+    "accepted": [
+      "2pi/sqrt(3)",
+      "2*pi/sqrt(3)"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Problem 1"
+  },
+  {
+    "id": 417,
+    "integrand": "\\int_0^{\\pi}\\sin\\!\\left(x\\int_1^{\\frac{1+\\sqrt{5}}{2}}(2t-1)\\,dt\\right)dx",
+    "answer": "2",
+    "accepted": [
+      "2"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Problem 2"
+  },
+  {
+    "id": 418,
+    "integrand": "\\int_1^2 x^4(\\ln x)^2\\,dx",
+    "answer": "\\frac{2}{5}\\!\\left(16\\ln^2(2)-\\frac{32}{5}\\ln(2)+\\frac{31}{25}\\right)",
+    "accepted": [
+      "(2/5)*(16*ln(2)^2-(32/5)*ln(2)+31/25)"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Problem 3"
+  },
+  {
+    "id": 419,
+    "integrand": "\\int_{-2}^{2}\\!\\left(x^3\\cos\\!\\left(\\frac{x}{2}\\right)+\\frac{1}{2}\\right)\\sqrt{4-x^2}\\,dx",
+    "answer": "\\pi",
+    "accepted": [
+      "pi"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Problem 4"
+  },
+  {
+    "id": 420,
+    "integrand": "\\int_{-1}^{1}\\ln\\!\\left(x+\\sqrt{1+x^2}\\right)dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Problem 5"
+  },
+  {
+    "id": 421,
+    "integrand": "\\int\\frac{1}{\\sqrt{\\cosh(x)-1}}\\,dx",
+    "answer": "\\sqrt{2}\\ln\\!\\left(\\tanh\\!\\left(\\frac{x}{4}\\right)\\right)+C",
+    "accepted": [
+      "sqrt(2)*ln(tanh(x/4))"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Tiebreaker 1"
+  },
+  {
+    "id": 422,
+    "integrand": "\\int\\frac{x^2}{(x^2+1)^2}\\,dx",
+    "answer": "\\frac{\\arctan(x)}{2}-\\frac{x}{2x^2+2}+C",
+    "accepted": [
+      "arctan(x)/2-x/(2x^2+2)"
+    ],
+    "source": "Heidelberg 2025 Semi Final 1 Tiebreaker 2"
+  },
+  {
+    "id": 423,
+    "integrand": "\\int_0^{\\pi/2}\\ln(\\sin(x))\\,dx",
+    "answer": "-\\frac{\\pi}{2}\\ln(2)",
+    "accepted": [
+      "-(pi/2)*ln(2)",
+      "-(pi/2)*log(2)"
+    ],
+    "source": "Heidelberg 2025 Semi Final 2 Problem 1"
+  },
+  {
+    "id": 424,
+    "integrand": "\\int_0^{\\infty}\\exp\\!\\left(\\frac{1-x}{2}\\right)\\sqrt{x}\\,dx",
+    "answer": "\\sqrt{2\\pi e}",
+    "accepted": [
+      "sqrt(2*pi*e)",
+      "sqrt(2pie)"
+    ],
+    "source": "Heidelberg 2025 Semi Final 2 Problem 2"
+  },
+  {
+    "id": 425,
+    "integrand": "\\int_0^{210\\pi}\\cos\\!\\left(\\frac{x}{5}\\right)\\sin\\!\\left(\\frac{x}{21}\\right)\\sin^2\\!\\left(\\frac{x}{2}\\right)dx",
+    "answer": "0",
+    "accepted": [
+      "0"
+    ],
+    "source": "Heidelberg 2025 Semi Final 2 Problem 3"
+  },
+  {
+    "id": 426,
+    "integrand": "\\int\\sec^3(x)\\,dx",
+    "answer": "\\frac{1}{2}\\sec(x)\\tan(x)+\\frac{1}{2}\\ln|\\sec(x)+\\tan(x)|+C",
+    "accepted": [
+      "(1/2)*sec(x)*tan(x)+(1/2)*ln|sec(x)+tan(x)|"
+    ],
+    "source": "Heidelberg 2025 Semi Final 2 Problem 4"
+  },
+  {
+    "id": 427,
+    "integrand": "\\int_{-\\infty}^{\\infty}\\frac{e^{-2\\pi ixy}}{\\cosh(\\pi x)}\\,dx",
+    "answer": "\\frac{1}{\\cosh(\\pi y)}",
+    "accepted": [
+      "1/cosh(pi*y)"
+    ],
+    "source": "Heidelberg 2025 Final Problem 1"
+  },
+  {
+    "id": 428,
+    "integrand": "\\int_0^{\\infty}\\sum_{m=0}^{\\infty}\\sum_{p=0}^{\\infty}\\frac{i^{p+2n}\\pi^p}{n!\\,m!\\,p!}\\,x^{n+m}(n+m)^p\\,dx",
+    "answer": "1",
+    "accepted": [
+      "1"
+    ],
+    "source": "Heidelberg 2025 Final Problem 2"
+  },
+  {
+    "id": 429,
+    "integrand": "\\int\\cos\\!\\left(2\\tan^{-1}\\!\\left(\\frac{3}{x+1}\\right)\\right)dx",
+    "answer": "x+6\\tan^{-1}\\!\\left(\\frac{3}{x+1}\\right)+C",
+    "accepted": [
+      "x+6arctan(3/(x+1))",
+      "x+6*arctan(3/(x+1))"
+    ],
+    "source": "Heidelberg 2025 Final Problem 3"
+  },
+  {
+    "id": 430,
+    "integrand": "\\int\\frac{x\\sec^2(x^2)}{\\sqrt{\\tan^3(x^2)}}\\,dx",
+    "answer": "-\\frac{1}{\\sqrt{\\tan(x^2)}}+C",
+    "accepted": [
+      "-1/sqrt(tan(x^2))"
+    ],
+    "source": "Heidelberg 2025 Final Problem 4"
+  },
+  {
+    "id": 431,
+    "integrand": "\\int\\sqrt{\\frac{1}{1+\\tan x}+\\frac{1}{1+\\sin x}+\\frac{1}{1+\\cos x}+\\frac{1}{1+\\csc x}+\\frac{1}{1+\\sec x}+\\frac{1}{1+\\cot x}}\\,dx",
+    "answer": "\\sqrt{3}\\,x+C",
+    "accepted": [
+      "sqrt(3)*x"
+    ],
+    "source": "Heidelberg 2025 Final Problem 5"
   }
 ]
