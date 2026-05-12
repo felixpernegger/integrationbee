@@ -52,11 +52,12 @@ function findNextProblem(targetRating, excludeIds, reviewIds = null) {
     pool = rawProblems.filter(p => !excludeIds.has(p.id))
     if (pool.length === 0) pool = rawProblems
   }
-  const next = pool.reduce((best, p) => {
+  const shuffled = [...pool].sort(() => Math.random() - 0.5)
+  const next = shuffled.reduce((best, p) => {
     const pR = getProblemRating(p.id, p.source).rating
     const bR = getProblemRating(best.id, best.source).rating
     return Math.abs(pR - targetRating) < Math.abs(bR - targetRating) ? p : best
-  })
+  }, shuffled[0])
   return { problem: next, reset: false }
 }
 
