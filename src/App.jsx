@@ -304,7 +304,7 @@ export default function App() {
             rd={activeRating?.rd ?? null}
             ratingDelta={ratingDelta}
             streak={streak}
-            label={relaxedMode ? 'Relaxed' : null}
+            label={relaxedMode ? 'Relaxed' : 'Strict'}
           />
           <div className="user-area">
             <button className="btn btn-leaderboard" onClick={() => setShowLeaderboard(true)}>Leaderboard</button>
@@ -338,7 +338,7 @@ export default function App() {
             />
             <span className="relaxed-switch-track" />
           </label>
-          <span className="relaxed-switch-label">{relaxedMode ? 'Anki Style' : 'Relaxed'}</span>
+          <span className="relaxed-switch-label">{relaxedMode ? 'Relaxed' : 'Strict'}</span>
         </div>
 
         <div className="card">
