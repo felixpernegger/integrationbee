@@ -1,11 +1,11 @@
-export default function ScoreBoard({ rating, rd, ratingDelta, streak }) {
+export default function ScoreBoard({ rating, rd, ratingDelta, streak, label }) {
   const ratingDisplay = rating !== null ? Math.round(rating) : '—'
   const rdDisplay = rd !== null ? Math.round(rd) : ''
 
   return (
     <div className="scoreboard">
       <div className="stat">
-        <span className="stat-label">Rating</span>
+        <span className="stat-label">{label ? `${label} Rating` : 'Rating'}</span>
         <span className="stat-value stat-rating">
           {ratingDisplay}
           {rdDisplay ? <span className="stat-rd"> ±{rdDisplay}</span> : null}

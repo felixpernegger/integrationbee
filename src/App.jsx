@@ -68,6 +68,9 @@ function buildSession() {
   return {
     username: storedUser || null,
     playerRating: userData ? { rating: userData.rating, rd: userData.rd, volatility: userData.volatility } : null,
+    relaxedPlayerRating: userData?.relaxedRating
+      ? { rating: userData.relaxedRating, rd: userData.relaxedRd ?? 350, volatility: userData.relaxedVolatility ?? 0.06 }
+      : null,
     currentProblem: first,
     problemRating: getProblemRating(first.id, first.source),
     seenIds: new Set([first.id]),
@@ -79,6 +82,7 @@ export default function App() {
   const [init] = useState(buildSession)
   const [username, setUsername] = useState(init.username)
   const [playerRating, setPlayerRating] = useState(init.playerRating)
+  const [relaxedPlayerRating, setRelaxedPlayerRating] = useState(init.relaxedPlayerRating)
   const [currentProblem, setCurrentProblem] = useState(init.currentProblem)
   const [problemRating, setProblemRating] = useState(init.problemRating)
   const [seenIds, setSeenIds] = useState(init.seenIds)
@@ -88,16 +92,20 @@ export default function App() {
   const [revealed, setRevealed] = useState(false)
   const [ratingDelta, setRatingDelta] = useState(null)
   const [reviewMode, setReviewMode] = useState(false)
+  const [relaxedMode, setRelaxedMode] = useState(false)
   const [currentPage, setCurrentPage] = useState('practice')
   const [showLeaderboard, setShowLeaderboard] = useState(false)
   const [showStats, setShowStats] = useState(false)
   const [showLogin, setShowLogin] = useState(false)
   const [showLatex, setShowLatex] = useState(false)
 
-  const done = status !== null || revealed
+  // In relaxed mode "done" means self-assessment is submitted, not just revealed
+  const done = relaxedMode ? status !== null : (status !== null || revealed)
+
+  const activeRating = relaxedMode ? relaxedPlayerRating : playerRating
 
   function advanceProblem(ratingOffset) {
-    const targetRating = (playerRating?.rating ?? 1500) + ratingOffset
+    const targetRating = (activeRating?.rating ?? 1500) + ratingOffset
     const currentSeen = new Set(seenIds)
     if (currentProblem) currentSeen.add(currentProblem.id)
 
@@ -127,6 +135,9 @@ export default function App() {
   function handleLogin(name, userData) {
     setUsername(name)
     setPlayerRating({ rating: userData.rating, rd: userData.rd, volatility: userData.volatility })
+    setRelaxedPlayerRating(userData.relaxedRating
+      ? { rating: userData.relaxedRating, rd: userData.relaxedRd ?? 350, volatility: userData.relaxedVolatility ?? 0.06 }
+      : null)
     setMistakeIds(userData.mistakeIds || [])
     const { problem: first } = findNextProblem(userData.rating, new Set())
     setCurrentProblem(first)
@@ -145,10 +156,10 @@ export default function App() {
     logout()
     setUsername(null)
     setPlayerRating(null)
+    setRelaxedPlayerRating(null)
     setMistakeIds([])
     setRatingDelta(null)
     setReviewMode(false)
-    // Keep playing — just pick a new problem as guest
     const { problem: first } = findNextProblem(1500, new Set())
     setCurrentProblem(first)
     setProblemRating(getProblemRating(first.id, first.source))
@@ -179,6 +190,31 @@ export default function App() {
     }
   }
 
+  function applyRelaxedRatingUpdate(score) {
+    if (!username || !currentProblem) return
+    const base = relaxedPlayerRating ?? { rating: 1500, rd: 350, volatility: 0.06 }
+    const problemStored = getProblemRating(currentProblem.id, currentProblem.source)
+    const { player: newRelaxed, problem: newProblemRating } = updateRatings(base, problemStored, score)
+    const delta = Math.round(newRelaxed.rating - base.rating)
+    setRatingDelta(delta)
+    setRelaxedPlayerRating(newRelaxed)
+    const userData = getUser(username)
+    saveUser(username, {
+      ...userData,
+      relaxedRating: newRelaxed.rating,
+      relaxedRd: newRelaxed.rd,
+      relaxedVolatility: newRelaxed.volatility,
+    })
+    saveProblemRating(currentProblem.id, newProblemRating)
+    if (score === 1) {
+      removeMistake(username, currentProblem.id)
+      setMistakeIds(prev => prev.filter(id => id !== currentProblem.id))
+    } else {
+      addMistake(username, currentProblem.id)
+      setMistakeIds(prev => prev.includes(currentProblem.id) ? prev : [...prev, currentProblem.id])
+    }
+  }
+
   function handleAnswer(input) {
     if (done) return
     const correct = checkAnswer(input, currentProblem.accepted)
@@ -190,6 +226,17 @@ export default function App() {
   function handleReveal() {
     setRevealed(true)
     if (status === null) { setStreak(0); applyRatingUpdate(0) }
+  }
+
+  function handleRelaxedReveal() {
+    setRevealed(true)
+  }
+
+  function handleRelaxedAssess(gotIt) {
+    const score = gotIt ? 1 : 0
+    setStatus(gotIt ? 'correct' : 'wrong')
+    if (gotIt) setStreak(s => s + 1); else setStreak(0)
+    applyRelaxedRatingUpdate(score)
   }
 
   function handleArchiveAnswer(problem, score) {
@@ -228,6 +275,14 @@ export default function App() {
     }
   }
 
+  function toggleRelaxedMode(on) {
+    setRelaxedMode(on)
+    setStatus(null)
+    setRevealed(false)
+    setRatingDelta(null)
+    setShowLatex(false)
+  }
+
   return (
     <div className="app">
       {showLeaderboard && <Leaderboard currentUser={username} onClose={() => setShowLeaderboard(false)} />}
@@ -245,10 +300,11 @@ export default function App() {
         </nav>
         <div className="header-right">
           <ScoreBoard
-            rating={playerRating?.rating ?? null}
-            rd={playerRating?.rd ?? null}
+            rating={activeRating?.rating ?? null}
+            rd={activeRating?.rd ?? null}
             ratingDelta={ratingDelta}
             streak={streak}
+            label={relaxedMode ? 'Relaxed' : null}
           />
           <div className="user-area">
             <button className="btn btn-leaderboard" onClick={() => setShowLeaderboard(true)}>Leaderboard</button>
@@ -272,6 +328,18 @@ export default function App() {
 
       {currentPage === 'practice' && (
       <main className="main">
+        <div className="relaxed-toggle-bar">
+          <label className="relaxed-switch">
+            <input
+              type="checkbox"
+              checked={relaxedMode}
+              onChange={e => toggleRelaxedMode(e.target.checked)}
+            />
+            <span className="relaxed-switch-track" />
+          </label>
+          <span className="relaxed-switch-label">{relaxedMode ? 'Anki Style' : 'Relaxed'}</span>
+        </div>
+
         <div className="card">
           {reviewMode && (
             <div className="review-banner">
@@ -298,31 +366,92 @@ export default function App() {
 
           <IntegralDisplay latex={currentProblem.integrand} />
 
-          {!done && <AnswerInput onSubmit={handleAnswer} disabled={done} />}
-
-          {status === 'correct' && <div className="feedback feedback-correct">Correct!</div>}
-          {status === 'wrong' && <div className="feedback feedback-wrong">Not quite — try revealing the answer.</div>}
-
-          {revealed && (
-            <div className="reveal-box">
-              <div className="reveal-label">Answer</div>
-              <BlockMath math={currentProblem.answer} />
-            </div>
+          {/* ── Normal mode ── */}
+          {!relaxedMode && (
+            <>
+              {!done && <AnswerInput onSubmit={handleAnswer} disabled={done} />}
+              {status === 'correct' && <div className="feedback feedback-correct">Correct!</div>}
+              {status === 'wrong' && <div className="feedback feedback-wrong">Not quite — try revealing the answer.</div>}
+              {revealed && (
+                <div className="reveal-box">
+                  <div className="reveal-label">Answer</div>
+                  <BlockMath math={currentProblem.answer} />
+                </div>
+              )}
+              <div className="actions">
+                {!revealed && <button className="btn btn-reveal" onClick={handleReveal}>Reveal answer</button>}
+                {done && !reviewMode && (
+                  <>
+                    <button className="btn btn-easier" onClick={() => advanceProblem(-RATING_STEP)}>← Easier</button>
+                    <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
+                    <button className="btn btn-harder" onClick={() => advanceProblem(RATING_STEP)}>Harder →</button>
+                  </>
+                )}
+                {done && reviewMode && (
+                  <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
+                )}
+              </div>
+            </>
           )}
 
-          <div className="actions">
-            {!revealed && <button className="btn btn-reveal" onClick={handleReveal}>Reveal answer</button>}
-            {done && !reviewMode && (
-              <>
-                <button className="btn btn-easier" onClick={() => advanceProblem(-RATING_STEP)}>← Easier</button>
-                <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
-                <button className="btn btn-harder" onClick={() => advanceProblem(RATING_STEP)}>Harder →</button>
-              </>
-            )}
-            {done && reviewMode && (
-              <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
-            )}
-          </div>
+          {/* ── Relaxed / Anki mode ── */}
+          {relaxedMode && (
+            <>
+              {!revealed && (
+                <div className="actions">
+                  <button className="btn btn-reveal" onClick={handleRelaxedReveal}>Show Answer</button>
+                </div>
+              )}
+              {revealed && (
+                <div className="reveal-box">
+                  <div className="reveal-label">Answer</div>
+                  <BlockMath math={currentProblem.answer} />
+                </div>
+              )}
+              {revealed && !done && (
+                <div className="actions relaxed-assess-actions">
+                  <button className="btn btn-easier" onClick={() => handleRelaxedAssess(false)}>✗ Missed it</button>
+                  <button className="btn btn-harder" onClick={() => handleRelaxedAssess(true)}>✓ Got it</button>
+                </div>
+              )}
+              {done && (
+                <>
+                  {status === 'correct' && (
+                    <div className="feedback feedback-correct">
+                      Got it!
+                      {ratingDelta !== null && (
+                        <span className={`rating-delta ${ratingDelta >= 0 ? 'delta-up' : 'delta-down'}`}>
+                          {' '}{ratingDelta > 0 ? '+' : ''}{ratingDelta}
+                        </span>
+                      )}
+                    </div>
+                  )}
+                  {status === 'wrong' && (
+                    <div className="feedback feedback-wrong">
+                      Better luck next time.
+                      {ratingDelta !== null && (
+                        <span className={`rating-delta ${ratingDelta >= 0 ? 'delta-up' : 'delta-down'}`}>
+                          {' '}{ratingDelta > 0 ? '+' : ''}{ratingDelta}
+                        </span>
+                      )}
+                    </div>
+                  )}
+                  <div className="actions">
+                    {!reviewMode && (
+                      <>
+                        <button className="btn btn-easier" onClick={() => advanceProblem(-RATING_STEP)}>← Easier</button>
+                        <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
+                        <button className="btn btn-harder" onClick={() => advanceProblem(RATING_STEP)}>Harder →</button>
+                      </>
+                    )}
+                    {reviewMode && (
+                      <button className="btn btn-next" onClick={() => advanceProblem(0)}>Next →</button>
+                    )}
+                  </div>
+                </>
+              )}
+            </>
+          )}
         </div>
       </main>
       )}
